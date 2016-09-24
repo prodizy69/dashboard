@@ -83,9 +83,6 @@
 
     // Custom Globals
     "globals"       : {
-      "define": true,
-      "kony": true,
-      "kore": true,
-      "io": true
-    }        // additional predefined global variables
+      "define": true
+    } // additional predefined global variables
 }
