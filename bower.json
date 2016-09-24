@@ -7,5 +7,8 @@
     "bootstrap": "^3.3.7",
     "angular-route": "^1.5.8"
   },
-  "dependencies": {}
+  "dependencies": {
+    "font-awesome": "^4.6.3",
+    "jquery": "^3.1.1"
+  }
 }

@@ -24,10 +24,10 @@
 	(function bootstrapApp() {
 
 		ng.element(document).ready(function() {
-            ng.bootstrap(document, ["dashly"], {
-                strictDi: true
-            });
-        });
+      ng.bootstrap(document, ["dashly"], {
+          strictDi: true
+      });
+    });
 
 	})();
 

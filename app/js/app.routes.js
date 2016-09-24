@@ -9,9 +9,8 @@
 		$routeProvider
 
 		.when('/', {
-			templateUrl: 'js/modules/home/home.html',
-			controller: 'HomeController',
-            controllerAs: 'homeCtrl'
+			templateUrl: 'js/modules/dashboard/dashboard.html',
+			controller: 'DashboardController'
 		})
 
 		// .otherwise({
