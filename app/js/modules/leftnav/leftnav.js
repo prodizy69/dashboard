@@ -4,11 +4,23 @@
 
 	ng.module('dashly')
 
-	.controller('leftnavController', leftnavController);
+	.directive('leftNav', LeftNavDirective);
 
-	leftnavController.$inject = ['$scope'];
+	LeftNavDirective.$inject = [];
 
-	function leftnavController($scope) {
+	function LeftNavDirective() {
+    var _directive = {};
+
+    _directive.restrict = 'AE';
+    _directive.scope = {};
+    _directive.link = linkFn;
+    _directive.templateUrl = 'js/modules/leftnav/leftnav.html';
+
+    function linkFn($scope, $element, $attrs) {
+
+    }
+
+    return _directive;
 
 	}
 
