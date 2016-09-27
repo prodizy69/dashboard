@@ -1,14 +1,10 @@
 {
-	"name": "dashly",
-	"version": "1.0.0",
-	"private": true,
-	"scripts": {
-		
-	},
-	"dependencies": {
-		
-	},
-	"devDependencies": {
-		
-	}
+  "name": "dashly",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-bower": "0.0.13"
+  }
 }
