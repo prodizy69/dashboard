@@ -4,37 +4,42 @@
 
   ng.module('dashly')
 
-  .directive('doughnutChart', DoughnutChart);
+  .directive('polarChart', PolarChart);
 
-  DoughnutChart.$inject = [];
+  PolarChart.$inject = [];
 
-  function DoughnutChart() {
+  function PolarChart() {
     var _directive = {};
 
     _directive.restrict = 'AE';
     _directive.scope = { chartData: '=', title: '=', width: '=', height: '=' };
-    _directive.template = '<div><h2>{{title}}</h2><canvas id="doughnutChart" width="{{width}}" height="{{height}}"></canvas></div>'
+    _directive.template = '<div><h2>{{title}}</h2><canvas id="polarChart" width="{{width}}" height="{{height}}"></canvas></div>'
     _directive.link = linkFn;
 
     function linkFn($scope, $ele, $attrs) {
       
-      var doughnutOptions = {
+      var polarOptions = {
+        scaleShowLabelBackdrop: true,
+        scaleBackdropColor: "rgba(255,255,255,0.75)",
+        scaleBeginAtZero: true,
+        scaleBackdropPaddingY: 1,
+        scaleBackdropPaddingX: 1,
+        scaleShowLine: true,
         segmentShowStroke: true,
         segmentStrokeColor: "#fff",
         segmentStrokeWidth: 2,
-        percentageInnerCutout: 45, // This is 0 for Pie charts
         animationSteps: 100,
         animationEasing: "easeOutBounce",
         animateRotate: true,
         animateScale: false
       };
 
-      var ctx = $($ele).find('#doughnutChart')[0].getContext('2d');
+      var ctx = $($ele).find('#polarChart')[0].getContext('2d');
 
       new Chart(ctx, {
-        type: 'doughnut',
+        type: 'polarArea',
         data: $scope.chartData,
-        options: doughnutOptions
+        options: polarOptions
       });
     }
 

@@ -2,6 +2,7 @@
     <div class="dash-comp" ng-repeat="comp in dashboardData.components">
         <div class="chart" ng-if="comp.type === 'chart'">
             <doughnut-chart ng-if="comp.subtype === 'doughnut'" chart-data="comp.data" title="comp.title" width="comp.height" height="comp.height"></doughnut-chart>
+            <polar-chart ng-if="comp.subtype === 'polar'" chart-data="comp.data" title="comp.title" width="comp.height" height="comp.height"></polar-chart>
         </div>
     </div>
 </div>
