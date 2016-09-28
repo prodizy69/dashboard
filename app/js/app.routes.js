@@ -9,23 +9,23 @@
 		$routeProvider
 
 		.when('/', {
-			templateUrl: 'js/modules/dashboard/dashboard.html',
-			controller: 'DashboardController'
-		}).when('/createnewDashbord.html', {
-			templateUrl: 'js/modules/dashboard/createnewDashbord.html',
-			controller: 'createnewDashbordCtrl'
-		}).when('/', {
+			templateUrl: 'js/modules/home/home.html',
+			controller: 'HomeController'
+		})
+
+		.when('/dashboard/:dashboardId', {
 			templateUrl: 'js/modules/dashboard/dashboard.html',
 			controller: 'DashboardController'
 		})
-		// .when('/', {
-		// 	templateUrl: 'js/modules/dashboard/dashboard.html',
-		// 	controller: 'DashboardController'
-		// })
 
-		// .otherwise({
-		// 	redirectTo: '/'
-		// });
+		.when('/editor', {
+			templateUrl: 'js/modules/editor/editor.html',
+			controller: 'EditorController'
+		})
+		
+		.otherwise({
+			redirectTo: '/'
+		});
 
 	}]);
 

@@ -6,21 +6,32 @@
 
 	.directive('leftNav', LeftNavDirective);
 
-	LeftNavDirective.$inject = [];
+	LeftNavDirective.$inject = ['$rootScope', 'DashboardService'];
 
-	function LeftNavDirective() {
-    var _directive = {};
+	function LeftNavDirective($rootScope, DashboardService) {
+        var _directive = {};
 
-    _directive.restrict = 'AE';
-    _directive.scope = {};
-    _directive.link = linkFn;
-    _directive.templateUrl = 'js/modules/leftnav/leftnav.html';
+        _directive.restrict = 'AE';
+        _directive.scope = {};
+        _directive.link = linkFn;
+        _directive.templateUrl = 'js/modules/leftnav/leftnav.html';
 
-    function linkFn($scope, $element, $attrs) {
+        function linkFn($scope, $element, $attrs) {
 
-    }
+            DashboardService.getDashboards()
+            .then(function(res) {
+                $scope.dashboards = res.data.dashboards;
+            });
 
-    return _directive;
+            $scope.handleNavClick = function(type, data) {
+                if(type === 'dashboard') {
+                    $rootScope.$broadcast('load-dashboard', { data: data });
+                }
+            };
+
+        }
+
+        return _directive;
 
 	}
 

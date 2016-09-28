@@ -19,12 +19,11 @@
                 <div class="logo-element">sdfds</div>
             </li>
             <li class="active">
-                <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span class="fa arrow"></span></a>
+                <i class="fa fa-th-large"></i><span class="nav-label">Dashboards</span> <span class="fa arrow"></span>
                 <ul class="nav nav-second-level">
-                    <li><a href="index.html">Dashboard1</a></li>
-                    <li class="active"><a href="dashboard2.html">Dashboard2</a></li>
-                    <li><a href="dashboard3.html">Dashboard3</a></li>
-                    <li><a href="dashboard4.html">Dashboard4</a></li>                            
+                    <li class="active" ng-repeat="dashboard in dashboards">
+                        <a href="" ng-click="handleNavClick('dashboard', dashboard)"> {{dashboard.name}} </a>
+                    </li>
                 </ul>
             </li>
             <li>

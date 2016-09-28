@@ -1,15 +1,19 @@
 (function(ng) {
 
-	'use strict';
+  'use strict';
 
-	ng.module('dashly')
+  ng.module('dashly')
 
-	.controller('HomeController', HomeController);
+  .controller('HomeController', HomeController);
 
-	HomeController.$inject = ['$scope'];
+  HomeController.$inject = ['$scope'];
 
-	function HomeController($scope) {
+  function HomeController($scope) {
 
-	}
+    $scope.$on('load-dashboard', function(event, eventData) {
+      $scope.dashboardData = eventData.data; 
+    });
+
+  }
 
 })(angular);
