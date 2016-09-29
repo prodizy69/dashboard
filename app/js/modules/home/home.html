@@ -6,6 +6,10 @@
         <div class="chart" ng-if="comp.type === 'chart'">
             <doughnut-chart ng-if="comp.subtype === 'doughnut'" chart-data="comp.data" title="comp.title" width="comp.height" height="comp.height"></doughnut-chart>
             <polar-chart ng-if="comp.subtype === 'polar'" chart-data="comp.data" title="comp.title" width="comp.height" height="comp.height"></polar-chart>
+            <line-chart ng-if="comp.subtype === 'line'" chart-data="comp.data" title="comp.title" width="comp.height" height="comp.height"></line-chart>
+            <bubble-chart ng-if="comp.subtype === 'bubble'" chart-data="comp.data" title="comp.title" width="comp.height" height="comp.height"></bubble-chart>
+            <radar-chart ng-if="comp.subtype === 'radar'" chart-data="comp.data" title="comp.title" width="comp.height" height="comp.height"></radar-chart>
+            <bar-chart ng-if="comp.subtype === 'bar'" chart-data="comp.data" title="comp.title" width="comp.height" height="comp.height"></bar-chart>
         </div>
     </div>
 </div>

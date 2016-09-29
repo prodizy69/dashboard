@@ -18,7 +18,7 @@
 
     function linkFn($scope, $ele, $attrs) {
       
-      var doughnutOptions = {
+      var options = {
         segmentShowStroke: true,
         segmentStrokeColor: "#fff",
         segmentStrokeWidth: 2,
@@ -36,7 +36,7 @@
       new Chart(ctx, {
         type: 'doughnut',
         data: $scope.chartData,
-        options: doughnutOptions
+        options: options
       });
     }
 

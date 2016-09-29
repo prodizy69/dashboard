@@ -18,7 +18,7 @@
 
     function linkFn($scope, $ele, $attrs) {
       
-      var polarOptions = {
+      var options = {
         scaleShowLabelBackdrop: true,
         scaleBackdropColor: "rgba(255,255,255,0.75)",
         scaleBeginAtZero: true,
@@ -41,7 +41,7 @@
       new Chart(ctx, {
         type: 'polarArea',
         data: $scope.chartData,
-        options: polarOptions
+        options: options
       });
     }
 
