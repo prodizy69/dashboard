@@ -1,4 +1,7 @@
 <div class="wrapper wrapper-content">
+    <div class="nav row">
+        <button class="pull-right" ng-click="createDashboard()"> Create Dashboard </button>
+    </div>
     <div class="dash-comp" ng-repeat="comp in dashboardData.components">
         <div class="chart" ng-if="comp.type === 'chart'">
             <doughnut-chart ng-if="comp.subtype === 'doughnut'" chart-data="comp.data" title="comp.title" width="comp.height" height="comp.height"></doughnut-chart>

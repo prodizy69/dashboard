@@ -1,5 +1,6 @@
 {
   "dashboards": [{
+    "id": 1,
     "name": "Dashboard 1",
     "components": [{
       "type": "chart",
@@ -31,6 +32,7 @@
       "height": 600
     }]
   },{
+    "id": 2,
     "name": "Dashboard 2",
     "components": [{
       "type": "chart",

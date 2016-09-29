@@ -18,13 +18,18 @@
 
         function linkFn($scope, $element, $attrs) {
 
+            $scope.selectedDashboard = null;
+
             DashboardService.getDashboards()
-            .then(function(res) {
-                $scope.dashboards = res.data.dashboards;
+            .then(function(dashboards) {
+                $scope.dashboards = dashboards;
+                $scope.selectedDashboard = dashboards[0];
+                $rootScope.$broadcast('load-dashboard', { data: dashboards[0] });
             });
 
             $scope.handleNavClick = function(type, data) {
                 if(type === 'dashboard') {
+                    $scope.selectedDashboard = data;
                     $rootScope.$broadcast('load-dashboard', { data: data });
                 }
             };

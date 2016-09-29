@@ -10,6 +10,8 @@
 
   function EditorController($scope) {
 
+    $scope.dInfo = { name: 'New Dashboard' };
+    
   }
 
 })(angular);
