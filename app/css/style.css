@@ -8400,3 +8400,14 @@ body.md-skin {
         background-size: 240px 24px;
     }
 }
+
+.underline-input {
+  background: none;
+  border: 0;
+  border-bottom: 1px solid;
+  border-radius: 0;
+  -webkit-appearance: none !important;
+  vertical-align: middle;
+  padding-left: 0;
+  border-color: #dbe0e2;
+}

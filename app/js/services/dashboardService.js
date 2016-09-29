@@ -19,7 +19,7 @@
       var self = this;
 
       if(this.dashboards.length) {
-        return deferred.resolve(self.dashboards);
+        return $q.when(self.dashboards);
       } else {
         $http.get(dashboardsUrl)
         .then(function(res) {
@@ -32,6 +32,7 @@
     }
 
     this.addDashboard = function(dashboard) {
+      dashboard.id = this.dashboards.length + 1;
       this.dashboards.push(dashboard);
     }
 

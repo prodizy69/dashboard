@@ -20,12 +20,14 @@
 
             $scope.selectedDashboard = null;
 
-            DashboardService.getDashboards()
-            .then(function(dashboards) {
-                $scope.dashboards = dashboards;
-                $scope.selectedDashboard = dashboards[0];
-                $rootScope.$broadcast('load-dashboard', { data: dashboards[0] });
-            });
+            function getDashboards() {
+                DashboardService.getDashboards()
+                .then(function(dashboards) {
+                    $scope.dashboards = dashboards;
+                    $scope.selectedDashboard = dashboards[0];
+                    $rootScope.$broadcast('load-dashboard', { data: dashboards[0] });
+                });
+            }
 
             $scope.handleNavClick = function(type, data) {
                 if(type === 'dashboard') {
@@ -33,6 +35,10 @@
                     $rootScope.$broadcast('load-dashboard', { data: data });
                 }
             };
+
+            getDashboards();
+
+            $scope.$on('dashboard-added', getDashboards);
 
         }
 

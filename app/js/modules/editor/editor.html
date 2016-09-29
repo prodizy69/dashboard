@@ -4,6 +4,26 @@
     </div>
 
     <div class="dashboard-name row">
-      <input type="text" ng-model="dInfo.name" placeholder="Enter Dashboard Name ... ">
+      <input class="form-control underline-input" type="text" ng-model="dInfo.name" placeholder="Enter Dashboard Name ... ">
+    </div>
+
+    <div class="dashboard-schema-select row">
+      <select class="form-control underline-input" type="text" ng-model="dInfo.chart">
+        <option value="" selected="selected"> Select Chart </option>
+        <option value="polar"> Polar Area </option>
+        <option value="doughnut"> Doughnut </option>
+      </select>
+    </div>
+
+    <div class="dashboard-schema-select row">
+      <select class="form-control underline-input" type="text" ng-model="dInfo.schema">
+        <option value="" selected="selected"> Select Schema Definition </option>
+        <option value="schema1"> Schema 1 </option>
+        <option value="schema2"> Schema 2 </option>
+      </select>
+    </div>
+
+    <div class="dashboard-name row">
+      <button class="form-control" ng-click="saveDashboard()"> Save </button>
     </div>
 </div>
