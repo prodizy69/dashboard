@@ -6,9 +6,9 @@
 
 	.directive('leftNav', LeftNavDirective);
 
-	LeftNavDirective.$inject = ['$rootScope', 'DashboardService'];
+	LeftNavDirective.$inject = ['$rootScope', 'DashboardService','$location'];
 
-	function LeftNavDirective($rootScope, DashboardService) {
+	function LeftNavDirective($rootScope, DashboardService,$location) {
         var _directive = {};
 
         _directive.restrict = 'AE';
@@ -30,6 +30,7 @@
             }
 
             $scope.handleNavClick = function(type, data) {
+                $location.path('/');
                 if(type === 'dashboard') {
                     $scope.selectedDashboard = data;
                     $rootScope.$broadcast('load-dashboard', { data: data });
@@ -37,6 +38,10 @@
             };
 
             getDashboards();
+
+            $scope.routeUsers= function () {
+                $location.path('users.html');
+            }
 
             $scope.$on('dashboard-added', getDashboards);
 
