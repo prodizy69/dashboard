@@ -13,8 +13,8 @@
           "hoverBackgroundColor": ["#FF6384", "#36A2EB", "#FFCE56"]
         }]
       },
-      "width": 100,
-      "height": 100
+      "width": 600,
+      "height": 600
     },{
       "type": "chart",
       "subtype": "polar",
@@ -27,11 +27,39 @@
         }],
         "labels": ["Red", "Green", "Yellow", "Grey", "Blue"]
       },
-      "width": 100,
-      "height": 100
+      "width": 600,
+      "height": 600
     }]
   },{
     "name": "Dashboard 2",
-    "components": {}
+    "components": [{
+      "type": "chart",
+      "subtype": "doughnut",
+      "title": "Project Beta Progress - Doughnut",
+      "data": {
+        "labels": ["Red", "Blue", "Yellow"],
+        "datasets": [{
+          "data": [150, 505, 160],
+          "backgroundColor": ["#FF6384", "#36A2EB", "#FFCE56"],
+          "hoverBackgroundColor": ["#FF6384", "#36A2EB", "#FFCE56"]
+        }]
+      },
+      "width": 600,
+      "height": 600
+    },{
+      "type": "chart",
+      "subtype": "polar",
+      "title": "Project Beta Progress - Polar",
+      "data": {
+        "datasets": [{
+          "data": [1, 6, 17, 30, 4],
+          "backgroundColor": ["#FF6384", "#4BC0C0", "#FFCE56", "#E7E9ED", "#36A2EB"],
+          "label": "Project Beta Progress - Polar"
+        }],
+        "labels": ["Red", "Green", "Yellow", "Grey", "Blue"]
+      },
+      "width": 600,
+      "height": 600
+    }]
   }]
 }

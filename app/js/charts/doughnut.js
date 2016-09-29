@@ -26,7 +26,9 @@
         animationSteps: 100,
         animationEasing: "easeOutBounce",
         animateRotate: true,
-        animateScale: false
+        animateScale: false,
+        // maintainAspectRatio: false,
+        responsive: false
       };
 
       var ctx = $($ele).find('#doughnutChart')[0].getContext('2d');
