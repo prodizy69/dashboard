@@ -32,13 +32,16 @@
         animationEasing: "easeOutBounce",
         animateRotate: true,
         animateScale: false,
-        // maintainAspectRatio: false,
+        maintainAspectRatio: true,
         responsive: false
       };
 
       var ctx = $($ele).find('#polarChart')[0].getContext('2d');
 
-      new Chart(ctx, {
+      ctx.canvas.width = $scope.width;
+      ctx.canvas.height = $scope.height;
+
+      new Chart($($ele).find('#polarChart'), {
         type: 'polarArea',
         data: $scope.chartData,
         options: options

@@ -25,11 +25,14 @@
             borderColor: 'rgb(0, 0, 0)'
           }
         },
-        // maintainAspectRatio: false,
+        maintainAspectRatio: true,
         responsive: false
       };
 
       var ctx = $($ele).find('#bubbleChart')[0].getContext('2d');
+
+      ctx.canvas.width = $scope.width;
+      ctx.canvas.height = $scope.height;
 
       new Chart(ctx, {
         type: 'bubble',

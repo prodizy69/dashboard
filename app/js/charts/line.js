@@ -24,13 +24,16 @@
             display: false
           }]
         },
-        // maintainAspectRatio: false,
+        maintainAspectRatio: true,
         responsive: false
       };
 
       var ctx = $($ele).find('#lineChart')[0].getContext('2d');
 
-      new Chart(ctx, {
+      ctx.canvas.width = $scope.width;
+      ctx.canvas.height = $scope.height;
+
+      new Chart($($ele).find('#lineChart'), {
         type: 'line',
         data: $scope.chartData,
         options: options

@@ -8411,3 +8411,10 @@ body.md-skin {
   padding-left: 0;
   border-color: #dbe0e2;
 }
+
+.dash-comp {
+  border: 1px solid gray;
+  margin: 5px;
+  padding: 5px;
+  float: left;
+}

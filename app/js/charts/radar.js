@@ -24,13 +24,17 @@
           ticks: {
             beginAtZero: true
           }
-        },// maintainAspectRatio: false,
+        },
+        maintainAspectRatio: true,
         responsive: false
       };
 
       var ctx = $($ele).find('#radarChart')[0].getContext('2d');
 
-      new Chart(ctx, {
+      ctx.canvas.width = $scope.width;
+      ctx.canvas.height = $scope.height;
+
+      new Chart($($ele).find('#radarChart'), {
         type: 'radar',
         data: $scope.chartData,
         options: options

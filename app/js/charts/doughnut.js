@@ -27,11 +27,14 @@
         animationEasing: "easeOutBounce",
         animateRotate: true,
         animateScale: false,
-        // maintainAspectRatio: false,
+        maintainAspectRatio: true,
         responsive: false
       };
 
       var ctx = $($ele).find('#doughnutChart')[0].getContext('2d');
+
+      ctx.canvas.width = $scope.width;
+      ctx.canvas.height = $scope.height;
 
       new Chart(ctx, {
         type: 'doughnut',

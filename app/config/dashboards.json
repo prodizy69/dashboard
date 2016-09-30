@@ -14,8 +14,8 @@
           "hoverBackgroundColor": ["#FF6384", "#36A2EB", "#FFCE56"]
         }]
       },
-      "width": 600,
-      "height": 600
+      "width": 300,
+      "height": 300
     },{
       "type": "chart",
       "subtype": "polar",
@@ -28,8 +28,8 @@
         }],
         "labels": ["Red", "Green", "Yellow", "Grey", "Blue"]
       },
-      "width": 600,
-      "height": 600
+      "width": 300,
+      "height": 300
     },{
       "type": "chart",
       "subtype": "line",
@@ -59,8 +59,8 @@
           "spanGaps": false
         }]
       },
-      "width": 600,
-      "height": 600
+      "width": 300,
+      "height": 300
     },{
       "type": "chart",
       "subtype": "bar",
@@ -89,8 +89,8 @@
           "data": [65, 59, 80, 81, 56, 55, 40]
         }]
       },
-      "width": 600,
-      "height": 600
+      "width": 300,
+      "height": 300
     },{
       "type": "chart",
       "subtype": "radar",
@@ -118,8 +118,8 @@
           "data": [28, 48, 40, 19, 96, 27, 100]
         }]
       },
-      "width": 600,
-      "height": 600
+      "width": 300,
+      "height": 300
     },{
       "type": "chart",
       "subtype": "bubble",
@@ -140,8 +140,8 @@
           "hoverBackgroundColor": "#FF6384"
         }]
       },
-      "width": 600,
-      "height": 600
+      "width": 300,
+      "height": 300
     }]
   },{
     "id": 2,
@@ -158,8 +158,8 @@
           "hoverBackgroundColor": ["#FF6384", "#36A2EB", "#FFCE56"]
         }]
       },
-      "width": 600,
-      "height": 600
+      "width": 300,
+      "height": 300
     },{
       "type": "chart",
       "subtype": "polar",
@@ -172,8 +172,8 @@
         }],
         "labels": ["Red", "Green", "Yellow", "Grey", "Blue"]
       },
-      "width": 600,
-      "height": 600
+      "width": 300,
+      "height": 300
     }]
   }]
 }
