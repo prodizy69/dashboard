@@ -21,7 +21,10 @@
 		.when('/editor', {
 			templateUrl: 'js/modules/editor/editor.html',
 			controller: 'EditorController'
-		})
+		}).when('/users.html', {
+				templateUrl: 'js/modules/users/users.html',
+				controller: 'userController'
+			})
 		
 		.otherwise({
 			redirectTo: '/'
