@@ -1,0 +1,844 @@
+{
+  "Metadata": {
+    "table": "User",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "Username",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "LastName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "FirstName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CompanyName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Division",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Department",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Title",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Street",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "City",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "State",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "PostalCode",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Country",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Latitude",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "Longitude",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "GeocodeAccuracy",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Address",
+        "type": "address",
+        "relationshipName": []
+      },
+      {
+        "name": "Email",
+        "type": "email",
+        "relationshipName": []
+      },
+      {
+        "name": "EmailPreferencesAutoBcc",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "EmailPreferencesAutoBccStayInTouch",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "EmailPreferencesStayInTouchReminder",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "SenderEmail",
+        "type": "email",
+        "relationshipName": []
+      },
+      {
+        "name": "SenderName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Signature",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "StayInTouchSubject",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "StayInTouchSignature",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "StayInTouchNote",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Phone",
+        "type": "phone",
+        "relationshipName": []
+      },
+      {
+        "name": "Fax",
+        "type": "phone",
+        "relationshipName": []
+      },
+      {
+        "name": "MobilePhone",
+        "type": "phone",
+        "relationshipName": []
+      },
+      {
+        "name": "Alias",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CommunityNickname",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "BadgeText",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "IsActive",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "TimeZoneSidKey",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "UserRoleId",
+        "type": "reference",
+        "relationshipName": [
+          "UserRole"
+        ]
+      },
+      {
+        "name": "LocaleSidKey",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "ReceivesInfoEmails",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "ReceivesAdminInfoEmails",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "EmailEncodingKey",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "ProfileId",
+        "type": "reference",
+        "relationshipName": [
+          "Profile"
+        ]
+      },
+      {
+        "name": "UserType",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "LanguageLocaleKey",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "EmployeeNumber",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "DelegatedApproverId",
+        "type": "reference",
+        "relationshipName": [
+          "Group",
+          "User"
+        ]
+      },
+      {
+        "name": "ManagerId",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastLoginDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastPasswordChangeDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "OfflineTrialExpirationDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "OfflinePdaTrialExpirationDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPermissionsMarketingUser",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPermissionsOfflineUser",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPermissionsAvantgoUser",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPermissionsCallCenterAutoLogin",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPermissionsMobileUser",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPermissionsSFContentUser",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPermissionsInteractionUser",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPermissionsSupportUser",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "ForecastEnabled",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesActivityRemindersPopup",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesEventRemindersCheckboxDefault",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesTaskRemindersCheckboxDefault",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesReminderSoundOff",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesDisableAllFeedsEmail",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesDisableFollowersEmail",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesDisableProfilePostEmail",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesDisableChangeCommentEmail",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesDisableLaterCommentEmail",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesDisProfPostCommentEmail",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesApexPagesDeveloperMode",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesHideCSNGetChatterMobileTask",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesDisableMentionsPostEmail",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesDisMentionsCommentEmail",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesHideCSNDesktopTask",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesHideChatterOnboardingSplash",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesHideSecondChatterOnboardingSplash",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesDisCommentAfterLikeEmail",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesDisableLikeEmail",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesSortFeedByComment",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesDisableMessageEmail",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesDisableBookmarkEmail",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesDisableSharePostEmail",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesEnableAutoSubForFeeds",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesDisableFileShareNotificationsForApi",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowTitleToExternalUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowManagerToExternalUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowEmailToExternalUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowWorkPhoneToExternalUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowMobilePhoneToExternalUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowFaxToExternalUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowStreetAddressToExternalUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowCityToExternalUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowStateToExternalUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowPostalCodeToExternalUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowCountryToExternalUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowProfilePicToGuestUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowTitleToGuestUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowCityToGuestUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowStateToGuestUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowPostalCodeToGuestUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowCountryToGuestUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesHideS1BrowserUI",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesDisableEndorsementEmail",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesPathAssistantCollapsed",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesCacheDiagnostics",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowEmailToGuestUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowManagerToGuestUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowWorkPhoneToGuestUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowMobilePhoneToGuestUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowFaxToGuestUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesShowStreetAddressToGuestUsers",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesLightningExperiencePreferred",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesPreviewLightning",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesHideEndUserOnboardingAssistantModal",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesHideLightningMigrationModal",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesHideSfxWelcomeMat",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "UserPreferencesHideBiggerPhotoCallout",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "ContactId",
+        "type": "reference",
+        "relationshipName": [
+          "Contact"
+        ]
+      },
+      {
+        "name": "AccountId",
+        "type": "reference",
+        "relationshipName": [
+          "Account"
+        ]
+      },
+      {
+        "name": "CallCenterId",
+        "type": "reference",
+        "relationshipName": [
+          "CallCenter"
+        ]
+      },
+      {
+        "name": "Extension",
+        "type": "phone",
+        "relationshipName": []
+      },
+      {
+        "name": "FederationIdentifier",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "AboutMe",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "FullPhotoUrl",
+        "type": "url",
+        "relationshipName": []
+      },
+      {
+        "name": "SmallPhotoUrl",
+        "type": "url",
+        "relationshipName": []
+      },
+      {
+        "name": "MediumPhotoUrl",
+        "type": "url",
+        "relationshipName": []
+      },
+      {
+        "name": "DigestFrequency",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "DefaultGroupNotificationFrequency",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "BannerPhotoUrl",
+        "type": "url",
+        "relationshipName": []
+      },
+      {
+        "name": "IsProfilePhotoActive",
+        "type": "boolean",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    [
+      {
+        "Address": {
+          "city": null,
+          "country": "US",
+          "countryCode": null,
+          "geocodeAccuracy": null,
+          "latitude": null,
+          "longitude": null,
+          "postalCode": null,
+          "state": null,
+          "stateCode": null,
+          "street": null
+        },
+        "Alias": "BLevc",
+        "BadgeText": "",
+        "BannerPhotoUrl": "/profilephoto/005/B",
+        "CommunityNickname": "boris1.4677496306749385E12",
+        "CompanyName": "Anvisi LLC",
+        "Country": "US",
+        "CreatedById": "00536000002n46IAAQ",
+        "CreatedDate": "2016-07-05T20:13:40.000+0000",
+        "DefaultGroupNotificationFrequency": "N",
+        "DigestFrequency": "D",
+        "Email": "gill.sunny31071989@gmail.com",
+        "EmailEncodingKey": "ISO-8859-1",
+        "EmailPreferencesAutoBcc": false,
+        "EmailPreferencesAutoBccStayInTouch": false,
+        "EmailPreferencesStayInTouchReminder": false,
+        "FirstName": "Boris",
+        "ForecastEnabled": true,
+        "FullPhotoUrl": "https://c.na30.content.force.com/profilephoto/72936000000gnkq/F",
+        "Id": "00536000002n46IAAQ",
+        "IsActive": true,
+        "IsProfilePhotoActive": true,
+        "LanguageLocaleKey": "en_US",
+        "LastLoginDate": "2016-10-01T05:24:02.000+0000",
+        "LastModifiedById": "00536000002n46IAAQ",
+        "LastModifiedDate": "2016-09-12T05:37:52.000+0000",
+        "LastName": "Levchets",
+        "LastPasswordChangeDate": "2016-09-02T20:55:43.000+0000",
+        "LastReferencedDate": "2016-09-12T05:37:52.000+0000",
+        "LastViewedDate": "2016-09-12T05:37:52.000+0000",
+        "LocaleSidKey": "en_US",
+        "MediumPhotoUrl": "https://c.na30.content.force.com/profilephoto/72936000000gnkq/M",
+        "Name": "Boris Levchets",
+        "ProfileId": "00e36000001afwFAAQ",
+        "ReceivesAdminInfoEmails": true,
+        "ReceivesInfoEmails": true,
+        "SmallPhotoUrl": "https://c.na30.content.force.com/profilephoto/72936000000gnkq/T",
+        "SystemModstamp": "2016-10-01T04:22:09.000+0000",
+        "TimeZoneSidKey": "America/Los_Angeles",
+        "UserPermissionsAvantgoUser": false,
+        "UserPermissionsCallCenterAutoLogin": false,
+        "UserPermissionsInteractionUser": true,
+        "UserPermissionsMarketingUser": true,
+        "UserPermissionsMobileUser": false,
+        "UserPermissionsOfflineUser": false,
+        "UserPermissionsSFContentUser": false,
+        "UserPermissionsSupportUser": true,
+        "UserPreferencesActivityRemindersPopup": true,
+        "UserPreferencesApexPagesDeveloperMode": true,
+        "UserPreferencesCacheDiagnostics": true,
+        "UserPreferencesDisCommentAfterLikeEmail": false,
+        "UserPreferencesDisMentionsCommentEmail": false,
+        "UserPreferencesDisProfPostCommentEmail": false,
+        "UserPreferencesDisableAllFeedsEmail": false,
+        "UserPreferencesDisableBookmarkEmail": false,
+        "UserPreferencesDisableChangeCommentEmail": false,
+        "UserPreferencesDisableEndorsementEmail": false,
+        "UserPreferencesDisableFileShareNotificationsForApi": false,
+        "UserPreferencesDisableFollowersEmail": false,
+        "UserPreferencesDisableLaterCommentEmail": false,
+        "UserPreferencesDisableLikeEmail": false,
+        "UserPreferencesDisableMentionsPostEmail": false,
+        "UserPreferencesDisableMessageEmail": false,
+        "UserPreferencesDisableProfilePostEmail": false,
+        "UserPreferencesDisableSharePostEmail": false,
+        "UserPreferencesEnableAutoSubForFeeds": false,
+        "UserPreferencesEventRemindersCheckboxDefault": true,
+        "UserPreferencesHideBiggerPhotoCallout": false,
+        "UserPreferencesHideCSNDesktopTask": false,
+        "UserPreferencesHideCSNGetChatterMobileTask": false,
+        "UserPreferencesHideChatterOnboardingSplash": true,
+        "UserPreferencesHideEndUserOnboardingAssistantModal": false,
+        "UserPreferencesHideLightningMigrationModal": false,
+        "UserPreferencesHideS1BrowserUI": false,
+        "UserPreferencesHideSecondChatterOnboardingSplash": false,
+        "UserPreferencesHideSfxWelcomeMat": false,
+        "UserPreferencesLightningExperiencePreferred": false,
+        "UserPreferencesPathAssistantCollapsed": false,
+        "UserPreferencesPreviewLightning": false,
+        "UserPreferencesReminderSoundOff": false,
+        "UserPreferencesShowCityToExternalUsers": false,
+        "UserPreferencesShowCityToGuestUsers": false,
+        "UserPreferencesShowCountryToExternalUsers": false,
+        "UserPreferencesShowCountryToGuestUsers": false,
+        "UserPreferencesShowEmailToExternalUsers": false,
+        "UserPreferencesShowEmailToGuestUsers": false,
+        "UserPreferencesShowFaxToExternalUsers": false,
+        "UserPreferencesShowFaxToGuestUsers": false,
+        "UserPreferencesShowManagerToExternalUsers": false,
+        "UserPreferencesShowManagerToGuestUsers": false,
+        "UserPreferencesShowMobilePhoneToExternalUsers": false,
+        "UserPreferencesShowMobilePhoneToGuestUsers": false,
+        "UserPreferencesShowPostalCodeToExternalUsers": false,
+        "UserPreferencesShowPostalCodeToGuestUsers": false,
+        "UserPreferencesShowProfilePicToGuestUsers": true,
+        "UserPreferencesShowStateToExternalUsers": false,
+        "UserPreferencesShowStateToGuestUsers": false,
+        "UserPreferencesShowStreetAddressToExternalUsers": false,
+        "UserPreferencesShowStreetAddressToGuestUsers": false,
+        "UserPreferencesShowTitleToExternalUsers": true,
+        "UserPreferencesShowTitleToGuestUsers": false,
+        "UserPreferencesShowWorkPhoneToExternalUsers": false,
+        "UserPreferencesShowWorkPhoneToGuestUsers": false,
+        "UserPreferencesSortFeedByComment": false,
+        "UserPreferencesTaskRemindersCheckboxDefault": true,
+        "UserType": "Standard",
+        "Username": "boris@anvisi.com",
+        "attributes": {
+          "type": "User",
+          "url": "/services/data/v37.0/sobjects/User/00536000002n46IAAQ"
+        }
+      }
+    ]
+  ]
+}

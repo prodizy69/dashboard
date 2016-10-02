@@ -1,0 +1,283 @@
+{
+  "Metadata": {
+    "table": "Contract",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "AccountId",
+        "type": "reference",
+        "relationshipName": [
+          "Account"
+        ]
+      },
+      {
+        "name": "OwnerExpirationNotice",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "StartDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "EndDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingStreet",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingCity",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingState",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingPostalCode",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingCountry",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingLatitude",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingLongitude",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingGeocodeAccuracy",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingAddress",
+        "type": "address",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingStreet",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingCity",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingState",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingPostalCode",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingCountry",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingLatitude",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingLongitude",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingGeocodeAccuracy",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingAddress",
+        "type": "address",
+        "relationshipName": []
+      },
+      {
+        "name": "ContractTerm",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "Status",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "CompanySignedId",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "CompanySignedDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "CustomerSignedId",
+        "type": "reference",
+        "relationshipName": [
+          "Contact"
+        ]
+      },
+      {
+        "name": "CustomerSignedTitle",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CustomerSignedDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "SpecialTerms",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "ActivatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "ActivatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "StatusCode",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Description",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "ContractNumber",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "LastApprovedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastActivityDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    [
+      {
+        "AccountId": "0013600000RSoV1AAL",
+        "BillingAddress": null,
+        "ContractNumber": "00000100",
+        "ContractTerm": 12,
+        "CreatedById": "00536000002n46IAAQ",
+        "CreatedDate": "2016-07-05T20:13:40.000+0000",
+        "EndDate": "2015-06-05",
+        "Id": "80036000000DyZPAA0",
+        "IsDeleted": false,
+        "LastModifiedById": "00536000002n46IAAQ",
+        "LastModifiedDate": "2016-07-05T20:13:40.000+0000",
+        "OwnerId": "00536000002n46IAAQ",
+        "ShippingAddress": null,
+        "StartDate": "2014-06-06",
+        "Status": "Draft",
+        "StatusCode": "Draft",
+        "SystemModstamp": "2016-07-05T20:13:40.000+0000",
+        "attributes": {
+          "type": "Contract",
+          "url": "/services/data/v37.0/sobjects/Contract/80036000000DyZPAA0"
+        }
+      }
+    ]
+  ]
+}

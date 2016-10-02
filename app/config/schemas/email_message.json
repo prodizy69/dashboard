@@ -1,0 +1,175 @@
+{
+  "Metadata": {
+    "table": "EmailMessage",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "ParentId",
+        "type": "reference",
+        "relationshipName": [
+          "Case"
+        ]
+      },
+      {
+        "name": "ActivityId",
+        "type": "reference",
+        "relationshipName": [
+          "Task"
+        ]
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "TextBody",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "HtmlBody",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "Headers",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "Subject",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "FromName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "FromAddress",
+        "type": "email",
+        "relationshipName": []
+      },
+      {
+        "name": "ToAddress",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CcAddress",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "BccAddress",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Incoming",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "HasAttachment",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Status",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "MessageDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "ReplyToEmailMessageId",
+        "type": "reference",
+        "relationshipName": [
+          "EmailMessage"
+        ]
+      },
+      {
+        "name": "IsExternallyVisible",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "RelatedToId",
+        "type": "reference",
+        "relationshipName": [
+          "Account",
+          "Asset",
+          "CHANNEL_ORDERS__Customer__c",
+          "CHANNEL_ORDERS__Partner_Contract_Terms__c",
+          "CHANNEL_ORDERS__Partner_Product_Catalog__c",
+          "CHANNEL_ORDERS__Service_Order_Detail__c",
+          "CHANNEL_ORDERS__Service_Order_Log__c",
+          "CHANNEL_ORDERS__Service_Order__c",
+          "Campaign",
+          "Case",
+          "Contract",
+          "Dasheroo__UserDashboard__c",
+          "Opportunity",
+          "Order",
+          "Product2",
+          "SQL_BI__c",
+          "Solution",
+          "sfLma__License__c",
+          "sfLma__Package_Version__c",
+          "sfLma__Package__c",
+          "skuid__Component_Pack__c",
+          "skuid__Image__c",
+          "skuid__Model_Service_Adapter__c",
+          "skuid__Page_Assignment__c",
+          "skuid__Page_Version__c",
+          "skuid__Page__c",
+          "skuid__Personalization_Settings__c",
+          "skuid__Preferences__c",
+          "skuid__Theme__c"
+        ]
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

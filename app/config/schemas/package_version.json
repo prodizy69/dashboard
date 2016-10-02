@@ -1,0 +1,106 @@
+{
+  "Metadata": {
+    "table": "sfLma__Package_Version__c",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastActivityDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Package__c",
+        "type": "reference",
+        "relationshipName": [
+          "sfLma__Package__c"
+        ]
+      },
+      {
+        "name": "sfLma__Help__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Is_Beta__c",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Release_Date__c",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Sequence__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Version_ID__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Version__c",
+        "type": "string",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

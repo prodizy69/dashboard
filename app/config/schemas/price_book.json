@@ -1,0 +1,96 @@
+{
+  "Metadata": {
+    "table": "Pricebook2",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "IsActive",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Description",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "IsStandard",
+        "type": "boolean",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    [
+      {
+        "CreatedById": "00536000002n46IAAQ",
+        "CreatedDate": "2016-07-05T20:13:40.000+0000",
+        "Id": "01s36000006SolpAAC",
+        "IsActive": false,
+        "IsDeleted": false,
+        "IsStandard": true,
+        "LastModifiedById": "00536000002n46IAAQ",
+        "LastModifiedDate": "2016-07-05T20:13:40.000+0000",
+        "Name": "Standard Price Book",
+        "SystemModstamp": "2016-07-05T20:13:40.000+0000",
+        "attributes": {
+          "type": "Pricebook2",
+          "url": "/services/data/v37.0/sobjects/Pricebook2/01s36000006SolpAAC"
+        }
+      }
+    ]
+  ]
+}

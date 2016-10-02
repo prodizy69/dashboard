@@ -1,0 +1,240 @@
+{
+  "Metadata": {
+    "table": "CHANNEL_ORDERS__Service_Order_Detail__c",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastActivityDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Partner_Order__c",
+        "type": "reference",
+        "relationshipName": [
+          "CHANNEL_ORDERS__Service_Order__c"
+        ]
+      },
+      {
+        "name": "CHANNEL_ORDERS__Application__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Currency__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Customer_Price_Per_Month__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Customer_Price__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Estimated_SFDC_Price_Per_Month__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Fixed_Price__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Floor_Price__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Number_Of_Users_ISVforce__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__PNR__c",
+        "type": "percent",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Partner_Contract_Term__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Pricing_Type__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Product_ID__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Product_Line_Description__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Product_Name__c",
+        "type": "reference",
+        "relationshipName": [
+          "CHANNEL_ORDERS__Partner_Product_Catalog__c"
+        ]
+      },
+      {
+        "name": "CHANNEL_ORDERS__Product_Special_Terms__c",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Quantity__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Special_Instructions__c",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__pc_Billing_Frequency__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__pc_Cancellation_Terms__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__pc_Contract_Auto_Renew__c",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__pc_Contract_Length__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__pc_Custom_Unit__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__pc_Fixed_Price__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__pc_Floor_Price__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__pc_PNR__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__pc_Partner_Contract_Term__c",
+        "type": "reference",
+        "relationshipName": [
+          "CHANNEL_ORDERS__Partner_Contract_Terms__c"
+        ]
+      },
+      {
+        "name": "CHANNEL_ORDERS__pc_Pricing_Type__c",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__pc_Pricing_Unit__c",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__pc_Product_ID__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__pc_Renewal_Terms__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__pct_Currency__c",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Product_Line_Desc_Overridden__c",
+        "type": "boolean",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

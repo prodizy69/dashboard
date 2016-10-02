@@ -1,0 +1,77 @@
+{
+  "Metadata": {
+    "table": "skuid__Image__c",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "Group",
+          "User"
+        ]
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "skuid__AttachmentId__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "skuid__NeedsRecompute__c",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "skuid__Url__c",
+        "type": "string",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

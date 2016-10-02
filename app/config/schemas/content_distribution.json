@@ -1,0 +1,178 @@
+{
+  "Metadata": {
+    "table": "ContentDistribution",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "ContentVersionId",
+        "type": "reference",
+        "relationshipName": [
+          "ContentVersion"
+        ]
+      },
+      {
+        "name": "ContentDocumentId",
+        "type": "reference",
+        "relationshipName": [
+          "ContentDocument"
+        ]
+      },
+      {
+        "name": "RelatedRecordId",
+        "type": "reference",
+        "relationshipName": [
+          "Account",
+          "CHANNEL_ORDERS__Customer__c",
+          "CHANNEL_ORDERS__Partner_Contract_Terms__c",
+          "CHANNEL_ORDERS__Partner_Product_Catalog__c",
+          "CHANNEL_ORDERS__Service_Order_Detail__c",
+          "CHANNEL_ORDERS__Service_Order_Log__c",
+          "CHANNEL_ORDERS__Service_Order__c",
+          "Campaign",
+          "Case",
+          "Contact",
+          "Dasheroo__UserDashboard__c",
+          "EmailMessage",
+          "Lead",
+          "Opportunity",
+          "SQL_BI__c",
+          "sfLma__License__c",
+          "sfLma__Package_Version__c",
+          "sfLma__Package__c",
+          "skuid__Component_Pack__c",
+          "skuid__Image__c",
+          "skuid__Model_Service_Adapter__c",
+          "skuid__Page_Assignment__c",
+          "skuid__Page_Version__c",
+          "skuid__Page__c",
+          "skuid__Personalization_Settings__c",
+          "skuid__Preferences__c",
+          "skuid__Theme__c"
+        ]
+      },
+      {
+        "name": "PreferencesAllowPDFDownload",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "PreferencesAllowOriginalDownload",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "PreferencesPasswordRequired",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "PreferencesNotifyOnVisit",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "PreferencesLinkLatestVersion",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "PreferencesAllowViewInBrowser",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "PreferencesExpires",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "PreferencesNotifyRndtnComplete",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "ExpiryDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "Password",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ViewCount",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "FirstViewDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "DistributionPublicUrl",
+        "type": "string",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "Metadata": {
+    "table": "EnvironmentHubMember",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "MemberEntity",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Description",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "Origin",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "EnvironmentHubId",
+        "type": "reference",
+        "relationshipName": [
+          "EnvironmentHub"
+        ]
+      },
+      {
+        "name": "IsSandbox",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "DisplayName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ShouldAddRelatedOrgs",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "RefreshFailureReason",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "ServiceProviderId",
+        "type": "reference",
+        "relationshipName": [
+          "ServiceProvider"
+        ]
+      },
+      {
+        "name": "SsoStatus",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "IsFedIdSsoMatchAllowed",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "SsoUsernameFormula",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ShouldCreateDefaultUserMapping",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "ShouldEnableSso",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "SSOMappedUsers",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "OrgStatus",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "OrgEdition",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Instance",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "OrgExpirationDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "MemberType",
+        "type": "picklist",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    [
+      {
+        "CreatedById": "00536000002n46NAAQ",
+        "CreatedDate": "2016-09-06T22:25:13.000+0000",
+        "DisplayName": "Dev1",
+        "EnvironmentHubId": "0J736000000CyosCAC",
+        "Id": "0J136000000LPcBCAW",
+        "Instance": "CS59",
+        "IsDeleted": false,
+        "IsFedIdSsoMatchAllowed": false,
+        "IsSandbox": true,
+        "LastModifiedById": "00536000002n46NAAQ",
+        "LastModifiedDate": "2016-09-06T22:25:13.000+0000",
+        "MemberEntity": "00D2C0000000pko",
+        "MemberType": "Sandbox Org",
+        "Name": "00000004",
+        "OrgEdition": "Enterprise Edition",
+        "OrgStatus": "Demo",
+        "Origin": "autoDiscovered",
+        "SSOMappedUsers": 0,
+        "ShouldAddRelatedOrgs": "requested",
+        "ShouldCreateDefaultUserMapping": true,
+        "ShouldEnableSso": false,
+        "SsoStatus": "Disabled",
+        "SystemModstamp": "2016-09-06T22:25:13.000+0000",
+        "attributes": {
+          "type": "EnvironmentHubMember",
+          "url": "/services/data/v37.0/sobjects/EnvironmentHubMember/0J136000000LPcBCAW"
+        }
+      }
+    ]
+  ]
+}

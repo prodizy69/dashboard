@@ -1,0 +1,27 @@
+{
+  "charts": [{
+    "name": "Bar Chart",
+    "type": "bar",
+    "icon": ""
+  },{
+    "name": "Bubble Chart",
+    "type": "bubble",
+    "icon": ""
+  },{
+    "name": "Doughnut Chart",
+    "type": "doughnut",
+    "icon": ""
+  },{
+    "name": "Line Chart",
+    "type": "line",
+    "icon": ""
+  },{
+    "name": "Polar Area Chart",
+    "type": "polar",
+    "icon": ""
+  },{
+    "name": "Radar Chart",
+    "type": "radar",
+    "icon": ""
+  }]
+}

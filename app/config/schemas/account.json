@@ -1,0 +1,295 @@
+{
+  "Metadata": {
+    "table": "Account",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "MasterRecordId",
+        "type": "reference",
+        "relationshipName": [
+          "Account"
+        ]
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Type",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "ParentId",
+        "type": "reference",
+        "relationshipName": [
+          "Account"
+        ]
+      },
+      {
+        "name": "BillingStreet",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingCity",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingState",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingPostalCode",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingCountry",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingLatitude",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingLongitude",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingGeocodeAccuracy",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingAddress",
+        "type": "address",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingStreet",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingCity",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingState",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingPostalCode",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingCountry",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingLatitude",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingLongitude",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingGeocodeAccuracy",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingAddress",
+        "type": "address",
+        "relationshipName": []
+      },
+      {
+        "name": "Phone",
+        "type": "phone",
+        "relationshipName": []
+      },
+      {
+        "name": "Fax",
+        "type": "phone",
+        "relationshipName": []
+      },
+      {
+        "name": "Website",
+        "type": "url",
+        "relationshipName": []
+      },
+      {
+        "name": "PhotoUrl",
+        "type": "url",
+        "relationshipName": []
+      },
+      {
+        "name": "Industry",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "AnnualRevenue",
+        "type": "currency",
+        "relationshipName": []
+      },
+      {
+        "name": "NumberOfEmployees",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "Description",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastActivityDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "Jigsaw",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "JigsawCompanyId",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "AccountSource",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "SicDesc",
+        "type": "string",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    [
+      {
+        "BillingAddress": {
+          "city": "GETZVILLE",
+          "country": "USA",
+          "countryCode": null,
+          "geocodeAccuracy": null,
+          "latitude": null,
+          "longitude": null,
+          "postalCode": null,
+          "state": "New York",
+          "stateCode": null,
+          "street": "480 CROSSPOINT PKWY"
+        },
+        "BillingCity": "GETZVILLE",
+        "BillingCountry": "USA",
+        "BillingState": "New York",
+        "BillingStreet": "480 CROSSPOINT PKWY",
+        "CreatedById": "00536000002n46IAAQ",
+        "CreatedDate": "2016-08-30T21:04:10.000+0000",
+        "Fax": "716-564-6262",
+        "Id": "0013600000Z3G1pAAF",
+        "IsDeleted": false,
+        "LastModifiedById": "00536000002n46IAAQ",
+        "LastModifiedDate": "2016-08-30T21:04:10.000+0000",
+        "LastReferencedDate": "2016-09-02T18:54:27.000+0000",
+        "LastViewedDate": "2016-09-02T18:54:27.000+0000",
+        "Name": "FIDELIS CARE NEW YORK",
+        "OwnerId": "00536000002n46IAAQ",
+        "Phone": "716-564-6162",
+        "PhotoUrl": "/services/images/photo/0013600000Z3G1pAAF",
+        "ShippingAddress": {
+          "city": null,
+          "country": "USA",
+          "countryCode": null,
+          "geocodeAccuracy": null,
+          "latitude": null,
+          "longitude": null,
+          "postalCode": null,
+          "state": null,
+          "stateCode": null,
+          "street": null
+        },
+        "ShippingCountry": "USA",
+        "SystemModstamp": "2016-09-03T11:02:44.000+0000",
+        "attributes": {
+          "type": "Account",
+          "url": "/services/data/v37.0/sobjects/Account/0013600000Z3G1pAAF"
+        }
+      }
+    ]
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "Metadata": {
+    "table": "Solution",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "SolutionNumber",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "SolutionName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "IsPublished",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "IsPublishedInPublicKb",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Status",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "IsReviewed",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "SolutionNote",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "TimesUsed",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "IsHtml",
+        "type": "boolean",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

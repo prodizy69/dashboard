@@ -1,0 +1,174 @@
+{
+  "Metadata": {
+    "table": "SocialPersona",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "ParentId",
+        "type": "reference",
+        "relationshipName": [
+          "Account",
+          "Contact",
+          "Lead",
+          "SocialPost"
+        ]
+      },
+      {
+        "name": "Provider",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "ExternalId",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDefault",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "ExternalPictureURL",
+        "type": "url",
+        "relationshipName": []
+      },
+      {
+        "name": "ProfileUrl",
+        "type": "url",
+        "relationshipName": []
+      },
+      {
+        "name": "TopicType",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "IsBlacklisted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Klout",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "RealName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "IsFollowingUs",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "AreWeFollowing",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "MediaType",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Bio",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "Followers",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "Following",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "NumberOfFriends",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "ListedCount",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "MediaProvider",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ProfileType",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "R6SourceId",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "NumberOfTweets",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "SourceApp",
+        "type": "string",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

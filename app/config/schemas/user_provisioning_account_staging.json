@@ -1,0 +1,103 @@
+{
+  "Metadata": {
+    "table": "UserProvAccountStaging",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "ConnectedAppId",
+        "type": "reference",
+        "relationshipName": [
+          "ConnectedApplication"
+        ]
+      },
+      {
+        "name": "SalesforceUserId",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "ExternalUserId",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ExternalUsername",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ExternalEmail",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ExternalFirstName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ExternalLastName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "LinkState",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Status",
+        "type": "picklist",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

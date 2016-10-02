@@ -1,0 +1,91 @@
+{
+  "Metadata": {
+    "table": "ContentDocumentLink",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "LinkedEntityId",
+        "type": "reference",
+        "relationshipName": [
+          "Account",
+          "Asset",
+          "CHANNEL_ORDERS__Customer__c",
+          "CHANNEL_ORDERS__Partner_Contract_Terms__c",
+          "CHANNEL_ORDERS__Partner_Product_Catalog__c",
+          "CHANNEL_ORDERS__Service_Order_Detail__c",
+          "CHANNEL_ORDERS__Service_Order_Log__c",
+          "CHANNEL_ORDERS__Service_Order__c",
+          "Campaign",
+          "Case",
+          "CollaborationGroup",
+          "Contact",
+          "Contract",
+          "Dashboard",
+          "DashboardComponent",
+          "Dasheroo__UserDashboard__c",
+          "EmailMessage",
+          "EmailTemplate",
+          "Event",
+          "Lead",
+          "Opportunity",
+          "Order",
+          "OrderItem",
+          "Organization",
+          "Product2",
+          "Report",
+          "SQL_BI__c",
+          "SignupRequest",
+          "Site",
+          "SocialPost",
+          "Solution",
+          "Task",
+          "Topic",
+          "User",
+          "sfLma__License__c",
+          "sfLma__Package_Version__c",
+          "sfLma__Package__c",
+          "skuid__Component_Pack__c",
+          "skuid__Image__c",
+          "skuid__Model_Service_Adapter__c",
+          "skuid__Page_Assignment__c",
+          "skuid__Page_Version__c",
+          "skuid__Page__c",
+          "skuid__Personalization_Settings__c",
+          "skuid__Preferences__c",
+          "skuid__Theme__c"
+        ]
+      },
+      {
+        "name": "ContentDocumentId",
+        "type": "reference",
+        "relationshipName": [
+          "ContentDocument"
+        ]
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "ShareType",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Visibility",
+        "type": "picklist",
+        "relationshipName": []
+      }
+    ]
+  }
+}

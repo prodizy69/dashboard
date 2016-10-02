@@ -1,0 +1,189 @@
+{
+  "Metadata": {
+    "table": "CHANNEL_ORDERS__Partner_Product_Catalog__c",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "Group",
+          "User"
+        ]
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Allow_Auto_Renew_Override__c",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Allow_Cancellation_Terms_Override__c",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Allow_Contract_Length_Override__c",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Allow_Renewal_Length_Override__c",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Application__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Billing_Frequency__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Cancellation_Terms__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Contract_Auto_Renew__c",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Contract_Length__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Custom_Unit__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Fixed_Price__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Floor_Price__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__PNR__c",
+        "type": "percent",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Partner_Application_Name__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Partner_Contract_Terms__c",
+        "type": "reference",
+        "relationshipName": [
+          "CHANNEL_ORDERS__Partner_Contract_Terms__c"
+        ]
+      },
+      {
+        "name": "CHANNEL_ORDERS__Pricing_Type__c",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Pricing_Unit__c",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Product_Description__c",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Product_ID__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Product_Special_Terms__c",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Renewal_Terms__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Special_Instructions__c",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Status__c",
+        "type": "picklist",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

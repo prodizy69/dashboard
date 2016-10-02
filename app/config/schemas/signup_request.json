@@ -1,0 +1,220 @@
+{
+  "Metadata": {
+    "table": "SignupRequest",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "Group",
+          "User"
+        ]
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "TrialSourceOrgId",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "TemplateId",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "TemplateDescription",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedOrgId",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "LastName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "FirstName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Username",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "SignupEmail",
+        "type": "email",
+        "relationshipName": []
+      },
+      {
+        "name": "Company",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Country",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "TrialDays",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "Status",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "ErrorCode",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ConnectedAppConsumerKey",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ConnectedAppCallbackUrl",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "Subdomain",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "AuthCode",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "IsSignupEmailSuppressed",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedOrgInstance",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ShouldConnectToEnvHub",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "PreferredLanguage",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Edition",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "ResolvedTemplateId",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "SignupSource",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "IsTso",
+        "type": "boolean",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    [
+      {
+        "Company": "Capgemini",
+        "Country": "US",
+        "CreatedById": "00536000002n46IAAQ",
+        "CreatedDate": "2016-07-05T20:13:40.000+0000",
+        "CreatedOrgId": "00D36000001Hpws",
+        "CreatedOrgInstance": "NA30",
+        "FirstName": "William",
+        "Id": "0SR36000000hSUlGAM",
+        "IsDeleted": false,
+        "IsSignupEmailSuppressed": false,
+        "IsTso": false,
+        "LastModifiedById": "00536000002n46NAAQ",
+        "LastModifiedDate": "2016-07-05T20:13:40.000+0000",
+        "LastName": "Donlan",
+        "Name": "00019300",
+        "OwnerId": "00536000002n46IAAQ",
+        "ResolvedTemplateId": "0TT360000041qOw",
+        "ShouldConnectToEnvHub": false,
+        "SignupEmail": "bill.donlan@capgemini.com",
+        "Status": "Success",
+        "SystemModstamp": "2016-07-05T20:13:40.000+0000",
+        "TemplateDescription": "Capturing Partner Functionality change in Spring '15",
+        "TemplateId": "0TT360000041qOw",
+        "TrialDays": 185,
+        "TrialSourceOrgId": "00D36000001HpZX",
+        "Username": "bill.donlan@capgemini.com",
+        "attributes": {
+          "type": "SignupRequest",
+          "url": "/services/data/v37.0/sobjects/SignupRequest/0SR36000000hSUlGAM"
+        }
+      }
+    ]
+  ]
+}

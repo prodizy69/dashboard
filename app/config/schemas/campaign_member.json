@@ -1,0 +1,206 @@
+{
+  "Metadata": {
+    "table": "CampaignMember",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CampaignId",
+        "type": "reference",
+        "relationshipName": [
+          "Campaign"
+        ]
+      },
+      {
+        "name": "LeadId",
+        "type": "reference",
+        "relationshipName": [
+          "Lead"
+        ]
+      },
+      {
+        "name": "ContactId",
+        "type": "reference",
+        "relationshipName": [
+          "Contact"
+        ]
+      },
+      {
+        "name": "Status",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "HasResponded",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "FirstRespondedDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "Salutation",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "FirstName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "LastName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Title",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Street",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "City",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "State",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "PostalCode",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Country",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Email",
+        "type": "email",
+        "relationshipName": []
+      },
+      {
+        "name": "Phone",
+        "type": "phone",
+        "relationshipName": []
+      },
+      {
+        "name": "Fax",
+        "type": "phone",
+        "relationshipName": []
+      },
+      {
+        "name": "MobilePhone",
+        "type": "phone",
+        "relationshipName": []
+      },
+      {
+        "name": "Description",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "DoNotCall",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "HasOptedOutOfEmail",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "HasOptedOutOfFax",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "LeadSource",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "CompanyOrAccount",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Type",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "LeadOrContactId",
+        "type": "reference",
+        "relationshipName": [
+          "Contact",
+          "Lead"
+        ]
+      },
+      {
+        "name": "LeadOrContactOwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "Group",
+          "User"
+        ]
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

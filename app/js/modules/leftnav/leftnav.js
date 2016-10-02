@@ -6,9 +6,9 @@
 
 	.directive('leftNav', LeftNavDirective);
 
-	LeftNavDirective.$inject = ['$rootScope', 'DashboardService','$location'];
+	LeftNavDirective.$inject = ['$rootScope', 'DashboardService', 'SchemaService', 'ChartService', '$location'];
 
-	function LeftNavDirective($rootScope, DashboardService,$location) {
+	function LeftNavDirective($rootScope, DashboardService, SchemaService, ChartService, $location) {
         var _directive = {};
 
         _directive.restrict = 'AE';
@@ -19,6 +19,7 @@
         function linkFn($scope, $element, $attrs) {
 
             $scope.selectedDashboard = null;
+            $scope.selectedSchema = null;
 
             function getDashboards() {
                 DashboardService.getDashboards()
@@ -26,6 +27,20 @@
                     $scope.dashboards = dashboards;
                     $scope.selectedDashboard = dashboards[0];
                     $rootScope.$broadcast('load-dashboard', { data: dashboards[0] });
+                });
+            }
+
+            function getSchemas() {
+                SchemaService.getSchemas()
+                .then(function(schemas) {
+                    $scope.schemas = schemas;
+                });
+            }
+
+            function getCharts() {
+                ChartService.getCharts()
+                .then(function(charts) {
+                    $scope.charts = charts;
                 });
             }
 
@@ -38,6 +53,8 @@
             };
 
             getDashboards();
+            getSchemas();
+            getCharts();
 
             $scope.routeUsers= function () {
                 $location.path('users.html');

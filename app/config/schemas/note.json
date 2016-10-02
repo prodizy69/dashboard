@@ -1,0 +1,120 @@
+{
+  "Metadata": {
+    "table": "Note",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "ParentId",
+        "type": "reference",
+        "relationshipName": [
+          "Account",
+          "Asset",
+          "CHANNEL_ORDERS__Customer__c",
+          "CHANNEL_ORDERS__Partner_Contract_Terms__c",
+          "CHANNEL_ORDERS__Partner_Product_Catalog__c",
+          "CHANNEL_ORDERS__Service_Order_Detail__c",
+          "CHANNEL_ORDERS__Service_Order_Log__c",
+          "CHANNEL_ORDERS__Service_Order__c",
+          "Contact",
+          "Contract",
+          "Dasheroo__UserDashboard__c",
+          "Lead",
+          "Opportunity",
+          "Order",
+          "Product2",
+          "SQL_BI__c",
+          "SocialPost",
+          "sfLma__License__c",
+          "sfLma__Package_Version__c",
+          "sfLma__Package__c",
+          "skuid__Image__c",
+          "skuid__Page_Assignment__c",
+          "skuid__Page_Version__c",
+          "skuid__Page__c",
+          "skuid__Personalization_Settings__c"
+        ]
+      },
+      {
+        "name": "Title",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "IsPrivate",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Body",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    [
+      {
+        "CreatedById": "00536000002n46IAAQ",
+        "CreatedDate": "2016-07-20T01:34:25.000+0000",
+        "Id": "00236000007WPYLAA4",
+        "IsDeleted": false,
+        "IsPrivate": false,
+        "LastModifiedById": "00536000002n46IAAQ",
+        "LastModifiedDate": "2016-07-20T01:34:25.000+0000",
+        "OwnerId": "00536000002n46IAAQ",
+        "ParentId": "0033600000LJPYKAA5",
+        "SystemModstamp": "2016-07-20T01:34:25.000+0000",
+        "Title": "Suffix",
+        "attributes": {
+          "type": "Note",
+          "url": "/services/data/v37.0/sobjects/Note/00236000007WPYLAA4"
+        }
+      }
+    ]
+  ]
+}

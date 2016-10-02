@@ -1,0 +1,90 @@
+{
+  "Metadata": {
+    "table": "CollaborationGroupMember",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "CollaborationGroupId",
+        "type": "reference",
+        "relationshipName": [
+          "CollaborationGroup"
+        ]
+      },
+      {
+        "name": "MemberId",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "CollaborationRole",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "NotificationFrequency",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastFeedAccessDate",
+        "type": "datetime",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    [
+      {
+        "CollaborationGroupId": "0F936000000cQteCAE",
+        "CollaborationRole": "Standard",
+        "CreatedById": "00536000002w5sGAAQ",
+        "CreatedDate": "2016-09-02T20:04:00.000+0000",
+        "Id": "0FB36000000PqWoGAK",
+        "LastModifiedById": "00536000002w5sGAAQ",
+        "LastModifiedDate": "2016-09-02T20:04:00.000+0000",
+        "MemberId": "00536000002w5sGAAQ",
+        "NotificationFrequency": "N",
+        "SystemModstamp": "2016-09-02T20:04:00.000+0000",
+        "attributes": {
+          "type": "CollaborationGroupMember",
+          "url": "/services/data/v37.0/sobjects/CollaborationGroupMember/0FB36000000PqWoGAK"
+        }
+      }
+    ]
+  ]
+}

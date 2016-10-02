@@ -1,0 +1,160 @@
+{
+  "Metadata": {
+    "table": "FeedComment",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "FeedItemId",
+        "type": "reference",
+        "relationshipName": [
+          "AccountFeed",
+          "AssetFeed",
+          "CampaignFeed",
+          "CaseFeed",
+          "CollaborationGroupFeed",
+          "ContactFeed",
+          "ContentDocumentFeed",
+          "ContractFeed",
+          "DashboardComponentFeed",
+          "DashboardFeed",
+          "EventFeed",
+          "FeedItem",
+          "LeadFeed",
+          "OpportunityFeed",
+          "OrderFeed",
+          "OrderItemFeed",
+          "Product2Feed",
+          "ReportFeed",
+          "SQL_BI__Feed",
+          "SignupRequestFeed",
+          "SiteFeed",
+          "SocialPostFeed",
+          "SolutionFeed",
+          "TaskFeed",
+          "TopicFeed",
+          "UserFeed"
+        ]
+      },
+      {
+        "name": "ParentId",
+        "type": "reference",
+        "relationshipName": [
+          "Account",
+          "Asset",
+          "CHANNEL_ORDERS__Customer__c",
+          "CHANNEL_ORDERS__Partner_Contract_Terms__c",
+          "CHANNEL_ORDERS__Partner_Product_Catalog__c",
+          "CHANNEL_ORDERS__Service_Order_Detail__c",
+          "CHANNEL_ORDERS__Service_Order_Log__c",
+          "CHANNEL_ORDERS__Service_Order__c",
+          "Campaign",
+          "Case",
+          "CollaborationGroup",
+          "Contact",
+          "ContentDocument",
+          "Contract",
+          "Dashboard",
+          "DashboardComponent",
+          "Dasheroo__UserDashboard__c",
+          "Event",
+          "Lead",
+          "Opportunity",
+          "Order",
+          "OrderItem",
+          "Product2",
+          "Report",
+          "SQL_BI__c",
+          "SignupRequest",
+          "Site",
+          "SocialPost",
+          "Solution",
+          "Task",
+          "Topic",
+          "User",
+          "sfLma__License__c",
+          "sfLma__Package_Version__c",
+          "sfLma__Package__c",
+          "skuid__Component_Pack__c",
+          "skuid__Image__c",
+          "skuid__Model_Service_Adapter__c",
+          "skuid__Page_Assignment__c",
+          "skuid__Page_Version__c",
+          "skuid__Page__c",
+          "skuid__Personalization_Settings__c",
+          "skuid__Preferences__c",
+          "skuid__Theme__c"
+        ]
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "Revision",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "LastEditById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastEditDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CommentBody",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "InsertedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "CommentType",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "RelatedRecordId",
+        "type": "reference",
+        "relationshipName": [
+          "ContentVersion"
+        ]
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

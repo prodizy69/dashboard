@@ -1,0 +1,261 @@
+{
+  "Metadata": {
+    "table": "ContentVersion",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "ContentDocumentId",
+        "type": "reference",
+        "relationshipName": [
+          "ContentDocument"
+        ]
+      },
+      {
+        "name": "IsLatest",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "ContentUrl",
+        "type": "url",
+        "relationshipName": []
+      },
+      {
+        "name": "VersionNumber",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Title",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Description",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "ReasonForChange",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "SharingOption",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "PathOnClient",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "RatingCount",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "ContentModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "ContentModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "PositiveRatingCount",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "NegativeRatingCount",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "FeaturedContentBoost",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "FeaturedContentDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "TagCsv",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "FileType",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "PublishStatus",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "VersionData",
+        "type": "base64",
+        "relationshipName": []
+      },
+      {
+        "name": "ContentSize",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "FileExtension",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "FirstPublishLocationId",
+        "type": "reference",
+        "relationshipName": [
+          "Account",
+          "Asset",
+          "CHANNEL_ORDERS__Customer__c",
+          "CHANNEL_ORDERS__Partner_Contract_Terms__c",
+          "CHANNEL_ORDERS__Partner_Product_Catalog__c",
+          "CHANNEL_ORDERS__Service_Order_Detail__c",
+          "CHANNEL_ORDERS__Service_Order_Log__c",
+          "CHANNEL_ORDERS__Service_Order__c",
+          "Campaign",
+          "Case",
+          "CollaborationGroup",
+          "Contact",
+          "Contract",
+          "Dashboard",
+          "DashboardComponent",
+          "Dasheroo__UserDashboard__c",
+          "Event",
+          "Lead",
+          "Opportunity",
+          "Order",
+          "OrderItem",
+          "Product2",
+          "Report",
+          "SQL_BI__c",
+          "SignupRequest",
+          "Site",
+          "SocialPost",
+          "Solution",
+          "Task",
+          "Topic",
+          "User",
+          "sfLma__License__c",
+          "sfLma__Package_Version__c",
+          "sfLma__Package__c",
+          "skuid__Component_Pack__c",
+          "skuid__Image__c",
+          "skuid__Model_Service_Adapter__c",
+          "skuid__Page_Assignment__c",
+          "skuid__Page_Version__c",
+          "skuid__Page__c",
+          "skuid__Personalization_Settings__c",
+          "skuid__Preferences__c",
+          "skuid__Theme__c"
+        ]
+      },
+      {
+        "name": "Origin",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "ContentLocation",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "TextPreview",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ExternalDocumentInfo1",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ExternalDocumentInfo2",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ExternalDataSourceId",
+        "type": "reference",
+        "relationshipName": [
+          "ExternalDataSource"
+        ]
+      },
+      {
+        "name": "Checksum",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "IsMajorVersion",
+        "type": "boolean",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

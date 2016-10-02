@@ -1,0 +1,178 @@
+{
+  "Metadata": {
+    "table": "CollaborationGroup",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "MemberCount",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "CollaborationType",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Description",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "FullPhotoUrl",
+        "type": "url",
+        "relationshipName": []
+      },
+      {
+        "name": "MediumPhotoUrl",
+        "type": "url",
+        "relationshipName": []
+      },
+      {
+        "name": "SmallPhotoUrl",
+        "type": "url",
+        "relationshipName": []
+      },
+      {
+        "name": "LastFeedModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "InformationTitle",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "InformationBody",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "HasPrivateFieldsAccess",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CanHaveGuests",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "IsArchived",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "IsAutoArchiveDisabled",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "AnnouncementId",
+        "type": "reference",
+        "relationshipName": [
+          "Announcement"
+        ]
+      },
+      {
+        "name": "BannerPhotoUrl",
+        "type": "url",
+        "relationshipName": []
+      },
+      {
+        "name": "IsBroadcast",
+        "type": "boolean",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    [
+      {
+        "BannerPhotoUrl": "/profilephoto/0F9/B",
+        "CanHaveGuests": false,
+        "CollaborationType": "Public",
+        "CreatedById": "00536000002n46IAAQ",
+        "CreatedDate": "2016-07-17T15:12:45.000+0000",
+        "Description": "Get company announcements and other important updates",
+        "FullPhotoUrl": "https://c.na30.content.force.com/profilephoto/72936000000gnTY/F",
+        "HasPrivateFieldsAccess": true,
+        "Id": "0F936000000cQteCAE",
+        "IsArchived": false,
+        "IsAutoArchiveDisabled": false,
+        "IsBroadcast": false,
+        "LastFeedModifiedDate": "2016-07-17T15:12:45.000+0000",
+        "LastModifiedById": "00536000002n46IAAQ",
+        "LastModifiedDate": "2016-07-17T15:12:45.000+0000",
+        "LastReferencedDate": "2016-09-02T20:37:53.000+0000",
+        "LastViewedDate": "2016-09-02T20:37:53.000+0000",
+        "MediumPhotoUrl": "/profilephoto/72936000000gnTY/M",
+        "MemberCount": 3,
+        "Name": "All Anvisi LLC",
+        "OwnerId": "00536000002n46IAAQ",
+        "SmallPhotoUrl": "https://c.na30.content.force.com/profilephoto/72936000000gnTY/T",
+        "SystemModstamp": "2016-09-03T11:02:44.000+0000",
+        "attributes": {
+          "type": "CollaborationGroup",
+          "url": "/services/data/v37.0/sobjects/CollaborationGroup/0F936000000cQteCAE"
+        }
+      }
+    ]
+  ]
+}

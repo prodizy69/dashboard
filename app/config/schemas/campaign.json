@@ -1,0 +1,225 @@
+{
+  "Metadata": {
+    "table": "Campaign",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ParentId",
+        "type": "reference",
+        "relationshipName": [
+          "Campaign"
+        ]
+      },
+      {
+        "name": "Type",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Status",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "StartDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "EndDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "ExpectedRevenue",
+        "type": "currency",
+        "relationshipName": []
+      },
+      {
+        "name": "BudgetedCost",
+        "type": "currency",
+        "relationshipName": []
+      },
+      {
+        "name": "ActualCost",
+        "type": "currency",
+        "relationshipName": []
+      },
+      {
+        "name": "ExpectedResponse",
+        "type": "percent",
+        "relationshipName": []
+      },
+      {
+        "name": "NumberSent",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "IsActive",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Description",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "NumberOfLeads",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "NumberOfConvertedLeads",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "NumberOfContacts",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "NumberOfResponses",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "NumberOfOpportunities",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "NumberOfWonOpportunities",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "AmountAllOpportunities",
+        "type": "currency",
+        "relationshipName": []
+      },
+      {
+        "name": "AmountWonOpportunities",
+        "type": "currency",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastActivityDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CampaignMemberRecordTypeId",
+        "type": "reference",
+        "relationshipName": [
+          "RecordType"
+        ]
+      }
+    ]
+  },
+  "Records": [
+    [
+      {
+        "AmountAllOpportunities": 0,
+        "AmountWonOpportunities": 0,
+        "CreatedById": "00536000002n46IAAQ",
+        "CreatedDate": "2016-09-12T17:37:22.000+0000",
+        "ExpectedResponse": 0,
+        "HierarchyAmountAllOpportunities": 0,
+        "HierarchyAmountWonOpportunities": 0,
+        "HierarchyNumberOfContacts": 0,
+        "HierarchyNumberOfConvertedLeads": 0,
+        "HierarchyNumberOfLeads": 0,
+        "HierarchyNumberOfOpportunities": 0,
+        "HierarchyNumberOfResponses": 0,
+        "HierarchyNumberOfWonOpportunities": 0,
+        "HierarchyNumberSent": 0,
+        "Id": "701360000005rdwAAA",
+        "IsActive": false,
+        "IsDeleted": false,
+        "LastModifiedById": "00536000002n46IAAQ",
+        "LastModifiedDate": "2016-09-12T17:37:22.000+0000",
+        "LastReferencedDate": "2016-09-12T17:37:23.000+0000",
+        "LastViewedDate": "2016-09-12T17:37:23.000+0000",
+        "Name": "Dreamforce",
+        "NumberOfContacts": 0,
+        "NumberOfConvertedLeads": 0,
+        "NumberOfLeads": 0,
+        "NumberOfOpportunities": 0,
+        "NumberOfResponses": 0,
+        "NumberOfWonOpportunities": 0,
+        "NumberSent": 0,
+        "OwnerId": "00536000002n46IAAQ",
+        "Status": "Planned",
+        "SystemModstamp": "2016-09-14T00:22:12.000+0000",
+        "Type": "Advertisement",
+        "attributes": {
+          "type": "Campaign",
+          "url": "/services/data/v37.0/sobjects/Campaign/701360000005rdwAAA"
+        }
+      }
+    ]
+  ]
+}

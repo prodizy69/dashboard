@@ -1,0 +1,97 @@
+{
+  "Metadata": {
+    "table": "CHANNEL_ORDERS__Customer__c",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "Group",
+          "User"
+        ]
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Customer_City__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Customer_Company_Name__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Customer_Country__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Customer_Org_ID__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Customer_State__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Customer_Street__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Customer_ZIP_Postal_Code__c",
+        "type": "string",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

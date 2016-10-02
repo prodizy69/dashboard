@@ -1,0 +1,144 @@
+{
+  "Metadata": {
+    "table": "Asset",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "ContactId",
+        "type": "reference",
+        "relationshipName": [
+          "Contact"
+        ]
+      },
+      {
+        "name": "AccountId",
+        "type": "reference",
+        "relationshipName": [
+          "Account"
+        ]
+      },
+      {
+        "name": "ParentId",
+        "type": "reference",
+        "relationshipName": [
+          "Asset"
+        ]
+      },
+      {
+        "name": "RootAssetId",
+        "type": "reference",
+        "relationshipName": [
+          "Asset"
+        ]
+      },
+      {
+        "name": "Product2Id",
+        "type": "reference",
+        "relationshipName": [
+          "Product2"
+        ]
+      },
+      {
+        "name": "IsCompetitorProduct",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "SerialNumber",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "InstallDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "PurchaseDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "UsageEndDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "Status",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Price",
+        "type": "currency",
+        "relationshipName": []
+      },
+      {
+        "name": "Quantity",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "Description",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

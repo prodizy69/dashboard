@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500,700");
+html,body { height: 100%; margin: 0px; padding: 0px; }
 h1,
 h2,
 h3,
@@ -8417,4 +8418,10 @@ body.md-skin {
   margin: 5px;
   padding: 5px;
   float: left;
+}
+
+.dash-editor {
+  background: url('../img/grid.png') repeat;
+  width: 100%;
+  height: 800px;
 }

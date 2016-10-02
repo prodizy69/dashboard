@@ -1,0 +1,116 @@
+{
+  "Metadata": {
+    "table": "skuid__Page_Assignment__c",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "Group",
+          "User"
+        ]
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "skuid__Action_Type__c",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "skuid__Assigned_To_User__c",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "skuid__Context__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "skuid__IsActive__c",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "skuid__Page__c",
+        "type": "reference",
+        "relationshipName": [
+          "skuid__Page__c"
+        ]
+      },
+      {
+        "name": "skuid__RecordTypeDeveloperName__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "skuid__SObject_Type__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "skuid__Use_Standard_Layouts__c",
+        "type": "boolean",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

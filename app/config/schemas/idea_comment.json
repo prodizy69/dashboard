@@ -1,0 +1,78 @@
+{
+  "Metadata": {
+    "table": "IdeaComment",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "IdeaId",
+        "type": "reference",
+        "relationshipName": [
+          "Idea"
+        ]
+      },
+      {
+        "name": "CommunityId",
+        "type": "reference",
+        "relationshipName": [
+          "Community"
+        ]
+      },
+      {
+        "name": "CommentBody",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "IsHtml",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatorFullPhotoUrl",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatorSmallPhotoUrl",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatorName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "UpVotes",
+        "type": "int",
+        "relationshipName": []
+      }
+    ]
+  }
+}

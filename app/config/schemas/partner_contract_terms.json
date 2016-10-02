@@ -1,0 +1,162 @@
+{
+  "Metadata": {
+    "table": "CHANNEL_ORDERS__Partner_Contract_Terms__c",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "Group",
+          "User"
+        ]
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Allow_Auto_Renew_Override__c",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Allow_Cancellation_Terms_Override__c",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Allow_Contract_Length_Override__c",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Allow_Renewal_Length_Override__c",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Allow_to_Sell_to_Existing_Org__c",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__COA_Sync_timestamp__c",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Default_Auto_Renew_Policy__c",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Default_Billing_Frequency__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Default_Cancellation_Terms__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Default_Contract_Auto_Renew__c",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Default_Contract_Currency__c",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Default_Contract_Length_Months__c",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Default_Contract_Length__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Default_Renewal_Length__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Override_Level__c",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Partner_API_Key__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Partner_Contract_Term_External_ID__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Type__c",
+        "type": "picklist",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

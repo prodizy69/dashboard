@@ -1,0 +1,92 @@
+{
+  "Metadata": {
+    "table": "CHANNEL_ORDERS__Service_Order_Log__c",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "Group",
+          "User"
+        ]
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Attachment__c",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Class_Name__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Log_Detail__c",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Log_Level__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Module_Name__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CHANNEL_ORDERS__Object_Id__c",
+        "type": "string",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

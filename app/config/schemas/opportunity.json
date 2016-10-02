@@ -1,0 +1,224 @@
+{
+  "Metadata": {
+    "table": "Opportunity",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "AccountId",
+        "type": "reference",
+        "relationshipName": [
+          "Account"
+        ]
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Description",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "StageName",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Amount",
+        "type": "currency",
+        "relationshipName": []
+      },
+      {
+        "name": "Probability",
+        "type": "percent",
+        "relationshipName": []
+      },
+      {
+        "name": "CloseDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "Type",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "NextStep",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "LeadSource",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "IsClosed",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "IsWon",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "ForecastCategory",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "ForecastCategoryName",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "CampaignId",
+        "type": "reference",
+        "relationshipName": [
+          "Campaign"
+        ]
+      },
+      {
+        "name": "HasOpportunityLineItem",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Pricebook2Id",
+        "type": "reference",
+        "relationshipName": [
+          "Pricebook2"
+        ]
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastActivityDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "FiscalQuarter",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "FiscalYear",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "Fiscal",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "HasOpenActivity",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "HasOverdueTask",
+        "type": "boolean",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    [
+      {
+        "AccountId": "0013600000RSoV0AAL",
+        "Amount": 500000,
+        "CloseDate": "2014-03-18",
+        "CreatedById": "00536000002n46IAAQ",
+        "CreatedDate": "2016-07-05T20:13:40.000+0000",
+        "Description": "Initial deal for 5000 widgets. We expect follow-on business with a potential upside of 40000 additional widgets over the next 12 months.",
+        "ExpectedRevenue": 500000,
+        "Fiscal": "2007 2",
+        "FiscalQuarter": 2,
+        "FiscalYear": 2007,
+        "ForecastCategory": "Closed",
+        "ForecastCategoryName": "Closed",
+        "HasOpenActivity": false,
+        "HasOpportunityLineItem": false,
+        "HasOverdueTask": false,
+        "Id": "00636000009jcCtAAI",
+        "IsClosed": true,
+        "IsDeleted": false,
+        "IsPrivate": false,
+        "IsWon": true,
+        "LastModifiedById": "00536000002n46IAAQ",
+        "LastModifiedDate": "2016-07-05T20:13:40.000+0000",
+        "LeadSource": "Advertisement",
+        "Name": "salesforce.com - 5000 Widgets",
+        "NextStep": "Closed!",
+        "OwnerId": "00536000002n46IAAQ",
+        "Probability": 100,
+        "StageName": "Closed Won",
+        "SystemModstamp": "2016-07-05T20:13:40.000+0000",
+        "Type": "New Business",
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v37.0/sobjects/Opportunity/00636000009jcCtAAI"
+        }
+      }
+    ]
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "Metadata": {
+    "table": "Task",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "WhoId",
+        "type": "reference",
+        "relationshipName": [
+          "Contact",
+          "Lead"
+        ]
+      },
+      {
+        "name": "WhatId",
+        "type": "reference",
+        "relationshipName": [
+          "Account",
+          "Asset",
+          "CHANNEL_ORDERS__Service_Order_Detail__c",
+          "CHANNEL_ORDERS__Service_Order__c",
+          "Campaign",
+          "Case",
+          "Contract",
+          "Opportunity",
+          "Order",
+          "Product2",
+          "SQL_BI__c",
+          "Solution",
+          "sfLma__License__c",
+          "sfLma__Package_Version__c",
+          "sfLma__Package__c"
+        ]
+      },
+      {
+        "name": "Subject",
+        "type": "combobox",
+        "relationshipName": []
+      },
+      {
+        "name": "ActivityDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "Status",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Priority",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "IsHighPriority",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "Description",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "AccountId",
+        "type": "reference",
+        "relationshipName": [
+          "Account"
+        ]
+      },
+      {
+        "name": "IsClosed",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "IsArchived",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CallDurationInSeconds",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "CallType",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "CallDisposition",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CallObject",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ReminderDateTime",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "IsReminderSet",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "RecurrenceActivityId",
+        "type": "reference",
+        "relationshipName": [
+          "Task"
+        ]
+      },
+      {
+        "name": "IsRecurrence",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "RecurrenceStartDateOnly",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "RecurrenceEndDateOnly",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "RecurrenceTimeZoneSidKey",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "RecurrenceType",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "RecurrenceInterval",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "RecurrenceDayOfWeekMask",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "RecurrenceDayOfMonth",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "RecurrenceInstance",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "RecurrenceMonthOfYear",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "RecurrenceRegeneratedType",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "TaskSubtype",
+        "type": "picklist",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

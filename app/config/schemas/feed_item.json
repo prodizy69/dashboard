@@ -1,0 +1,204 @@
+{
+  "Metadata": {
+    "table": "FeedItem",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "ParentId",
+        "type": "reference",
+        "relationshipName": [
+          "Account",
+          "Asset",
+          "CHANNEL_ORDERS__Customer__c",
+          "CHANNEL_ORDERS__Partner_Contract_Terms__c",
+          "CHANNEL_ORDERS__Partner_Product_Catalog__c",
+          "CHANNEL_ORDERS__Service_Order_Detail__c",
+          "CHANNEL_ORDERS__Service_Order_Log__c",
+          "CHANNEL_ORDERS__Service_Order__c",
+          "Campaign",
+          "Case",
+          "CollaborationGroup",
+          "Contact",
+          "ContentDocument",
+          "Contract",
+          "Dashboard",
+          "DashboardComponent",
+          "Dasheroo__UserDashboard__c",
+          "Event",
+          "Lead",
+          "Opportunity",
+          "Order",
+          "OrderItem",
+          "Product2",
+          "Report",
+          "SQL_BI__c",
+          "SignupRequest",
+          "Site",
+          "SocialPost",
+          "Solution",
+          "Task",
+          "Topic",
+          "User",
+          "sfLma__License__c",
+          "sfLma__Package_Version__c",
+          "sfLma__Package__c",
+          "skuid__Component_Pack__c",
+          "skuid__Image__c",
+          "skuid__Model_Service_Adapter__c",
+          "skuid__Page_Assignment__c",
+          "skuid__Page_Version__c",
+          "skuid__Page__c",
+          "skuid__Personalization_Settings__c",
+          "skuid__Preferences__c",
+          "skuid__Theme__c"
+        ]
+      },
+      {
+        "name": "Type",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "Revision",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "LastEditById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastEditDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CommentCount",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "LikeCount",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "Title",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Body",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "LinkUrl",
+        "type": "url",
+        "relationshipName": []
+      },
+      {
+        "name": "IsRichText",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "RelatedRecordId",
+        "type": "reference",
+        "relationshipName": [
+          "ContentVersion"
+        ]
+      },
+      {
+        "name": "InsertedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "BestCommentId",
+        "type": "reference",
+        "relationshipName": [
+          "FeedComment"
+        ]
+      },
+      {
+        "name": "HasContent",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "HasLink",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Status",
+        "type": "picklist",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    [
+      {
+        "Body": null,
+        "CommentCount": 0,
+        "CreatedById": "00536000002n46IAAQ",
+        "CreatedDate": "2016-07-05T20:13:40.000+0000",
+        "HasContent": false,
+        "HasLink": false,
+        "Id": "0D53600000GTbpvCAD",
+        "InsertedById": "00536000002n46IAAQ",
+        "IsDeleted": false,
+        "IsRichText": false,
+        "LastModifiedDate": "2016-07-05T20:13:40.000+0000",
+        "LikeCount": 0,
+        "ParentId": "00536000002n46IAAQ",
+        "Revision": 1,
+        "Status": "Published",
+        "SystemModstamp": "2016-07-05T20:13:40.000+0000",
+        "Type": "TrackedChange",
+        "attributes": {
+          "type": "FeedItem",
+          "url": "/services/data/v37.0/sobjects/FeedItem/0D53600000GTbpvCAD"
+        }
+      }
+    ]
+  ]
+}

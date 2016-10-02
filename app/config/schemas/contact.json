@@ -1,0 +1,368 @@
+{
+  "Metadata": {
+    "table": "Contact",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "MasterRecordId",
+        "type": "reference",
+        "relationshipName": [
+          "Contact"
+        ]
+      },
+      {
+        "name": "AccountId",
+        "type": "reference",
+        "relationshipName": [
+          "Account"
+        ]
+      },
+      {
+        "name": "LastName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "FirstName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Salutation",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "OtherStreet",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "OtherCity",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "OtherState",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "OtherPostalCode",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "OtherCountry",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "OtherLatitude",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "OtherLongitude",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "OtherGeocodeAccuracy",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "OtherAddress",
+        "type": "address",
+        "relationshipName": []
+      },
+      {
+        "name": "MailingStreet",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "MailingCity",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "MailingState",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "MailingPostalCode",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "MailingCountry",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "MailingLatitude",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "MailingLongitude",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "MailingGeocodeAccuracy",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "MailingAddress",
+        "type": "address",
+        "relationshipName": []
+      },
+      {
+        "name": "Phone",
+        "type": "phone",
+        "relationshipName": []
+      },
+      {
+        "name": "Fax",
+        "type": "phone",
+        "relationshipName": []
+      },
+      {
+        "name": "MobilePhone",
+        "type": "phone",
+        "relationshipName": []
+      },
+      {
+        "name": "HomePhone",
+        "type": "phone",
+        "relationshipName": []
+      },
+      {
+        "name": "OtherPhone",
+        "type": "phone",
+        "relationshipName": []
+      },
+      {
+        "name": "AssistantPhone",
+        "type": "phone",
+        "relationshipName": []
+      },
+      {
+        "name": "ReportsToId",
+        "type": "reference",
+        "relationshipName": [
+          "Contact"
+        ]
+      },
+      {
+        "name": "Email",
+        "type": "email",
+        "relationshipName": []
+      },
+      {
+        "name": "Title",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Department",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "AssistantName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "LeadSource",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Birthdate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "Description",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastActivityDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "LastCURequestDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastCUUpdateDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "EmailBouncedReason",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "EmailBouncedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "IsEmailBounced",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "PhotoUrl",
+        "type": "url",
+        "relationshipName": []
+      },
+      {
+        "name": "Jigsaw",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "JigsawContactId",
+        "type": "string",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    [
+      {
+        "AccountId": "0013600000RSoV0AAL",
+        "CreatedById": "00536000002n46IAAQ",
+        "CreatedDate": "2016-07-05T20:13:40.000+0000",
+        "DoNotCall": false,
+        "Email": "info@salesforce.com",
+        "FirstName": "Geoff",
+        "HasOptedOutOfEmail": false,
+        "HasOptedOutOfFax": false,
+        "Id": "0033600000Ja8U3AAJ",
+        "IsDeleted": false,
+        "IsEmailBounced": false,
+        "LastModifiedById": "00536000002n46IAAQ",
+        "LastModifiedDate": "2016-07-05T20:13:40.000+0000",
+        "LastName": "Minor",
+        "MailingAddress": {
+          "city": "Toronto",
+          "country": "Canada",
+          "countryCode": null,
+          "geocodeAccuracy": null,
+          "latitude": null,
+          "longitude": null,
+          "postalCode": "L4B 1Y3",
+          "state": "Ontario",
+          "stateCode": null,
+          "street": "150 Chestnut Street"
+        },
+        "MailingCity": "Toronto",
+        "MailingCountry": "Canada",
+        "MailingPostalCode": "L4B 1Y3",
+        "MailingState": "Ontario",
+        "MailingStreet": "150 Chestnut Street",
+        "Name": "Geoff Minor",
+        "OtherAddress": {
+          "city": "Toronto",
+          "country": "Canada",
+          "countryCode": null,
+          "geocodeAccuracy": null,
+          "latitude": null,
+          "longitude": null,
+          "postalCode": "L4B 1Y3",
+          "state": "Ontario",
+          "stateCode": null,
+          "street": "150 Chestnut Street"
+        },
+        "OtherCity": "Toronto",
+        "OtherCountry": "Canada",
+        "OtherPostalCode": "L4B 1Y3",
+        "OtherState": "Ontario",
+        "OtherStreet": "150 Chestnut Street",
+        "OwnerId": "00536000002n46IAAQ",
+        "Phone": "(415) 555-1212",
+        "PhotoUrl": "/services/images/photo/0033600000Ja8U3AAJ",
+        "SystemModstamp": "2016-07-05T20:13:40.000+0000",
+        "Title": "President",
+        "attributes": {
+          "type": "Contact",
+          "url": "/services/data/v37.0/sobjects/Contact/0033600000Ja8U3AAJ"
+        }
+      }
+    ]
+  ]
+}

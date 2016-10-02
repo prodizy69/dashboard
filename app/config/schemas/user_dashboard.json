@@ -1,0 +1,97 @@
+{
+  "Metadata": {
+    "table": "Dasheroo__UserDashboard__c",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "Group",
+          "User"
+        ]
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "Dasheroo__LastReportViewed__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Dasheroo__SplashDismissed__c",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Dasheroo__User__c",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      }
+    ]
+  },
+  "Records": [
+    [
+      {
+        "CreatedById": "00536000002n46IAAQ",
+        "CreatedDate": "2016-08-10T19:22:46.000+0000",
+        "Dasheroo__SplashDismissed__c": true,
+        "Dasheroo__User__c": "00536000002n46IAAQ",
+        "Id": "a0236000006x3ZCAAY",
+        "IsDeleted": false,
+        "LastModifiedById": "00536000002n46IAAQ",
+        "LastModifiedDate": "2016-08-10T19:22:46.000+0000",
+        "Name": "a0236000006x3ZC",
+        "OwnerId": "00536000002n46IAAQ",
+        "SystemModstamp": "2016-08-10T19:22:46.000+0000",
+        "attributes": {
+          "type": "Dasheroo__UserDashboard__c",
+          "url": "/services/data/v37.0/sobjects/Dasheroo__UserDashboard__c/a0236000006x3ZCAAY"
+        }
+      }
+    ]
+  ]
+}

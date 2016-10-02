@@ -1,0 +1,256 @@
+{
+  "Metadata": {
+    "table": "Order",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "Group",
+          "User"
+        ]
+      },
+      {
+        "name": "ContractId",
+        "type": "reference",
+        "relationshipName": [
+          "Contract"
+        ]
+      },
+      {
+        "name": "AccountId",
+        "type": "reference",
+        "relationshipName": [
+          "Account"
+        ]
+      },
+      {
+        "name": "Pricebook2Id",
+        "type": "reference",
+        "relationshipName": [
+          "Pricebook2"
+        ]
+      },
+      {
+        "name": "OriginalOrderId",
+        "type": "reference",
+        "relationshipName": [
+          "Order"
+        ]
+      },
+      {
+        "name": "EffectiveDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "EndDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "IsReductionOrder",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Status",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Description",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "CustomerAuthorizedById",
+        "type": "reference",
+        "relationshipName": [
+          "Contact"
+        ]
+      },
+      {
+        "name": "CompanyAuthorizedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "Type",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingStreet",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingCity",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingState",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingPostalCode",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingCountry",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingLatitude",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingLongitude",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingGeocodeAccuracy",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "BillingAddress",
+        "type": "address",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingStreet",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingCity",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingState",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingPostalCode",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingCountry",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingLatitude",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingLongitude",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingGeocodeAccuracy",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "ShippingAddress",
+        "type": "address",
+        "relationshipName": []
+      },
+      {
+        "name": "ActivatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "ActivatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "StatusCode",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "OrderNumber",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "TotalAmount",
+        "type": "currency",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

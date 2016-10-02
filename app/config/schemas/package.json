@@ -1,0 +1,114 @@
+{
+  "Metadata": {
+    "table": "sfLma__Package__c",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "Group",
+          "User"
+        ]
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastActivityDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Developer_Name__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Developer_Org_ID__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Help__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Latest_Version__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Lead_Manager__c",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "sfLma__Package_ID__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Release_Date__c",
+        "type": "date",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

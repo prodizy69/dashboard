@@ -1,0 +1,182 @@
+{
+  "Metadata": {
+    "table": "sfLma__License__c",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "Group",
+          "User"
+        ]
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "RecordTypeId",
+        "type": "reference",
+        "relationshipName": [
+          "RecordType"
+        ]
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastActivityDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Account__c",
+        "type": "reference",
+        "relationshipName": [
+          "Account"
+        ]
+      },
+      {
+        "name": "sfLma__Contact__c",
+        "type": "reference",
+        "relationshipName": [
+          "Contact"
+        ]
+      },
+      {
+        "name": "sfLma__Expiration_Date__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Expiration__c",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Help__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Install_Date__c",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Lead__c",
+        "type": "reference",
+        "relationshipName": [
+          "Lead"
+        ]
+      },
+      {
+        "name": "sfLma__License_Status__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__License_Type__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Licensed_Seats__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Package_License_ID__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Package_Version__c",
+        "type": "reference",
+        "relationshipName": [
+          "sfLma__Package_Version__c"
+        ]
+      },
+      {
+        "name": "sfLma__Proxy_User__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Seats__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Status__c",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Subscriber_Org_ID__c",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Used_Licenses__c",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Is_Sandbox__c",
+        "type": "boolean",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

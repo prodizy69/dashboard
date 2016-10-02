@@ -1,0 +1,196 @@
+{
+  "Metadata": {
+    "table": "Case",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CaseNumber",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ContactId",
+        "type": "reference",
+        "relationshipName": [
+          "Contact"
+        ]
+      },
+      {
+        "name": "AccountId",
+        "type": "reference",
+        "relationshipName": [
+          "Account"
+        ]
+      },
+      {
+        "name": "SourceId",
+        "type": "reference",
+        "relationshipName": [
+          "SocialPost"
+        ]
+      },
+      {
+        "name": "ParentId",
+        "type": "reference",
+        "relationshipName": [
+          "Case"
+        ]
+      },
+      {
+        "name": "SuppliedName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "SuppliedEmail",
+        "type": "email",
+        "relationshipName": []
+      },
+      {
+        "name": "SuppliedPhone",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "SuppliedCompany",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Type",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Status",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Reason",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Origin",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Subject",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Priority",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Description",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "IsClosed",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "ClosedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "IsEscalated",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "Group",
+          "User"
+        ]
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    [
+      {
+        "AccountId": "0013600000RSoV0AAL",
+        "BusinessHoursId": "01m36000000EcxmAAC",
+        "CaseNumber": "00001000",
+        "ContactId": "0033600000Ja8U5AAJ",
+        "CreatedById": "00536000002n46IAAQ",
+        "CreatedDate": "2016-07-05T20:13:40.000+0000",
+        "Id": "50036000003Kz5IAAS",
+        "IsClosed": false,
+        "IsClosedOnCreate": false,
+        "IsDeleted": false,
+        "IsEscalated": false,
+        "LastModifiedById": "00536000002n46IAAQ",
+        "LastModifiedDate": "2016-07-05T20:13:40.000+0000",
+        "Origin": "Phone",
+        "OwnerId": "00536000002n46IAAQ",
+        "Priority": "High",
+        "Status": "Escalated",
+        "Subject": "Sample Case: Our Widgets have not been delivered.",
+        "SystemModstamp": "2016-07-05T20:13:40.000+0000",
+        "attributes": {
+          "type": "Case",
+          "url": "/services/data/v37.0/sobjects/Case/50036000003Kz5IAAS"
+        }
+      }
+    ]
+  ]
+}

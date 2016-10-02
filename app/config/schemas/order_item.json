@@ -1,0 +1,110 @@
+{
+  "Metadata": {
+    "table": "OrderItem",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "OrderId",
+        "type": "reference",
+        "relationshipName": [
+          "Order"
+        ]
+      },
+      {
+        "name": "PricebookEntryId",
+        "type": "reference",
+        "relationshipName": [
+          "PricebookEntry"
+        ]
+      },
+      {
+        "name": "OriginalOrderItemId",
+        "type": "reference",
+        "relationshipName": [
+          "OrderItem"
+        ]
+      },
+      {
+        "name": "AvailableQuantity",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "Quantity",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "UnitPrice",
+        "type": "currency",
+        "relationshipName": []
+      },
+      {
+        "name": "ListPrice",
+        "type": "currency",
+        "relationshipName": []
+      },
+      {
+        "name": "ServiceDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "EndDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "Description",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "OrderItemNumber",
+        "type": "string",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

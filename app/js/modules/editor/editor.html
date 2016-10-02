@@ -1,13 +1,18 @@
-<div class="wrapper wrapper-content editor">
+<div class="wrapper wrapper-content">
     <div class="row">
-        <h4>Create Dashboard</h4>
+        <div class="pull-left"> Create Dashboard </div>
+        <button class="pull-right" ng-click="saveDashboard()"> Save </button>
     </div>
 
-    <div class="dashboard-name row">
+    <div class="row dash-editor" droppable on-drop="onDrop">
+
+    </div>
+
+    <!-- <div class="dashboard-name row">
       <input class="form-control underline-input" type="text" ng-model="dInfo.name" placeholder="Enter Dashboard Name ... ">
-    </div>
+    </div> -->
 
-    <div class="dashboard-schema-select row">
+    <!-- <div class="dashboard-schema-select row">
       <select class="form-control underline-input" type="text" ng-model="dInfo.chart">
         <option value="" selected="selected"> Select Chart </option>
         <option value="polar"> Polar Area </option>
@@ -21,10 +26,5 @@
         <option value="schema1"> Schema 1 </option>
         <option value="schema2"> Schema 2 </option>
       </select>
-    </div>
-<div>
-    </div>
-    <div class="dashboard-name row">
-      <button class="form-control" ng-click="saveDashboard()"> Save </button>
-    </div>
+    </div> -->
 </div>

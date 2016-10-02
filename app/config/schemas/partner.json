@@ -1,0 +1,87 @@
+{
+  "Metadata": {
+    "table": "Partner",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "OpportunityId",
+        "type": "reference",
+        "relationshipName": [
+          "Opportunity"
+        ]
+      },
+      {
+        "name": "AccountFromId",
+        "type": "reference",
+        "relationshipName": [
+          "Account"
+        ]
+      },
+      {
+        "name": "AccountToId",
+        "type": "reference",
+        "relationshipName": [
+          "Account"
+        ]
+      },
+      {
+        "name": "Role",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "IsPrimary",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "ReversePartnerId",
+        "type": "reference",
+        "relationshipName": [
+          "Partner"
+        ]
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

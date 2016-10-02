@@ -1,0 +1,329 @@
+{
+  "Metadata": {
+    "table": "SocialPost",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "Group",
+          "User"
+        ]
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "ParentId",
+        "type": "reference",
+        "relationshipName": [
+          "Case"
+        ]
+      },
+      {
+        "name": "PersonaId",
+        "type": "reference",
+        "relationshipName": [
+          "SocialPersona"
+        ]
+      },
+      {
+        "name": "WhoId",
+        "type": "reference",
+        "relationshipName": [
+          "Account",
+          "Contact",
+          "Lead"
+        ]
+      },
+      {
+        "name": "ReplyToId",
+        "type": "reference",
+        "relationshipName": [
+          "SocialPost"
+        ]
+      },
+      {
+        "name": "Headline",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Content",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "Posted",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "PostUrl",
+        "type": "url",
+        "relationshipName": []
+      },
+      {
+        "name": "Provider",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Handle",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "SpamRating",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "MediaType",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "MediaProvider",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Sentiment",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "PostPriority",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Status",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "StatusMessage",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "Recipient",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "RecipientType",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "MessageType",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "R6PostId",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "R6TopicId",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "R6SourceId",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "TopicType",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "ExternalPostId",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "HarvestDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "IsOutbound",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "PostTags",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "SourceTags",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "Classification",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "ThreadSize",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "CommentCount",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "Shares",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "ViewCount",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "InboundLinkCount",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "UniqueCommentors",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "LikesAndVotes",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "TopicProfileName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "KeywordGroupName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "EngagementLevel",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "AssignedTo",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "ReviewedStatus",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "AttachmentUrl",
+        "type": "url",
+        "relationshipName": []
+      },
+      {
+        "name": "AttachmentType",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "DeletedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "ResponseContextExternalId",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "LikedBy",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "AnalyzerScore",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "Language",
+        "type": "string",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

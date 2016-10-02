@@ -11,7 +11,9 @@
   function EditorController($scope, $rootScope, DashboardService, $location) {
 
     $scope.dInfo = { name: 'New Dashboard', components: [] };
-    var _chartType=$scope.dInfo.chart
+    
+    var _chartType = $scope.dInfo.chart;
+    
     $scope.doughnutcomponents= [{
       "type": "chart",
       "subtype": "doughnut",
@@ -43,22 +45,28 @@
       "width": 600,
       "height": 600
     }];
+
     $scope.saveDashboard = function() {
+
       var dashboard = {};
-      if($scope.dInfo.chart==='polar'){
-        dashboard.components=$scope.polarcomponents;
-      }else if($scope.dInfo.chart==='doughnut'){
-        dashboard.components=$scope.doughnutcomponents;
+
+      if($scope.dInfo.chart === 'polar'){
+        dashboard.components = $scope.polarcomponents;
+      } else if($scope.dInfo.chart==='doughnut'){
+        dashboard.components = $scope.doughnutcomponents;
       }
+
       dashboard.name = $scope.dInfo.name;
-
-
       
       DashboardService.addDashboard(dashboard);
 
       $rootScope.$broadcast('dashboard-added');
 
       $location.path('/');
+    };
+
+    $scope.onDrop = function(draggedItemType, draggedItemData) {
+      console.log('dropped > type > ' + draggedItemType + ' data > ' + draggedItemData);
     };
     
   }

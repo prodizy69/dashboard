@@ -1,0 +1,115 @@
+{
+  "Metadata": {
+    "table": "OpportunityLineItem",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "OpportunityId",
+        "type": "reference",
+        "relationshipName": [
+          "Opportunity"
+        ]
+      },
+      {
+        "name": "SortOrder",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "PricebookEntryId",
+        "type": "reference",
+        "relationshipName": [
+          "PricebookEntry"
+        ]
+      },
+      {
+        "name": "Product2Id",
+        "type": "reference",
+        "relationshipName": [
+          "Product2"
+        ]
+      },
+      {
+        "name": "ProductCode",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Quantity",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "TotalPrice",
+        "type": "currency",
+        "relationshipName": []
+      },
+      {
+        "name": "UnitPrice",
+        "type": "currency",
+        "relationshipName": []
+      },
+      {
+        "name": "ListPrice",
+        "type": "currency",
+        "relationshipName": []
+      },
+      {
+        "name": "ServiceDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "Description",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

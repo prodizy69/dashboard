@@ -1,0 +1,130 @@
+{
+  "Metadata": {
+    "table": "ContentDocument",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "IsArchived",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "ArchivedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "ArchivedDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "Title",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "PublishStatus",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "LatestPublishedVersionId",
+        "type": "reference",
+        "relationshipName": [
+          "ContentVersion"
+        ]
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "Description",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "ContentSize",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "FileType",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "FileExtension",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "SharingOption",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "ContentModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

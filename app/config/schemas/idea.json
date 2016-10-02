@@ -1,0 +1,152 @@
+{
+  "Metadata": {
+    "table": "Idea",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "Title",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "RecordTypeId",
+        "type": "reference",
+        "relationshipName": [
+          "RecordType"
+        ]
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CommunityId",
+        "type": "reference",
+        "relationshipName": [
+          "Community"
+        ]
+      },
+      {
+        "name": "Body",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "NumComments",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "VoteScore",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "VoteTotal",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "Categories",
+        "type": "multipicklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Status",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "LastCommentDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastCommentId",
+        "type": "reference",
+        "relationshipName": [
+          "IdeaComment"
+        ]
+      },
+      {
+        "name": "ParentIdeaId",
+        "type": "reference",
+        "relationshipName": [
+          "Idea"
+        ]
+      },
+      {
+        "name": "IsHtml",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "IsMerged",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatorFullPhotoUrl",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatorSmallPhotoUrl",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatorName",
+        "type": "string",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    []
+  ]
+}

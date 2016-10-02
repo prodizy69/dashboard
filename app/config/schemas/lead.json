@@ -1,0 +1,317 @@
+{
+  "Metadata": {
+    "table": "Lead",
+    "columns": [
+      {
+        "name": "Id",
+        "type": "id",
+        "relationshipName": []
+      },
+      {
+        "name": "IsDeleted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "MasterRecordId",
+        "type": "reference",
+        "relationshipName": [
+          "Lead"
+        ]
+      },
+      {
+        "name": "LastName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "FirstName",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Salutation",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Title",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Company",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Street",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "City",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "State",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "PostalCode",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Country",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "Latitude",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "Longitude",
+        "type": "double",
+        "relationshipName": []
+      },
+      {
+        "name": "GeocodeAccuracy",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Address",
+        "type": "address",
+        "relationshipName": []
+      },
+      {
+        "name": "Phone",
+        "type": "phone",
+        "relationshipName": []
+      },
+      {
+        "name": "Email",
+        "type": "email",
+        "relationshipName": []
+      },
+      {
+        "name": "Website",
+        "type": "url",
+        "relationshipName": []
+      },
+      {
+        "name": "PhotoUrl",
+        "type": "url",
+        "relationshipName": []
+      },
+      {
+        "name": "Description",
+        "type": "textarea",
+        "relationshipName": []
+      },
+      {
+        "name": "LeadSource",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Status",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Industry",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "Rating",
+        "type": "picklist",
+        "relationshipName": []
+      },
+      {
+        "name": "AnnualRevenue",
+        "type": "currency",
+        "relationshipName": []
+      },
+      {
+        "name": "NumberOfEmployees",
+        "type": "int",
+        "relationshipName": []
+      },
+      {
+        "name": "OwnerId",
+        "type": "reference",
+        "relationshipName": [
+          "Group",
+          "User"
+        ]
+      },
+      {
+        "name": "IsConverted",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "ConvertedDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "ConvertedAccountId",
+        "type": "reference",
+        "relationshipName": [
+          "Account"
+        ]
+      },
+      {
+        "name": "ConvertedContactId",
+        "type": "reference",
+        "relationshipName": [
+          "Contact"
+        ]
+      },
+      {
+        "name": "ConvertedOpportunityId",
+        "type": "reference",
+        "relationshipName": [
+          "Opportunity"
+        ]
+      },
+      {
+        "name": "IsUnreadByOwner",
+        "type": "boolean",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "CreatedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "LastModifiedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastModifiedById",
+        "type": "reference",
+        "relationshipName": [
+          "User"
+        ]
+      },
+      {
+        "name": "SystemModstamp",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastActivityDate",
+        "type": "date",
+        "relationshipName": []
+      },
+      {
+        "name": "LastViewedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "LastReferencedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "Jigsaw",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "JigsawContactId",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "EmailBouncedReason",
+        "type": "string",
+        "relationshipName": []
+      },
+      {
+        "name": "EmailBouncedDate",
+        "type": "datetime",
+        "relationshipName": []
+      },
+      {
+        "name": "sfLma__Subscriber_Org_Type__c",
+        "type": "string",
+        "relationshipName": []
+      }
+    ]
+  },
+  "Records": [
+    [
+      {
+        "Address": {
+          "city": "Rockland",
+          "country": "United States",
+          "countryCode": null,
+          "geocodeAccuracy": null,
+          "latitude": null,
+          "longitude": null,
+          "postalCode": "2370",
+          "state": "Massachusetts",
+          "stateCode": null,
+          "street": "30 Commerce Road"
+        },
+        "City": "Rockland",
+        "Company": "3M",
+        "Country": "United States",
+        "CreatedById": "00536000002n46IAAQ",
+        "CreatedDate": "2016-07-22T21:52:43.000+0000",
+        "DoNotCall": false,
+        "Email": "amercadante@mmm.com",
+        "FirstName": "Tony",
+        "HasOptedOutOfEmail": false,
+        "HasOptedOutOfFax": false,
+        "Id": "00Q3600000FEfazEAD",
+        "IsConverted": false,
+        "IsDeleted": false,
+        "IsUnreadByOwner": true,
+        "LastModifiedById": "00536000002n46IAAQ",
+        "LastModifiedDate": "2016-07-22T21:52:43.000+0000",
+        "LastName": "Mercadante",
+        "LastTransferDate": "2016-07-22",
+        "LeadSource": "Other",
+        "Name": "Tony Mercadante",
+        "OwnerId": "00536000002n46IAAQ",
+        "Phone": "(781) 241-2283",
+        "PhotoUrl": "/services/images/photo/00Q3600000FEfazEAD",
+        "PostalCode": "2370",
+        "State": "Massachusetts",
+        "Status": "Marketing Qualified",
+        "Street": "30 Commerce Road",
+        "SystemModstamp": "2016-07-22T21:52:44.000+0000",
+        "attributes": {
+          "type": "Lead",
+          "url": "/services/data/v37.0/sobjects/Lead/00Q3600000FEfazEAD"
+        }
+      }
+    ]
+  ]
+}
