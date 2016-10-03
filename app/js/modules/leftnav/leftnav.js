@@ -6,9 +6,9 @@
 
 	.directive('leftNav', LeftNavDirective);
 
-	LeftNavDirective.$inject = ['$rootScope', 'DashboardService', 'SchemaService', 'ChartService', '$location'];
+	LeftNavDirective.$inject = ['$rootScope', 'DashboardService', 'SchemaService', 'ChartService', 'DataObjectService', '$location'];
 
-	function LeftNavDirective($rootScope, DashboardService, SchemaService, ChartService, $location) {
+	function LeftNavDirective($rootScope, DashboardService, SchemaService, ChartService, DataObjectService, $location) {
         var _directive = {};
 
         _directive.restrict = 'AE';
@@ -30,6 +30,13 @@
                 });
             }
 
+            function getDataObjects() {
+                DataObjectService.getDataObjects()
+                .then(function(dataObjects) {
+                    $scope.dataObjects = dataObjects;
+                });
+            }
+
             function getSchemas() {
                 SchemaService.getSchemas()
                 .then(function(schemas) {
@@ -44,23 +51,36 @@
                 });
             }
 
-            $scope.handleNavClick = function(type, data) {
+            $scope.showDashboard = function(data) {
                 $location.path('/');
-                if(type === 'dashboard') {
-                    $scope.selectedDashboard = data;
-                    $rootScope.$broadcast('load-dashboard', { data: data });
-                }
+                
+                $scope.selectedDashboard = data;
+                $rootScope.$broadcast('load-dashboard', { data: data });
+            };
+
+            $scope.enableSchemaEditMode = function() {
+                $rootScope.$broadcast('enable-edit-mode', { type: 'schema' });
             };
 
             getDashboards();
             getSchemas();
             getCharts();
+            getDataObjects();
 
             $scope.routeUsers= function () {
                 $location.path('users.html');
             }
 
             $scope.$on('dashboard-added', getDashboards);
+
+            $scope.$on('enable-edit-mode', function(event, data) {
+                $scope.editType = data.type;
+                $scope.editMode = true;
+            });
+
+            $scope.$on('disable-edit-mode', function(event, data) {
+                $scope.editMode = false;
+            });
 
         }
 

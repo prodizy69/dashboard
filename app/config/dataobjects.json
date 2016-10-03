@@ -1,0 +1,819 @@
+{
+  "dataObjects": [{
+        "name": "account",
+        "Metadata": {
+            "table": "Account",
+            "columns": [
+              {
+                "name": "Id",
+                "type": "id",
+                "relationshipName": []
+              },
+              {
+                "name": "IsDeleted",
+                "type": "boolean",
+                "relationshipName": []
+              },
+              {
+                "name": "MasterRecordId",
+                "type": "reference",
+                "relationshipName": [
+                  "Account"
+                ]
+              },
+              {
+                "name": "Name",
+                "type": "string",
+                "relationshipName": []
+              },
+              {
+                "name": "Type",
+                "type": "picklist",
+                "relationshipName": []
+              },
+              {
+                "name": "ParentId",
+                "type": "reference",
+                "relationshipName": [
+                  "Account"
+                ]
+              },
+              {
+                "name": "BillingStreet",
+                "type": "textarea",
+                "relationshipName": []
+              },
+              {
+                "name": "BillingCity",
+                "type": "string",
+                "relationshipName": []
+              },
+              {
+                "name": "BillingState",
+                "type": "string",
+                "relationshipName": []
+              },
+              {
+                "name": "BillingPostalCode",
+                "type": "string",
+                "relationshipName": []
+              },
+              {
+                "name": "BillingCountry",
+                "type": "string",
+                "relationshipName": []
+              },
+              {
+                "name": "BillingLatitude",
+                "type": "double",
+                "relationshipName": []
+              },
+              {
+                "name": "BillingLongitude",
+                "type": "double",
+                "relationshipName": []
+              },
+              {
+                "name": "BillingGeocodeAccuracy",
+                "type": "picklist",
+                "relationshipName": []
+              },
+              {
+                "name": "BillingAddress",
+                "type": "address",
+                "relationshipName": []
+              },
+              {
+                "name": "ShippingStreet",
+                "type": "textarea",
+                "relationshipName": []
+              },
+              {
+                "name": "ShippingCity",
+                "type": "string",
+                "relationshipName": []
+              },
+              {
+                "name": "ShippingState",
+                "type": "string",
+                "relationshipName": []
+              },
+              {
+                "name": "ShippingPostalCode",
+                "type": "string",
+                "relationshipName": []
+              },
+              {
+                "name": "ShippingCountry",
+                "type": "string",
+                "relationshipName": []
+              },
+              {
+                "name": "ShippingLatitude",
+                "type": "double",
+                "relationshipName": []
+              },
+              {
+                "name": "ShippingLongitude",
+                "type": "double",
+                "relationshipName": []
+              },
+              {
+                "name": "ShippingGeocodeAccuracy",
+                "type": "picklist",
+                "relationshipName": []
+              },
+              {
+                "name": "ShippingAddress",
+                "type": "address",
+                "relationshipName": []
+              },
+              {
+                "name": "Phone",
+                "type": "phone",
+                "relationshipName": []
+              },
+              {
+                "name": "Fax",
+                "type": "phone",
+                "relationshipName": []
+              },
+              {
+                "name": "Website",
+                "type": "url",
+                "relationshipName": []
+              },
+              {
+                "name": "PhotoUrl",
+                "type": "url",
+                "relationshipName": []
+              },
+              {
+                "name": "Industry",
+                "type": "picklist",
+                "relationshipName": []
+              },
+              {
+                "name": "AnnualRevenue",
+                "type": "currency",
+                "relationshipName": []
+              },
+              {
+                "name": "NumberOfEmployees",
+                "type": "int",
+                "relationshipName": []
+              },
+              {
+                "name": "Description",
+                "type": "textarea",
+                "relationshipName": []
+              },
+              {
+                "name": "OwnerId",
+                "type": "reference",
+                "relationshipName": [
+                  "User"
+                ]
+              },
+              {
+                "name": "CreatedDate",
+                "type": "datetime",
+                "relationshipName": []
+              },
+              {
+                "name": "CreatedById",
+                "type": "reference",
+                "relationshipName": [
+                  "User"
+                ]
+              },
+              {
+                "name": "LastModifiedDate",
+                "type": "datetime",
+                "relationshipName": []
+              },
+              {
+                "name": "LastModifiedById",
+                "type": "reference",
+                "relationshipName": [
+                  "User"
+                ]
+              },
+              {
+                "name": "SystemModstamp",
+                "type": "datetime",
+                "relationshipName": []
+              },
+              {
+                "name": "LastActivityDate",
+                "type": "date",
+                "relationshipName": []
+              },
+              {
+                "name": "LastViewedDate",
+                "type": "datetime",
+                "relationshipName": []
+              },
+              {
+                "name": "LastReferencedDate",
+                "type": "datetime",
+                "relationshipName": []
+              },
+              {
+                "name": "Jigsaw",
+                "type": "string",
+                "relationshipName": []
+              },
+              {
+                "name": "JigsawCompanyId",
+                "type": "string",
+                "relationshipName": []
+              },
+              {
+                "name": "AccountSource",
+                "type": "picklist",
+                "relationshipName": []
+              },
+              {
+                "name": "SicDesc",
+                "type": "string",
+                "relationshipName": []
+              }
+            ]
+        },
+        "Records": [
+            [
+              {
+                "BillingAddress": {
+                  "city": "GETZVILLE",
+                  "country": "USA",
+                  "countryCode": null,
+                  "geocodeAccuracy": null,
+                  "latitude": null,
+                  "longitude": null,
+                  "postalCode": null,
+                  "state": "New York",
+                  "stateCode": null,
+                  "street": "480 CROSSPOINT PKWY"
+                },
+                "BillingCity": "GETZVILLE",
+                "BillingCountry": "USA",
+                "BillingState": "New York",
+                "BillingStreet": "480 CROSSPOINT PKWY",
+                "CreatedById": "00536000002n46IAAQ",
+                "CreatedDate": "2016-08-30T21:04:10.000+0000",
+                "Fax": "716-564-6262",
+                "Id": "0013600000Z3G1pAAF",
+                "IsDeleted": false,
+                "LastModifiedById": "00536000002n46IAAQ",
+                "LastModifiedDate": "2016-08-30T21:04:10.000+0000",
+                "LastReferencedDate": "2016-09-02T18:54:27.000+0000",
+                "LastViewedDate": "2016-09-02T18:54:27.000+0000",
+                "Name": "FIDELIS CARE NEW YORK",
+                "OwnerId": "00536000002n46IAAQ",
+                "Phone": "716-564-6162",
+                "PhotoUrl": "/services/images/photo/0013600000Z3G1pAAF",
+                "ShippingAddress": {
+                  "city": null,
+                  "country": "USA",
+                  "countryCode": null,
+                  "geocodeAccuracy": null,
+                  "latitude": null,
+                  "longitude": null,
+                  "postalCode": null,
+                  "state": null,
+                  "stateCode": null,
+                  "street": null
+                },
+                "ShippingCountry": "USA",
+                "SystemModstamp": "2016-09-03T11:02:44.000+0000",
+                "attributes": {
+                  "type": "Account",
+                  "url": "/services/data/v37.0/sobjects/Account/0013600000Z3G1pAAF"
+                }
+              }
+            ]
+        ]
+    },{
+        "name": "asset"
+    },{
+        "name": "campaign"
+    },{
+        "name": "case",
+        "Metadata": {
+          "table": "Case",
+          "columns": [
+            {
+              "name": "Id",
+              "type": "id",
+              "relationshipName": []
+            },
+            {
+              "name": "IsDeleted",
+              "type": "boolean",
+              "relationshipName": []
+            },
+            {
+              "name": "CaseNumber",
+              "type": "string",
+              "relationshipName": []
+            },
+            {
+              "name": "ContactId",
+              "type": "reference",
+              "relationshipName": [
+                "Contact"
+              ]
+            },
+            {
+              "name": "AccountId",
+              "type": "reference",
+              "relationshipName": [
+                "Account"
+              ]
+            },
+            {
+              "name": "SourceId",
+              "type": "reference",
+              "relationshipName": [
+                "SocialPost"
+              ]
+            },
+            {
+              "name": "ParentId",
+              "type": "reference",
+              "relationshipName": [
+                "Case"
+              ]
+            },
+            {
+              "name": "SuppliedName",
+              "type": "string",
+              "relationshipName": []
+            },
+            {
+              "name": "SuppliedEmail",
+              "type": "email",
+              "relationshipName": []
+            },
+            {
+              "name": "SuppliedPhone",
+              "type": "string",
+              "relationshipName": []
+            },
+            {
+              "name": "SuppliedCompany",
+              "type": "string",
+              "relationshipName": []
+            },
+            {
+              "name": "Type",
+              "type": "picklist",
+              "relationshipName": []
+            },
+            {
+              "name": "Status",
+              "type": "picklist",
+              "relationshipName": []
+            },
+            {
+              "name": "Reason",
+              "type": "picklist",
+              "relationshipName": []
+            },
+            {
+              "name": "Origin",
+              "type": "picklist",
+              "relationshipName": []
+            },
+            {
+              "name": "Subject",
+              "type": "string",
+              "relationshipName": []
+            },
+            {
+              "name": "Priority",
+              "type": "picklist",
+              "relationshipName": []
+            },
+            {
+              "name": "Description",
+              "type": "textarea",
+              "relationshipName": []
+            },
+            {
+              "name": "IsClosed",
+              "type": "boolean",
+              "relationshipName": []
+            },
+            {
+              "name": "ClosedDate",
+              "type": "datetime",
+              "relationshipName": []
+            },
+            {
+              "name": "IsEscalated",
+              "type": "boolean",
+              "relationshipName": []
+            },
+            {
+              "name": "OwnerId",
+              "type": "reference",
+              "relationshipName": [
+                "Group",
+                "User"
+              ]
+            },
+            {
+              "name": "CreatedDate",
+              "type": "datetime",
+              "relationshipName": []
+            },
+            {
+              "name": "CreatedById",
+              "type": "reference",
+              "relationshipName": [
+                "User"
+              ]
+            },
+            {
+              "name": "LastModifiedDate",
+              "type": "datetime",
+              "relationshipName": []
+            },
+            {
+              "name": "LastModifiedById",
+              "type": "reference",
+              "relationshipName": [
+                "User"
+              ]
+            },
+            {
+              "name": "SystemModstamp",
+              "type": "datetime",
+              "relationshipName": []
+            },
+            {
+              "name": "LastViewedDate",
+              "type": "datetime",
+              "relationshipName": []
+            },
+            {
+              "name": "LastReferencedDate",
+              "type": "datetime",
+              "relationshipName": []
+            }
+          ]
+        },
+        "Records": [
+          [
+            {
+              "AccountId": "0013600000RSoV0AAL",
+              "BusinessHoursId": "01m36000000EcxmAAC",
+              "CaseNumber": "00001000",
+              "ContactId": "0033600000Ja8U5AAJ",
+              "CreatedById": "00536000002n46IAAQ",
+              "CreatedDate": "2016-07-05T20:13:40.000+0000",
+              "Id": "50036000003Kz5IAAS",
+              "IsClosed": false,
+              "IsClosedOnCreate": false,
+              "IsDeleted": false,
+              "IsEscalated": false,
+              "LastModifiedById": "00536000002n46IAAQ",
+              "LastModifiedDate": "2016-07-05T20:13:40.000+0000",
+              "Origin": "Phone",
+              "OwnerId": "00536000002n46IAAQ",
+              "Priority": "High",
+              "Status": "Escalated",
+              "Subject": "Sample Case: Our Widgets have not been delivered.",
+              "SystemModstamp": "2016-07-05T20:13:40.000+0000",
+              "attributes": {
+                "type": "Case",
+                "url": "/services/data/v37.0/sobjects/Case/50036000003Kz5IAAS"
+              }
+            }
+          ]
+        ]
+    },{
+        "name": "contact"
+    },{
+        "name": "contract"
+    },{
+        "name": "customer"
+    },{
+        "name": "event"
+    },{
+        "name": "feed_comment"
+    },{
+        "name": "feed_comment"
+    },{
+        "name": "feed_item"
+    },{
+        "name": "group",
+        "Metadata": {
+          "table": "CollaborationGroup",
+          "columns": [
+            {
+              "name": "Id",
+              "type": "id",
+              "relationshipName": []
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "relationshipName": []
+            },
+            {
+              "name": "MemberCount",
+              "type": "int",
+              "relationshipName": []
+            },
+            {
+              "name": "OwnerId",
+              "type": "reference",
+              "relationshipName": [
+                "User"
+              ]
+            },
+            {
+              "name": "CollaborationType",
+              "type": "picklist",
+              "relationshipName": []
+            },
+            {
+              "name": "Description",
+              "type": "textarea",
+              "relationshipName": []
+            },
+            {
+              "name": "CreatedDate",
+              "type": "datetime",
+              "relationshipName": []
+            },
+            {
+              "name": "CreatedById",
+              "type": "reference",
+              "relationshipName": [
+                "User"
+              ]
+            },
+            {
+              "name": "LastModifiedDate",
+              "type": "datetime",
+              "relationshipName": []
+            },
+            {
+              "name": "LastModifiedById",
+              "type": "reference",
+              "relationshipName": [
+                "User"
+              ]
+            },
+            {
+              "name": "SystemModstamp",
+              "type": "datetime",
+              "relationshipName": []
+            },
+            {
+              "name": "FullPhotoUrl",
+              "type": "url",
+              "relationshipName": []
+            },
+            {
+              "name": "MediumPhotoUrl",
+              "type": "url",
+              "relationshipName": []
+            },
+            {
+              "name": "SmallPhotoUrl",
+              "type": "url",
+              "relationshipName": []
+            },
+            {
+              "name": "LastFeedModifiedDate",
+              "type": "datetime",
+              "relationshipName": []
+            },
+            {
+              "name": "InformationTitle",
+              "type": "string",
+              "relationshipName": []
+            },
+            {
+              "name": "InformationBody",
+              "type": "textarea",
+              "relationshipName": []
+            },
+            {
+              "name": "HasPrivateFieldsAccess",
+              "type": "boolean",
+              "relationshipName": []
+            },
+            {
+              "name": "CanHaveGuests",
+              "type": "boolean",
+              "relationshipName": []
+            },
+            {
+              "name": "LastViewedDate",
+              "type": "datetime",
+              "relationshipName": []
+            },
+            {
+              "name": "LastReferencedDate",
+              "type": "datetime",
+              "relationshipName": []
+            },
+            {
+              "name": "IsArchived",
+              "type": "boolean",
+              "relationshipName": []
+            },
+            {
+              "name": "IsAutoArchiveDisabled",
+              "type": "boolean",
+              "relationshipName": []
+            },
+            {
+              "name": "AnnouncementId",
+              "type": "reference",
+              "relationshipName": [
+                "Announcement"
+              ]
+            },
+            {
+              "name": "BannerPhotoUrl",
+              "type": "url",
+              "relationshipName": []
+            },
+            {
+              "name": "IsBroadcast",
+              "type": "boolean",
+              "relationshipName": []
+            }
+          ]
+        },
+        "Records": [
+          [
+            {
+              "BannerPhotoUrl": "/profilephoto/0F9/B",
+              "CanHaveGuests": false,
+              "CollaborationType": "Public",
+              "CreatedById": "00536000002n46IAAQ",
+              "CreatedDate": "2016-07-17T15:12:45.000+0000",
+              "Description": "Get company announcements and other important updates",
+              "FullPhotoUrl": "https://c.na30.content.force.com/profilephoto/72936000000gnTY/F",
+              "HasPrivateFieldsAccess": true,
+              "Id": "0F936000000cQteCAE",
+              "IsArchived": false,
+              "IsAutoArchiveDisabled": false,
+              "IsBroadcast": false,
+              "LastFeedModifiedDate": "2016-07-17T15:12:45.000+0000",
+              "LastModifiedById": "00536000002n46IAAQ",
+              "LastModifiedDate": "2016-07-17T15:12:45.000+0000",
+              "LastReferencedDate": "2016-09-02T20:37:53.000+0000",
+              "LastViewedDate": "2016-09-02T20:37:53.000+0000",
+              "MediumPhotoUrl": "/profilephoto/72936000000gnTY/M",
+              "MemberCount": 3,
+              "Name": "All Anvisi LLC",
+              "OwnerId": "00536000002n46IAAQ",
+              "SmallPhotoUrl": "https://c.na30.content.force.com/profilephoto/72936000000gnTY/T",
+              "SystemModstamp": "2016-09-03T11:02:44.000+0000",
+              "attributes": {
+                "type": "CollaborationGroup",
+                "url": "/services/data/v37.0/sobjects/CollaborationGroup/0F936000000cQteCAE"
+              }
+            }
+          ]
+        ]
+    },{
+        "name": "group_member",
+        "Metadata": {
+          "table": "CollaborationGroupMember",
+          "columns": [
+            {
+              "name": "Id",
+              "type": "id",
+              "relationshipName": []
+            },
+            {
+              "name": "CollaborationGroupId",
+              "type": "reference",
+              "relationshipName": [
+                "CollaborationGroup"
+              ]
+            },
+            {
+              "name": "MemberId",
+              "type": "reference",
+              "relationshipName": [
+                "User"
+              ]
+            },
+            {
+              "name": "CollaborationRole",
+              "type": "picklist",
+              "relationshipName": []
+            },
+            {
+              "name": "NotificationFrequency",
+              "type": "picklist",
+              "relationshipName": []
+            },
+            {
+              "name": "CreatedDate",
+              "type": "datetime",
+              "relationshipName": []
+            },
+            {
+              "name": "CreatedById",
+              "type": "reference",
+              "relationshipName": [
+                "User"
+              ]
+            },
+            {
+              "name": "LastModifiedDate",
+              "type": "datetime",
+              "relationshipName": []
+            },
+            {
+              "name": "LastModifiedById",
+              "type": "reference",
+              "relationshipName": [
+                "User"
+              ]
+            },
+            {
+              "name": "SystemModstamp",
+              "type": "datetime",
+              "relationshipName": []
+            },
+            {
+              "name": "LastFeedAccessDate",
+              "type": "datetime",
+              "relationshipName": []
+            }
+          ]
+        },
+        "Records": [
+          [
+            {
+              "CollaborationGroupId": "0F936000000cQteCAE",
+              "CollaborationRole": "Standard",
+              "CreatedById": "00536000002w5sGAAQ",
+              "CreatedDate": "2016-09-02T20:04:00.000+0000",
+              "Id": "0FB36000000PqWoGAK",
+              "LastModifiedById": "00536000002w5sGAAQ",
+              "LastModifiedDate": "2016-09-02T20:04:00.000+0000",
+              "MemberId": "00536000002w5sGAAQ",
+              "NotificationFrequency": "N",
+              "SystemModstamp": "2016-09-02T20:04:00.000+0000",
+              "attributes": {
+                "type": "CollaborationGroupMember",
+                "url": "/services/data/v37.0/sobjects/CollaborationGroupMember/0FB36000000PqWoGAK"
+              }
+            }
+          ]
+        ]
+    },{
+        "name": "idea"
+    },{
+        "name": "idea_comment"
+    },{
+        "name": "lead"
+    },{
+        "name": "license"
+    },{
+        "name": "macro"
+    },{
+        "name": "note"
+    },{
+        "name": "opportunity"
+    },{
+        "name": "order"
+    },{
+        "name": "order_item"
+    },{
+        "name": "package"
+    },{
+        "name": "partner"
+    },{
+        "name": "product"
+    },{
+        "name": "record"
+    },{
+        "name": "service_order"
+    },{
+        "name": "solution"
+    },{
+        "name": "task"
+    },{
+        "name": "topic"
+    },{
+        "name": "user"
+    },{
+        "name": "user_dashboard"
+    }
+  ]
+}

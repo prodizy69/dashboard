@@ -2,7 +2,7 @@
 
 	'use strict';
 
-	ng.module('dashly', ['ngRoute'])
+	ng.module('dashly', ['ngRoute', 'gridster'])
 
 	.config(['$locationProvider', function($locationProvider) {
 		

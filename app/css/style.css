@@ -8425,3 +8425,9 @@ body.md-skin {
   width: 100%;
   height: 800px;
 }
+
+.dash-editor .schema-table,
+.dash-editor .schema-table > thead,
+.dash-editor .schema-table > tbody > tr {
+  border: 1px solid black;
+}

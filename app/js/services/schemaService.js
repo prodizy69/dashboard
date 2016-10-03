@@ -10,7 +10,7 @@
 
   function SchemaService($http, $q) {
 
-    var schemasUrl = 'config/schemas.json';
+    var schemasUrl = 'config/schema.json';
 
     this.schemas = [];
 

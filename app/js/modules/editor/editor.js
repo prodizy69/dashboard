@@ -10,9 +10,15 @@
 
   function EditorController($scope, $rootScope, DashboardService, $location) {
 
-    $scope.dInfo = { name: 'New Dashboard', components: [] };
+    var editorEle = $('.dash-editor');
+
+    $scope.editorType = 'dashboard';
+
+    $scope.editData = {};
+
+    $scope.work = { name: 'New Dashboard', components: [] };
     
-    var _chartType = $scope.dInfo.chart;
+    var _chartType = $scope.editData.chart;
     
     $scope.doughnutcomponents= [{
       "type": "chart",
@@ -50,13 +56,13 @@
 
       var dashboard = {};
 
-      if($scope.dInfo.chart === 'polar'){
+      if($scope.editData.chart === 'polar'){
         dashboard.components = $scope.polarcomponents;
-      } else if($scope.dInfo.chart==='doughnut'){
+      } else if($scope.editData.chart==='doughnut'){
         dashboard.components = $scope.doughnutcomponents;
       }
 
-      dashboard.name = $scope.dInfo.name;
+      dashboard.name = $scope.editData.name;
       
       DashboardService.addDashboard(dashboard);
 
@@ -65,10 +71,35 @@
       $location.path('/');
     };
 
+    $scope.cancel = function() {
+      $rootScope.$broadcast('disable-edit-mode');
+      $location.path('/');
+    };
+
+    $scope.$on('enable-edit-mode', function(event, data) {
+        $scope.editorType = data.type;
+    });
+
     $scope.onDrop = function(draggedItemType, draggedItemData) {
-      console.log('dropped > type > ' + draggedItemType + ' data > ' + draggedItemData);
+      if(draggedItemType === 'dataobject') {
+        var dataObject = JSON.parse(draggedItemData);
+
+        createTableForData(dataObject.Metadata);
+      }
     };
     
+    function createTableForData(data) {
+      var _table = $('<table class="schema-table"><thead><tr><th>'+data.table+'</th></tr></thead><tbody></tbody></table>');
+      var row, cell;
+      ng.forEach(data.columns, function(column, trIndex) {
+        // row = _table[0].insertRow(trIndex+1);
+        // cell = row.insertCell(0);
+        // cell.innerHTML = column.name;
+        _table.find('tbody').append('<tr><td>'+column.name+'</td></tr>');
+      });
+      _table.appendTo(editorEle);
+      _table.draggable();
+    }
   }
 
 })(angular);

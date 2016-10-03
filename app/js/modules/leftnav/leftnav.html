@@ -20,35 +20,57 @@
             </li>
         </ul>
         <ul id="side-menu">
-            <li class="active">
+            
+            <li ng-if="!editMode">
                 <i class="fa fa-th-large"></i><span class="nav-label">Dashboards</span> <span class="fa arrow"></span>
                 <ul class="nav nav-second-level">
                     <li ng-class="{'active': selectedDashboard.id === dashboard.id}" ng-repeat="dashboard in dashboards">
-                        <a href="" ng-click="handleNavClick('dashboard', dashboard)">
+                        <a href="" ng-click="showDashboard(dashboard)">
                             <span> {{dashboard.name}} </span>
                         </a>
                     </li>
                 </ul>
             </li>
-            <li>
+
+            <li ng-if="editMode && editType === 'dashboard'">
                 <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label"> Charts </span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li ng-repeat="chart in charts track by $index">
                         <a href="" id="chart{{$index}}">
-                            <span draggable drag-data="{{chart.type}}" drag-data-type="chart"> {{chart.name}} </span>
+                            <i class="fa fa-{{chart.fa_icon}}" aria-hidden="true"></i>
+                            <span draggable drag-data="{{chart}}" drag-data-type="chart"> {{chart.name}} </span>
                         </a>
                     </li>
                 </ul>
             </li>
-            <li>
+
+            <li ng-if="editMode && editType === 'dashboard'">
                 <a href="#"><i class="fa fa-bar-chart-o"></i><span class="nav-label"> Schemas </span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li ng-class="{'active': selectedSchema.id === schema.id}" ng-repeat="schema in schemas track by $index">
-                        <a href="" id="schema{{$index}}" ng-click="handleNavClick('schema', schema)" draggable> {{schema.name}} </a>
+                    <li ng-if="!schemas.length">
+                        <a href="" ng-click="enableSchemaEditMode()"> Create Schema ... </a>
+                    </li>
+                    <li ng-class="{'active': selectedSchema.id === schema.id}" ng-repeat="schema in schemas track by $index" ng-if="schemas.length">
+                        <a href="" id="schema{{$index}}">
+                            <span draggable drag-data="{{schema}}" drag-data-type="schema"> {{schema.name}} </span>
+                        </a>
                     </li>
                 </ul>
-            </li>  
-            <li><a href="" ng-click="routeUsers()"><i class="fa fa-users"></i> <span class="nav-label">Users</span></a></li>
+            </li>
+            
+            <li ng-if="editMode && editType === 'schema'">
+                <a href="#"><i class="fa fa-bar-chart-o"></i><span class="nav-label"> Data Objects </span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li ng-repeat="obj in dataObjects track by $index">
+                        <a href="" id="obj{{$index}}">
+                            <span draggable drag-data="{{obj}}" drag-data-type="dataobject"> {{obj.name}} </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            
+            <!-- <li><a href="" ng-click="routeUsers()"><i class="fa fa-users"></i> <span class="nav-label">Users</span></a></li> -->
+
         </ul>
     </div>
 </nav>

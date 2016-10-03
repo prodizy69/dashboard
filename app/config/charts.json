@@ -2,26 +2,26 @@
   "charts": [{
     "name": "Bar Chart",
     "type": "bar",
-    "icon": ""
+    "fa_icon": "bar-chart"
   },{
     "name": "Bubble Chart",
     "type": "bubble",
-    "icon": ""
+    "fa_icon": "line-chart"
   },{
     "name": "Doughnut Chart",
     "type": "doughnut",
-    "icon": ""
+    "fa_icon": "pie-chart"
   },{
     "name": "Line Chart",
     "type": "line",
-    "icon": ""
+    "fa_icon": "line-chart"
   },{
     "name": "Polar Area Chart",
     "type": "polar",
-    "icon": ""
+    "fa_icon": "pie-chart"
   },{
     "name": "Radar Chart",
     "type": "radar",
-    "icon": ""
+    "fa_icon": "area-chart"
   }]
 }
