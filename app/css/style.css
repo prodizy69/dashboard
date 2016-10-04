@@ -8421,7 +8421,7 @@ body.md-skin {
 }
 
 .dash-editor {
-  background: url('../img/grid.png') repeat;
+  /*background: url('../img/grid.png') repeat;*/
   width: 100%;
   height: 800px;
 }
@@ -8430,4 +8430,40 @@ body.md-skin {
 .dash-editor .schema-table > thead,
 .dash-editor .schema-table > tbody > tr {
   border: 1px solid black;
+}
+.dash-editor .schema-table > thead {
+  background-color: royalblue;
+  color: white;
+}
+.dash-editor .schema-table th,
+.dash-editor .schema-table td {
+  padding: 5px;
+}
+.dash-editor .schema-table .table-icon {
+  margin-right: 5px;
+}
+.dash-editor .schema-table .table-title {
+  
+}
+.dash-editor .schema-table .table-info {
+  float: right;
+  font-size: 125%;
+  margin-left: 40px;
+}
+.dash-editor .schema-table .tr-icon {
+  margin-right: 5px;
+  border: 1px solid #cecece;
+  padding: 1px;
+  /*color: #a9a9a9;*/
+}
+.dash-editor .schema-table .tr-name {
+
+}
+.dash-editor .schema-table .tr-tools {
+  float: right;
+  font-size: 125%;
+  margin-left: 40px;
+}
+.dash-editor .schema-table .tr-tools i:last-child {
+  margin-left: 10px;
 }

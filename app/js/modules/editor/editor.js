@@ -87,18 +87,28 @@
         createTableForData(dataObject.Metadata);
       }
     };
+
+    function getRowIconClass(column) {
+      var className = 'fa fa-font';
+      if(column.type === 'int' || column.type === 'int') {
+        className = 'fa fa-hashtag';
+      } else if(column.type === 'date' || column.type === 'datetime'){
+        className = 'fa fa-calendar';
+      } else {
+        className = 'fa fa-font';
+      }
+
+      return className;
+    }
     
     function createTableForData(data) {
-      var _table = $('<table class="schema-table"><thead><tr><th>'+data.table+'</th></tr></thead><tbody></tbody></table>');
+      var _table = $('<table class="schema-table"><thead><tr><th><span class="table-icon"><i class="fa fa-database" aria-hidden="true"></i></span><span class="table-title">'+data.table+'</span><span class="table-info"><i class="fa fa-info-circle" aria-hidden="true"></i></span></th></tr></thead><tbody></tbody></table>');
       var row, cell;
       ng.forEach(data.columns, function(column, trIndex) {
-        // row = _table[0].insertRow(trIndex+1);
-        // cell = row.insertCell(0);
-        // cell.innerHTML = column.name;
-        _table.find('tbody').append('<tr><td>'+column.name+'</td></tr>');
+        _table.find('tbody').append('<tr><td><span class="tr-icon"><i class="'+getRowIconClass(column)+'" aria-hidden="true"></i></span><span class="tr-name">'+column.name+'</span><span class="tr-tools"><i class="fa fa-circle-thin" aria-hidden="true"></i><i class="fa fa-filter" aria-hidden="true"></i></span></td></tr>');
       });
       _table.appendTo(editorEle);
-      _table.draggable();
+      _table.draggable({ handle: 'thead', cursor: 'crosshair' });
     }
   }
 
