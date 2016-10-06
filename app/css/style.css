@@ -8488,3 +8488,14 @@ body.md-skin {
 .dash-editor .schema-table .tr-draw-right-handle.injoin {
   color: royalblue;
 }
+.dash-editor .editor-chart-container {
+  min-width: 200px;
+  min-height: 200px;
+  background-color: #fff;
+}
+.dash-editor .editing-chart {
+
+}
+.dash-editor .editing-chart .middle {
+  padding: 20px;
+}

@@ -13,8 +13,6 @@
     var editorEle = $('.dash-editor');
     var linkLine = editorEle.find('#link-line');
 
-    var lineSVG = editorEle.connectSVG();
-
     var chartTemplateUrl = 'js/modules/editor/editor-chart-ui.html';
     var tableTemplateUrl = 'js/modules/editor/editor-table-ui.html';
 
@@ -101,6 +99,14 @@
       }
     };
 
+    $scope.addDimensions = function($event) {
+      alert('add dimnensions');
+    };
+
+    $scope.addMeasure = function() {
+      alert('add measure');
+    };
+
     function createTableForData(data) {
       var tableData = ng.copy(data);
       ng.forEach(tableData.Metadata.columns, function(column) {
@@ -118,22 +124,24 @@
       });
 
       $timeout(function() {
-        editorEle.find('table').draggable({
-          handle: 'thead',
-          drag: function(event, ui) {
-            lineSVG.redrawLines();
-          }
-        });
+        editorEle.find('table').draggable({ handle: 'thead' });
       }, 1000);
     }
 
     function createChart(data) {
-      var _chart = $('<div class="editing-chart"></div>');
-      _chart.append('<div class="middle"><span><i class="'+data.iconClass+'"></i></span></div>');
-      _chart.append('<div class="controls"><button ng-click="addDimensions()">Add Dimensions</button><button ng-click="addMeasure()">Add Measure</button></div>');
-      _chart.appendTo(editorEle);
+      $http.get(chartTemplateUrl)
+      .then(function(res) {
+        var _scope = $scope.$new(false);
+        _scope.chartData = data;
+        var _table = $compile(res.data)(_scope);
+        _table.appendTo(editorEle);
+      });
 
-      _chart.resizable();
+      $timeout(function() {
+        editorEle.find('.editor-chart-container')
+        .draggable()
+        .resizable();
+      }, 1000);
     }
 
   }

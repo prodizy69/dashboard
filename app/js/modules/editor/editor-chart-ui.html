@@ -1,13 +1,17 @@
-<div class="editor-table-container">
+<div class="editor-chart-container text-center">
   <div class="editing-chart">
     <div class="middle">
       <span>
-        <i class="'+data.iconClass+'"></i>
+        <i class="{{chartData.iconClass}}"></i>
       </span>
     </div>
     <div class="controls">
-      <button ng-click="addDimensions()"> Add Dimensions </button>
-      <button ng-click="addMeasure()"> Add Measure </button>
+      <div>
+        <button ng-click="addDimensions()"> Add Dimensions </button>
+      </div>
+      <div>
+        <button ng-click="addMeasure()"> Add Measure </button>
+      </div>
     </div>
   </div>
 </div>
