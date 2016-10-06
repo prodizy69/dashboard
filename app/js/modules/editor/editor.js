@@ -30,6 +30,8 @@
 
       $rootScope.$broadcast('dashboard-added');
 
+      $rootScope.$broadcast('disable-edit-mode');
+
       $location.path('/');
     };
 
@@ -129,19 +131,25 @@
     }
 
     function createChart(data) {
+      var _scope = null;
       $http.get(chartTemplateUrl)
       .then(function(res) {
-        var _scope = $scope.$new(false);
+        _scope = $scope.$new(false);
         _scope.chartData = data;
         var _table = $compile(res.data)(_scope);
         _table.appendTo(editorEle);
-      });
 
-      $timeout(function() {
-        editorEle.find('.editor-chart-container')
-        .draggable()
-        .resizable();
-      }, 1000);
+        $timeout(function() {
+          editorEle.find('.editor-chart-container')
+          .draggable()
+          .resizable({
+            resize: function(event, ui) {
+              _scope.chartData.width = ui.size.width;
+              _scope.chartData.height = ui.size.height;
+            }
+          });
+        }, 1000);
+      });
     }
 
   }
