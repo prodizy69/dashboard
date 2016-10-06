@@ -32,7 +32,7 @@
     }
 
     this.addDashboard = function(dashboard) {
-      dashboard.id = this.dashboards.length + 1;
+      dashboard.id = this.dashboards.length + 1 + "";
       this.dashboards.push(dashboard);
     }
 

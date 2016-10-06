@@ -8489,8 +8489,8 @@ body.md-skin {
   color: royalblue;
 }
 .dash-editor .editor-chart-container {
-  min-width: 200px;
-  min-height: 200px;
+  width: 200px;
+  height: 200px;
   background-color: #fff;
 }
 .dash-editor .editing-chart {
@@ -8498,4 +8498,11 @@ body.md-skin {
 }
 .dash-editor .editing-chart .middle {
   padding: 20px;
+}
+.dash-editor .chart-close {
+  position: absolute;
+  right: 0px;
+  top: -7px;
+  font-size: 150%;
+  cursor: pointer;
 }

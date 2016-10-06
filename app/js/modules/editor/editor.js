@@ -11,22 +11,17 @@
   function EditorController($scope, $rootScope, DashboardService, SchemaService, $location, $http, $compile, $timeout, $routeParams) {
 
     var editorEle = $('.dash-editor');
-    var linkLine = editorEle.find('#link-line');
 
     var chartTemplateUrl = 'js/modules/editor/editor-chart-ui.html';
     var tableTemplateUrl = 'js/modules/editor/editor-table-ui.html';
 
     $scope.editorType = 'dashboard';
 
-    $scope.editData = { schema: { tables: [] }, charts: [] };
+    $scope.editData = { schema: { name: '', tables: [] }, dashboard: { name: '', components: [] } };
 
     $scope.saveDashboard = function() {
 
-      var dashboard = {};
-
-      dashboard.name = $scope.editData.name;
-      
-      DashboardService.addDashboard(dashboard);
+      DashboardService.addDashboard($scope.editData.dashboard);
 
       $rootScope.$broadcast('dashboard-added');
 
@@ -55,7 +50,7 @@
         tables.push({ table: table.Metadata.table, fields: selectedFields, conditionalField: conditionalField });
       });
 
-      SchemaService.addSchema({ name: $scope.editData.name, queryData: tables });
+      SchemaService.addSchema({ name: $scope.editData.schema.name, queryData: tables });
 
       $rootScope.$broadcast('schema-added');
 
@@ -74,7 +69,7 @@
       if(draggedItemType === 'dataobject') {
         createTableForData(JSON.parse(draggedItemData));
       } else if(draggedItemType === 'chart') {
-        createChart(JSON.parse(draggedItemData));
+        addChart(JSON.parse(draggedItemData));
       }
     };
 
@@ -93,12 +88,6 @@
 
     $scope.toggleTableField = function(column) {
       column.selected = !column.selected;
-    };
-
-    $scope.handleLinkMouseEvent = function(eventType, column) {
-      if(eventType === 'click') {
-        column.joined = !column.joined;
-      }
     };
 
     $scope.addDimensions = function($event) {
@@ -130,14 +119,32 @@
       }, 1000);
     }
 
-    function createChart(data) {
+    function addChart(data) {
       var _scope = null;
       $http.get(chartTemplateUrl)
       .then(function(res) {
+        
         _scope = $scope.$new(false);
         _scope.chartData = data;
-        var _table = $compile(res.data)(_scope);
-        _table.appendTo(editorEle);
+        _scope.chartData.cIndex = $scope.editData.dashboard.components.length;
+        
+        var _chart = $compile(res.data)(_scope);
+        _chart.appendTo(editorEle);
+
+        _scope.chartData.el = _chart;
+
+        $scope.editData.dashboard.components.push({
+          type: 'chart',
+          subtype: data.type,
+          title: '',
+          data: { },
+          width: 300,
+          height: 300,
+          sizeX: 2,
+          sizeY: 2,
+          row: 0,
+          col: 0
+        });
 
         $timeout(function() {
           editorEle.find('.editor-chart-container')
@@ -151,6 +158,11 @@
         }, 1000);
       });
     }
+
+    $scope.removeChart = function(chartData) {
+      $scope.editData.dashboard.components.splice(chartData.cIndex, 1);
+      chartData.el.remove();
+    };
 
   }
 
