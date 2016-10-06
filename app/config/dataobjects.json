@@ -1,819 +1,795 @@
 {
-  "dataObjects": [{
-        "name": "account",
-        "Metadata": {
-            "table": "Account",
-            "columns": [
-              {
-                "name": "Id",
-                "type": "id",
-                "relationshipName": []
-              },
-              {
-                "name": "IsDeleted",
-                "type": "boolean",
-                "relationshipName": []
-              },
-              {
-                "name": "MasterRecordId",
-                "type": "reference",
-                "relationshipName": [
-                  "Account"
-                ]
-              },
-              {
-                "name": "Name",
-                "type": "string",
-                "relationshipName": []
-              },
-              {
-                "name": "Type",
-                "type": "picklist",
-                "relationshipName": []
-              },
-              {
-                "name": "ParentId",
-                "type": "reference",
-                "relationshipName": [
-                  "Account"
-                ]
-              },
-              {
-                "name": "BillingStreet",
-                "type": "textarea",
-                "relationshipName": []
-              },
-              {
-                "name": "BillingCity",
-                "type": "string",
-                "relationshipName": []
-              },
-              {
-                "name": "BillingState",
-                "type": "string",
-                "relationshipName": []
-              },
-              {
-                "name": "BillingPostalCode",
-                "type": "string",
-                "relationshipName": []
-              },
-              {
-                "name": "BillingCountry",
-                "type": "string",
-                "relationshipName": []
-              },
-              {
-                "name": "BillingLatitude",
-                "type": "double",
-                "relationshipName": []
-              },
-              {
-                "name": "BillingLongitude",
-                "type": "double",
-                "relationshipName": []
-              },
-              {
-                "name": "BillingGeocodeAccuracy",
-                "type": "picklist",
-                "relationshipName": []
-              },
-              {
-                "name": "BillingAddress",
-                "type": "address",
-                "relationshipName": []
-              },
-              {
-                "name": "ShippingStreet",
-                "type": "textarea",
-                "relationshipName": []
-              },
-              {
-                "name": "ShippingCity",
-                "type": "string",
-                "relationshipName": []
-              },
-              {
-                "name": "ShippingState",
-                "type": "string",
-                "relationshipName": []
-              },
-              {
-                "name": "ShippingPostalCode",
-                "type": "string",
-                "relationshipName": []
-              },
-              {
-                "name": "ShippingCountry",
-                "type": "string",
-                "relationshipName": []
-              },
-              {
-                "name": "ShippingLatitude",
-                "type": "double",
-                "relationshipName": []
-              },
-              {
-                "name": "ShippingLongitude",
-                "type": "double",
-                "relationshipName": []
-              },
-              {
-                "name": "ShippingGeocodeAccuracy",
-                "type": "picklist",
-                "relationshipName": []
-              },
-              {
-                "name": "ShippingAddress",
-                "type": "address",
-                "relationshipName": []
-              },
-              {
-                "name": "Phone",
-                "type": "phone",
-                "relationshipName": []
-              },
-              {
-                "name": "Fax",
-                "type": "phone",
-                "relationshipName": []
-              },
-              {
-                "name": "Website",
-                "type": "url",
-                "relationshipName": []
-              },
-              {
-                "name": "PhotoUrl",
-                "type": "url",
-                "relationshipName": []
-              },
-              {
-                "name": "Industry",
-                "type": "picklist",
-                "relationshipName": []
-              },
-              {
-                "name": "AnnualRevenue",
-                "type": "currency",
-                "relationshipName": []
-              },
-              {
-                "name": "NumberOfEmployees",
-                "type": "int",
-                "relationshipName": []
-              },
-              {
-                "name": "Description",
-                "type": "textarea",
-                "relationshipName": []
-              },
-              {
-                "name": "OwnerId",
-                "type": "reference",
-                "relationshipName": [
-                  "User"
-                ]
-              },
-              {
-                "name": "CreatedDate",
-                "type": "datetime",
-                "relationshipName": []
-              },
-              {
-                "name": "CreatedById",
-                "type": "reference",
-                "relationshipName": [
-                  "User"
-                ]
-              },
-              {
-                "name": "LastModifiedDate",
-                "type": "datetime",
-                "relationshipName": []
-              },
-              {
-                "name": "LastModifiedById",
-                "type": "reference",
-                "relationshipName": [
-                  "User"
-                ]
-              },
-              {
-                "name": "SystemModstamp",
-                "type": "datetime",
-                "relationshipName": []
-              },
-              {
-                "name": "LastActivityDate",
-                "type": "date",
-                "relationshipName": []
-              },
-              {
-                "name": "LastViewedDate",
-                "type": "datetime",
-                "relationshipName": []
-              },
-              {
-                "name": "LastReferencedDate",
-                "type": "datetime",
-                "relationshipName": []
-              },
-              {
-                "name": "Jigsaw",
-                "type": "string",
-                "relationshipName": []
-              },
-              {
-                "name": "JigsawCompanyId",
-                "type": "string",
-                "relationshipName": []
-              },
-              {
-                "name": "AccountSource",
-                "type": "picklist",
-                "relationshipName": []
-              },
-              {
-                "name": "SicDesc",
-                "type": "string",
-                "relationshipName": []
-              }
-            ]
-        },
-        "Records": [
-            [
-              {
-                "BillingAddress": {
-                  "city": "GETZVILLE",
-                  "country": "USA",
-                  "countryCode": null,
-                  "geocodeAccuracy": null,
-                  "latitude": null,
-                  "longitude": null,
-                  "postalCode": null,
-                  "state": "New York",
-                  "stateCode": null,
-                  "street": "480 CROSSPOINT PKWY"
-                },
-                "BillingCity": "GETZVILLE",
-                "BillingCountry": "USA",
-                "BillingState": "New York",
-                "BillingStreet": "480 CROSSPOINT PKWY",
-                "CreatedById": "00536000002n46IAAQ",
-                "CreatedDate": "2016-08-30T21:04:10.000+0000",
-                "Fax": "716-564-6262",
-                "Id": "0013600000Z3G1pAAF",
-                "IsDeleted": false,
-                "LastModifiedById": "00536000002n46IAAQ",
-                "LastModifiedDate": "2016-08-30T21:04:10.000+0000",
-                "LastReferencedDate": "2016-09-02T18:54:27.000+0000",
-                "LastViewedDate": "2016-09-02T18:54:27.000+0000",
-                "Name": "FIDELIS CARE NEW YORK",
-                "OwnerId": "00536000002n46IAAQ",
-                "Phone": "716-564-6162",
-                "PhotoUrl": "/services/images/photo/0013600000Z3G1pAAF",
-                "ShippingAddress": {
-                  "city": null,
-                  "country": "USA",
-                  "countryCode": null,
-                  "geocodeAccuracy": null,
-                  "latitude": null,
-                  "longitude": null,
-                  "postalCode": null,
-                  "state": null,
-                  "stateCode": null,
-                  "street": null
-                },
-                "ShippingCountry": "USA",
-                "SystemModstamp": "2016-09-03T11:02:44.000+0000",
-                "attributes": {
-                  "type": "Account",
-                  "url": "/services/data/v37.0/sobjects/Account/0013600000Z3G1pAAF"
-                }
-              }
-            ]
+  "dataObjects": [
+    {
+      "name": "agent",
+      "Metadata": {
+        "table": "AGENT",
+        "columns": [
+          {
+            "name": "AGENT_CODE",
+            "type": "string"
+          },{
+            "name": "AGENT_NAME",
+            "type": "string"
+          },{
+            "name": "WORKING_AREA",
+            "type": "string"
+          },{
+            "name": "COMMISSION",
+            "type": "number"
+          },{
+            "name": "PHONE_NO",
+            "type": "string"
+          },{
+            "name": "COUNTRY",
+            "type": "string"
+          }
         ]
-    },{
-        "name": "asset"
-    },{
-        "name": "campaign"
-    },{
-        "name": "case",
-        "Metadata": {
-          "table": "Case",
-          "columns": [
-            {
-              "name": "Id",
-              "type": "id",
-              "relationshipName": []
-            },
-            {
-              "name": "IsDeleted",
-              "type": "boolean",
-              "relationshipName": []
-            },
-            {
-              "name": "CaseNumber",
-              "type": "string",
-              "relationshipName": []
-            },
-            {
-              "name": "ContactId",
-              "type": "reference",
-              "relationshipName": [
-                "Contact"
-              ]
-            },
-            {
-              "name": "AccountId",
-              "type": "reference",
-              "relationshipName": [
-                "Account"
-              ]
-            },
-            {
-              "name": "SourceId",
-              "type": "reference",
-              "relationshipName": [
-                "SocialPost"
-              ]
-            },
-            {
-              "name": "ParentId",
-              "type": "reference",
-              "relationshipName": [
-                "Case"
-              ]
-            },
-            {
-              "name": "SuppliedName",
-              "type": "string",
-              "relationshipName": []
-            },
-            {
-              "name": "SuppliedEmail",
-              "type": "email",
-              "relationshipName": []
-            },
-            {
-              "name": "SuppliedPhone",
-              "type": "string",
-              "relationshipName": []
-            },
-            {
-              "name": "SuppliedCompany",
-              "type": "string",
-              "relationshipName": []
-            },
-            {
-              "name": "Type",
-              "type": "picklist",
-              "relationshipName": []
-            },
-            {
-              "name": "Status",
-              "type": "picklist",
-              "relationshipName": []
-            },
-            {
-              "name": "Reason",
-              "type": "picklist",
-              "relationshipName": []
-            },
-            {
-              "name": "Origin",
-              "type": "picklist",
-              "relationshipName": []
-            },
-            {
-              "name": "Subject",
-              "type": "string",
-              "relationshipName": []
-            },
-            {
-              "name": "Priority",
-              "type": "picklist",
-              "relationshipName": []
-            },
-            {
-              "name": "Description",
-              "type": "textarea",
-              "relationshipName": []
-            },
-            {
-              "name": "IsClosed",
-              "type": "boolean",
-              "relationshipName": []
-            },
-            {
-              "name": "ClosedDate",
-              "type": "datetime",
-              "relationshipName": []
-            },
-            {
-              "name": "IsEscalated",
-              "type": "boolean",
-              "relationshipName": []
-            },
-            {
-              "name": "OwnerId",
-              "type": "reference",
-              "relationshipName": [
-                "Group",
-                "User"
-              ]
-            },
-            {
-              "name": "CreatedDate",
-              "type": "datetime",
-              "relationshipName": []
-            },
-            {
-              "name": "CreatedById",
-              "type": "reference",
-              "relationshipName": [
-                "User"
-              ]
-            },
-            {
-              "name": "LastModifiedDate",
-              "type": "datetime",
-              "relationshipName": []
-            },
-            {
-              "name": "LastModifiedById",
-              "type": "reference",
-              "relationshipName": [
-                "User"
-              ]
-            },
-            {
-              "name": "SystemModstamp",
-              "type": "datetime",
-              "relationshipName": []
-            },
-            {
-              "name": "LastViewedDate",
-              "type": "datetime",
-              "relationshipName": []
-            },
-            {
-              "name": "LastReferencedDate",
-              "type": "datetime",
-              "relationshipName": []
-            }
-          ]
-        },
-        "Records": [
-          [
-            {
-              "AccountId": "0013600000RSoV0AAL",
-              "BusinessHoursId": "01m36000000EcxmAAC",
-              "CaseNumber": "00001000",
-              "ContactId": "0033600000Ja8U5AAJ",
-              "CreatedById": "00536000002n46IAAQ",
-              "CreatedDate": "2016-07-05T20:13:40.000+0000",
-              "Id": "50036000003Kz5IAAS",
-              "IsClosed": false,
-              "IsClosedOnCreate": false,
-              "IsDeleted": false,
-              "IsEscalated": false,
-              "LastModifiedById": "00536000002n46IAAQ",
-              "LastModifiedDate": "2016-07-05T20:13:40.000+0000",
-              "Origin": "Phone",
-              "OwnerId": "00536000002n46IAAQ",
-              "Priority": "High",
-              "Status": "Escalated",
-              "Subject": "Sample Case: Our Widgets have not been delivered.",
-              "SystemModstamp": "2016-07-05T20:13:40.000+0000",
-              "attributes": {
-                "type": "Case",
-                "url": "/services/data/v37.0/sobjects/Case/50036000003Kz5IAAS"
-              }
-            }
-          ]
+      },
+      "Records": [
+        {
+          "AGENT_CODE": "A007",
+          "AGENT_NAME": "Ramasundar",
+          "WORKING_AREA": "Bangalore",
+          "COMMISSION": 0.15,
+          "PHONE_NO": "077-25814763",
+          "COUNTRY": ""
+        },{
+          "AGENT_CODE": "A003",
+          "AGENT_NAME": "Alex",
+          "WORKING_AREA": "London",
+          "COMMISSION": 0.13,
+          "PHONE_NO": "075-12458979",
+          "COUNTRY": ""
+        },{
+          "AGENT_CODE": "A008",
+          "AGENT_NAME": "Alfrod",
+          "WORKING_AREA": "New York",
+          "COMMISSION": 0.12,
+          "PHONE_NO": "044-25874365",
+          "COUNTRY": ""
+        },{
+          "AGENT_CODE": "A011",
+          "AGENT_NAME": "Ravi Kumar",
+          "WORKING_AREA": "Bangalore",
+          "COMMISSION": 0.15,
+          "PHONE_NO": "077-45629868",
+          "COUNTRY": ""
+        },{
+          "AGENT_CODE": "A010",
+          "AGENT_NAME": "Santakumar",
+          "WORKING_AREA": "Chennai",
+          "COMMISSION": 0.14,
+          "PHONE_NO": "007-22388644",
+          "COUNTRY": ""
+        },{
+          "AGENT_CODE": "A012",
+          "AGENT_NAME": "Lucida",
+          "WORKING_AREA": "San Jose",
+          "COMMISSION": 0.12,
+          "PHONE_NO": "044-52981654",
+          "COUNTRY": ""
+        },{
+          "AGENT_CODE": "A005",
+          "AGENT_NAME": "Anderson",
+          "WORKING_AREA": "Brisban",
+          "COMMISSION": 0.13,
+          "PHONE_NO": "045-21443379",
+          "COUNTRY": ""
+        },{
+          "AGENT_CODE": "A001",
+          "AGENT_NAME": "Subbarao",
+          "WORKING_AREA": "Bangalore",
+          "COMMISSION": 0.14,
+          "PHONE_NO": "077-12346676",
+          "COUNTRY": ""
+        },{
+          "AGENT_CODE": "A002",
+          "AGENT_NAME": "Mukesh",
+          "WORKING_AREA": "Mumbai",
+          "COMMISSION": 0.11,
+          "PHONE_NO": "029-12358964",
+          "COUNTRY": ""
+        },{
+          "AGENT_CODE": "A006",
+          "AGENT_NAME": "McDen",
+          "WORKING_AREA": "London",
+          "COMMISSION": 0.15,
+          "PHONE_NO": "078-22338945",
+          "COUNTRY": ""
+        },{
+          "AGENT_CODE": "A004",
+          "AGENT_NAME": "Ivan",
+          "WORKING_AREA": "Toronto",
+          "COMMISSION": 0.15,
+          "PHONE_NO": "008-22544166",
+          "COUNTRY": ""
+        },{
+          "AGENT_CODE": "A009",
+          "AGENT_NAME": "Benjamin",
+          "WORKING_AREA": "Hampshire",
+          "COMMISSION": 0.11,
+          "PHONE_NO": "008-22536178",
+          "COUNTRY": ""
+        }
+      ]
+    },
+    {
+      "name": "customer",
+      "Metadata": {
+        "table": "CUSTOMER",
+        "columns": [
+          {
+            "name": "CUST_CODE",
+            "type": "string"
+          },{
+            "name": "CUST_NAME",
+            "type": "string"
+          },{
+            "name": "CUST_CITY",
+            "type": "string"
+          },{
+            "name": "WORKING_AREA",
+            "type": "string"
+          },{
+            "name": "CUST_COUNTRY",
+            "type": "string"
+          },{
+            "name": "GRADE",
+            "type": "number"
+          },{
+            "name": "OPENING_AMT",
+            "type": "number"
+          },{
+            "name": "RECEIVED_AMT",
+            "type": "number"
+          },{
+            "name": "PAYMENT_AMT",
+            "type": "number"
+          },{
+            "name": "OUTSTANDING_AMT",
+            "type": "number"
+          },{
+            "name": "PHONE_NO",
+            "type": "string"
+          },{
+            "name": "AGENT_CODE",
+            "type": "string"
+          }
         ]
+      },
+      "RECORDS": [
+        {
+          "CUST_CODE": "C00013",
+          "CUST_NAME": "Holmes",
+          "CUST_CITY": "London",
+          "WORKING_AREA": "London",
+          "CUST_COUNTRY": "UK",
+          "GRADE": 2,
+          "OPENING_AMT": 6000.00,
+          "RECEIVED_AMT": 5000.00,
+          "PAYMENT_AMT": 7000.00,
+          "OUTSTANDING_AMT": 4000.00,
+          "PHONE_NO": "BBBBBBB",
+          "AGENT_CODE": "A003"
+        },{
+          "CUST_CODE": "C00001",
+          "CUST_NAME": "Micheal",
+          "CUST_CITY": "New York",
+          "WORKING_AREA": "New York",
+          "CUST_COUNTRY": "USA",
+          "GRADE": 2,
+          "OPENING_AMT": 3000.00,
+          "RECEIVED_AMT": 5000.00,
+          "PAYMENT_AMT": 2000.00,
+          "OUTSTANDING_AMT": 6000.00,
+          "PHONE_NO": "CCCCCCC",
+          "AGENT_CODE": "A008"
+        },{
+          "CUST_CODE": "C00020",
+          "CUST_NAME": "Albert",
+          "CUST_CITY": "New York",
+          "WORKING_AREA": "New York",
+          "CUST_COUNTRY": "USA",
+          "GRADE": 3,
+          "OPENING_AMT": 5000.00,
+          "RECEIVED_AMT": 7000.00,
+          "PAYMENT_AMT": 6000.00,
+          "OUTSTANDING_AMT": 6000.00,
+          "PHONE_NO": "BBBBSBB",
+          "AGENT_CODE": "A008"
+        },{
+          "CUST_CODE": "C00025",
+          "CUST_NAME": "Ravindran",
+          "CUST_CITY": "Bangalore",
+          "WORKING_AREA": "Bangalore",
+          "CUST_COUNTRY": "India",
+          "GRADE": 2,
+          "OPENING_AMT": 5000.00,
+          "RECEIVED_AMT": 7000.00,
+          "PAYMENT_AMT": 4000.00,
+          "OUTSTANDING_AMT": 8000.00,
+          "PHONE_NO": "AVAVAVA",
+          "AGENT_CODE": "A011"
+        },{
+          "CUST_CODE": "C000243",
+          "CUST_NAME": "Cook",
+          "CUST_CITY": "London",
+          "WORKING_AREA": "London",
+          "CUST_COUNTRY": "UK",
+          "GRADE": 2,
+          "OPENING_AMT": 4000.00,
+          "RECEIVED_AMT": 9000.00,
+          "PAYMENT_AMT": 7000.00,
+          "OUTSTANDING_AMT": 6000.00,
+          "PHONE_NO": "FSDDSDF",
+          "AGENT_CODE": "A006"
+        },{
+          "CUST_CODE": "C00002",
+          "CUST_NAME": "Stuart",
+          "CUST_CITY": "London",
+          "WORKING_AREA": "London",
+          "CUST_COUNTRY": "UK",
+          "GRADE": 1,
+          "OPENING_AMT": 6000.00,
+          "RECEIVED_AMT": 8000.00,
+          "PAYMENT_AMT": 3000.00,
+          "OUTSTANDING_AMT": 11000.00,
+          "PHONE_NO": "GFSGERS",
+          "AGENT_CODE": "A003"
+        },{
+          "CUST_CODE": "C00002",
+          "CUST_NAME": "Bolt",
+          "CUST_CITY": "New York",
+          "WORKING_AREA": "New York",
+          "CUST_COUNTRY": "USA",
+          "GRADE": 3,
+          "OPENING_AMT": 5000.00,
+          "RECEIVED_AMT": 7000.00,
+          "PAYMENT_AMT": 9000.00,
+          "OUTSTANDING_AMT": 3000.00,
+          "PHONE_NO": "DDNRDRH",
+          "AGENT_CODE": "A008"
+        },{
+          "CUST_CODE": "C00018",
+          "CUST_NAME": "Fleming",
+          "CUST_CITY": "Brisban",
+          "WORKING_AREA": "Brisban",
+          "CUST_COUNTRY": "Australia",
+          "GRADE": 2,
+          "OPENING_AMT": 7000.00,
+          "RECEIVED_AMT": 7000.00,
+          "PAYMENT_AMT": 9000.00,
+          "OUTSTANDING_AMT": 5000.00,
+          "PHONE_NO": "NHBGVFC",
+          "AGENT_CODE": "A005"
+        },{
+          "CUST_CODE": "C00021",
+          "CUST_NAME": "Jacks",
+          "CUST_CITY": "Brisban",
+          "WORKING_AREA": "Brisban",
+          "CUST_COUNTRY": "Australia",
+          "GRADE": 1,
+          "OPENING_AMT": 7000.00,
+          "RECEIVED_AMT": 7000.00,
+          "PAYMENT_AMT": 7000.00,
+          "OUTSTANDING_AMT": 7000.00,
+          "PHONE_NO": "WERTGDF",
+          "AGENT_CODE": "A005"
+        },{
+          "CUST_CODE": "C00019",
+          "CUST_NAME": "Yearannaidu",
+          "CUST_CITY": "Chennai",
+          "WORKING_AREA": "Chennai",
+          "CUST_COUNTRY": "India",
+          "GRADE": 1,
+          "OPENING_AMT": 8000.00,
+          "RECEIVED_AMT": 7000.00,
+          "PAYMENT_AMT": 7000.00,
+          "OUTSTANDING_AMT": 8000.00,
+          "PHONE_NO": "ZZZZBFV",
+          "AGENT_CODE": "A010"
+        },{
+          "CUST_CODE": "C00005",
+          "CUST_NAME": "Sasikant",
+          "CUST_CITY": "Mumbai",
+          "WORKING_AREA": "Mumbai",
+          "CUST_COUNTRY": "India",
+          "GRADE": 1,
+          "OPENING_AMT": 7000.00,
+          "RECEIVED_AMT": 11000.00,
+          "PAYMENT_AMT": 7000.00,
+          "OUTSTANDING_AMT": 11000.00,
+          "PHONE_NO": "147-25896312",
+          "AGENT_CODE": "A002"
+        },{
+          "CUST_CODE": "C00007",
+          "CUST_NAME": "Ramanathan",
+          "CUST_CITY": "Chennai",
+          "WORKING_AREA": "Chennai",
+          "CUST_COUNTRY": "India",
+          "GRADE": 1,
+          "OPENING_AMT": 7000.00,
+          "RECEIVED_AMT": 11000.00,
+          "PAYMENT_AMT": 9000.00,
+          "OUTSTANDING_AMT": 9000.00,
+          "PHONE_NO": "GHRDWSD",
+          "AGENT_CODE": "A010"
+        },{
+          "CUST_CODE": "C00022",
+          "CUST_NAME": "Avinash",
+          "CUST_CITY": "Mumbai",
+          "WORKING_AREA": "Mumbai",
+          "CUST_COUNTRY": "India",
+          "GRADE": 2,
+          "OPENING_AMT": 7000.00,
+          "RECEIVED_AMT": 11000.00,
+          "PAYMENT_AMT": 9000.00,
+          "OUTSTANDING_AMT": 9000.00,
+          "PHONE_NO": "113-12345678",
+          "AGENT_CODE": "A002"
+        },{
+          "CUST_CODE": "C00004",
+          "CUST_NAME": "Winston",
+          "CUST_CITY": "Brisban",
+          "WORKING_AREA": "Brisban",
+          "CUST_COUNTRY": "Australia",
+          "GRADE": 1,
+          "OPENING_AMT": 5000.00,
+          "RECEIVED_AMT": 8000.00,
+          "PAYMENT_AMT": 7000.00,
+          "OUTSTANDING_AMT": 6000.00,
+          "PHONE_NO": "AAAAAAA",
+          "AGENT_CODE": "A005"
+        },{
+          "CUST_CODE": "C00023",
+          "CUST_NAME": "Karl",
+          "CUST_CITY": "London",
+          "WORKING_AREA": "London",
+          "CUST_COUNTRY": "UK",
+          "GRADE": 0,
+          "OPENING_AMT": 4000.00,
+          "RECEIVED_AMT": 6000.00,
+          "PAYMENT_AMT": 7000.00,
+          "OUTSTANDING_AMT": 3000.00,
+          "PHONE_NO": "AAAABAA",
+          "AGENT_CODE": "A006"
+        },{
+          "CUST_CODE": "C00006",
+          "CUST_NAME": "Shilton",
+          "CUST_CITY": "Toronto",
+          "WORKING_AREA": "Toronto",
+          "CUST_COUNTRY": "Canada",
+          "GRADE": 1,
+          "OPENING_AMT": 10000.00,
+          "RECEIVED_AMT": 7000.00,
+          "PAYMENT_AMT": 6000.00,
+          "OUTSTANDING_AMT": 11000.00,
+          "PHONE_NO": "DDDDDDD",
+          "AGENT_CODE": "A004"
+        },{
+          "CUST_CODE": "C00010",
+          "CUST_NAME": "Charles",
+          "CUST_CITY": "Hampshire",
+          "WORKING_AREA": "Hampshire",
+          "CUST_COUNTRY": "UK",
+          "GRADE": 3,
+          "OPENING_AMT": 6000.00,
+          "RECEIVED_AMT": 4000.00,
+          "PAYMENT_AMT": 5000.00,
+          "OUTSTANDING_AMT": 5000.00,
+          "PHONE_NO": "MMMMMMM",
+          "AGENT_CODE": "A009"
+        },{
+          "CUST_CODE": "C00017",
+          "CUST_NAME": "Srinivas",
+          "CUST_CITY": "Bangalore",
+          "WORKING_AREA": "Bangalore",
+          "CUST_COUNTRY": "India",
+          "GRADE": 2,
+          "OPENING_AMT": 8000.00,
+          "RECEIVED_AMT": 4000.00,
+          "PAYMENT_AMT": 3000.00,
+          "OUTSTANDING_AMT": 9000.00,
+          "PHONE_NO": "AAAAAAB",
+          "AGENT_CODE": "A007"
+        },{
+          "CUST_CODE": "C00012",
+          "CUST_NAME": "Steven",
+          "CUST_CITY": "San Jose",
+          "WORKING_AREA": "San Jose",
+          "CUST_COUNTRY": "USA",
+          "GRADE": 1,
+          "OPENING_AMT": 5000.00,
+          "RECEIVED_AMT": 7000.00,
+          "PAYMENT_AMT": 9000.00,
+          "OUTSTANDING_AMT": 3000.00,
+          "PHONE_NO": "KRFYGJK",
+          "AGENT_CODE": "A012"
+        },{
+          "CUST_CODE": "C00008",
+          "CUST_NAME": "Karolina",
+          "CUST_CITY": "Toronto",
+          "WORKING_AREA": "Toronto",
+          "CUST_COUNTRY": "Canada",
+          "GRADE": 1,
+          "OPENING_AMT": 7000.00,
+          "RECEIVED_AMT": 7000.00,
+          "PAYMENT_AMT": 9000.00,
+          "OUTSTANDING_AMT": 5000.00,
+          "PHONE_NO": "HJKORED",
+          "AGENT_CODE": "A004"
+        },{
+          "CUST_CODE": "C00003",
+          "CUST_NAME": "Martin",
+          "CUST_CITY": "Toronto",
+          "WORKING_AREA": "Toronto",
+          "CUST_COUNTRY": "Canada",
+          "GRADE": 2,
+          "OPENING_AMT": 8000.00,
+          "RECEIVED_AMT": 7000.00,
+          "PAYMENT_AMT": 7000.00,
+          "OUTSTANDING_AMT": 8000.00,
+          "PHONE_NO": "MJYURFD",
+          "AGENT_CODE": "A004"
+        },{
+          "CUST_CODE": "C00009",
+          "CUST_NAME": "Ramesh",
+          "CUST_CITY": "Mumbai",
+          "WORKING_AREA": "Mumbai",
+          "CUST_COUNTRY": "India",
+          "GRADE": 3,
+          "OPENING_AMT": 8000.00,
+          "RECEIVED_AMT": 7000.00,
+          "PAYMENT_AMT": 3000.00,
+          "OUTSTANDING_AMT": 12000.00,
+          "PHONE_NO": "AAASGHJ",
+          "AGENT_CODE": "A002"
+        },{
+          "CUST_CODE": "C00014",
+          "CUST_NAME": "Rangarappa",
+          "CUST_CITY": "Bangalore",
+          "WORKING_AREA": "Bangalore",
+          "CUST_COUNTRY": "India",
+          "GRADE": 2,
+          "OPENING_AMT": 8000.00,
+          "RECEIVED_AMT": 11000.00,
+          "PAYMENT_AMT": 7000.00,
+          "OUTSTANDING_AMT": 12000.00,
+          "PHONE_NO": "AAAATGF",
+          "AGENT_CODE": "A001"
+        },{
+          "CUST_CODE": "C00016",
+          "CUST_NAME": "Venkatpati",
+          "CUST_CITY": "Bangalore",
+          "WORKING_AREA": "Bangalore",
+          "CUST_COUNTRY": "India",
+          "GRADE": 2,
+          "OPENING_AMT": 8000.00,
+          "RECEIVED_AMT": 11000.00,
+          "PAYMENT_AMT": 7000.00,
+          "OUTSTANDING_AMT": 12000.00,
+          "PHONE_NO": "JRTVFDD",
+          "AGENT_CODE": "A007"
+        },{
+          "CUST_CODE": "C00011",
+          "CUST_NAME": "Sundariya",
+          "CUST_CITY": "Chennai",
+          "WORKING_AREA": "Chennai",
+          "CUST_COUNTRY": "India",
+          "GRADE": 3,
+          "OPENING_AMT": 7000.00,
+          "RECEIVED_AMT": 11000.00,
+          "PAYMENT_AMT": 7000.00,
+          "OUTSTANDING_AMT": 11000.00,
+          "PHONE_NO": "PPHGRTS",
+          "AGENT_CODE": "A010"
+        }
+      ]
     },{
-        "name": "contact"
-    },{
-        "name": "contract"
-    },{
-        "name": "customer"
-    },{
-        "name": "event"
-    },{
-        "name": "feed_comment"
-    },{
-        "name": "feed_comment"
-    },{
-        "name": "feed_item"
-    },{
-        "name": "group",
-        "Metadata": {
-          "table": "CollaborationGroup",
-          "columns": [
-            {
-              "name": "Id",
-              "type": "id",
-              "relationshipName": []
-            },
-            {
-              "name": "Name",
-              "type": "string",
-              "relationshipName": []
-            },
-            {
-              "name": "MemberCount",
-              "type": "int",
-              "relationshipName": []
-            },
-            {
-              "name": "OwnerId",
-              "type": "reference",
-              "relationshipName": [
-                "User"
-              ]
-            },
-            {
-              "name": "CollaborationType",
-              "type": "picklist",
-              "relationshipName": []
-            },
-            {
-              "name": "Description",
-              "type": "textarea",
-              "relationshipName": []
-            },
-            {
-              "name": "CreatedDate",
-              "type": "datetime",
-              "relationshipName": []
-            },
-            {
-              "name": "CreatedById",
-              "type": "reference",
-              "relationshipName": [
-                "User"
-              ]
-            },
-            {
-              "name": "LastModifiedDate",
-              "type": "datetime",
-              "relationshipName": []
-            },
-            {
-              "name": "LastModifiedById",
-              "type": "reference",
-              "relationshipName": [
-                "User"
-              ]
-            },
-            {
-              "name": "SystemModstamp",
-              "type": "datetime",
-              "relationshipName": []
-            },
-            {
-              "name": "FullPhotoUrl",
-              "type": "url",
-              "relationshipName": []
-            },
-            {
-              "name": "MediumPhotoUrl",
-              "type": "url",
-              "relationshipName": []
-            },
-            {
-              "name": "SmallPhotoUrl",
-              "type": "url",
-              "relationshipName": []
-            },
-            {
-              "name": "LastFeedModifiedDate",
-              "type": "datetime",
-              "relationshipName": []
-            },
-            {
-              "name": "InformationTitle",
-              "type": "string",
-              "relationshipName": []
-            },
-            {
-              "name": "InformationBody",
-              "type": "textarea",
-              "relationshipName": []
-            },
-            {
-              "name": "HasPrivateFieldsAccess",
-              "type": "boolean",
-              "relationshipName": []
-            },
-            {
-              "name": "CanHaveGuests",
-              "type": "boolean",
-              "relationshipName": []
-            },
-            {
-              "name": "LastViewedDate",
-              "type": "datetime",
-              "relationshipName": []
-            },
-            {
-              "name": "LastReferencedDate",
-              "type": "datetime",
-              "relationshipName": []
-            },
-            {
-              "name": "IsArchived",
-              "type": "boolean",
-              "relationshipName": []
-            },
-            {
-              "name": "IsAutoArchiveDisabled",
-              "type": "boolean",
-              "relationshipName": []
-            },
-            {
-              "name": "AnnouncementId",
-              "type": "reference",
-              "relationshipName": [
-                "Announcement"
-              ]
-            },
-            {
-              "name": "BannerPhotoUrl",
-              "type": "url",
-              "relationshipName": []
-            },
-            {
-              "name": "IsBroadcast",
-              "type": "boolean",
-              "relationshipName": []
-            }
-          ]
-        },
-        "Records": [
-          [
-            {
-              "BannerPhotoUrl": "/profilephoto/0F9/B",
-              "CanHaveGuests": false,
-              "CollaborationType": "Public",
-              "CreatedById": "00536000002n46IAAQ",
-              "CreatedDate": "2016-07-17T15:12:45.000+0000",
-              "Description": "Get company announcements and other important updates",
-              "FullPhotoUrl": "https://c.na30.content.force.com/profilephoto/72936000000gnTY/F",
-              "HasPrivateFieldsAccess": true,
-              "Id": "0F936000000cQteCAE",
-              "IsArchived": false,
-              "IsAutoArchiveDisabled": false,
-              "IsBroadcast": false,
-              "LastFeedModifiedDate": "2016-07-17T15:12:45.000+0000",
-              "LastModifiedById": "00536000002n46IAAQ",
-              "LastModifiedDate": "2016-07-17T15:12:45.000+0000",
-              "LastReferencedDate": "2016-09-02T20:37:53.000+0000",
-              "LastViewedDate": "2016-09-02T20:37:53.000+0000",
-              "MediumPhotoUrl": "/profilephoto/72936000000gnTY/M",
-              "MemberCount": 3,
-              "Name": "All Anvisi LLC",
-              "OwnerId": "00536000002n46IAAQ",
-              "SmallPhotoUrl": "https://c.na30.content.force.com/profilephoto/72936000000gnTY/T",
-              "SystemModstamp": "2016-09-03T11:02:44.000+0000",
-              "attributes": {
-                "type": "CollaborationGroup",
-                "url": "/services/data/v37.0/sobjects/CollaborationGroup/0F936000000cQteCAE"
-              }
-            }
-          ]
+      "name": "order",
+      "Metadata": {
+        "table": "ORDER",
+        "columns": [
+          {
+            "name": "ORD_NUM",
+            "type": "number"
+          },{
+            "name": "ORD_AMOUNT",
+            "type": "number"
+          },{
+            "name": "ADVANCE_AMT",
+            "type": "number"
+          },{
+            "name": "ORD_DATE",
+            "type": "date"
+          },{
+            "name": "CUST_CODE",
+            "type": "string"
+          },{
+            "name": "AGENT_CODE",
+            "type": "string"
+          },{
+            "name": "ORD_DESCRIPTION",
+            "type": "string"
+          }
         ]
-    },{
-        "name": "group_member",
-        "Metadata": {
-          "table": "CollaborationGroupMember",
-          "columns": [
-            {
-              "name": "Id",
-              "type": "id",
-              "relationshipName": []
-            },
-            {
-              "name": "CollaborationGroupId",
-              "type": "reference",
-              "relationshipName": [
-                "CollaborationGroup"
-              ]
-            },
-            {
-              "name": "MemberId",
-              "type": "reference",
-              "relationshipName": [
-                "User"
-              ]
-            },
-            {
-              "name": "CollaborationRole",
-              "type": "picklist",
-              "relationshipName": []
-            },
-            {
-              "name": "NotificationFrequency",
-              "type": "picklist",
-              "relationshipName": []
-            },
-            {
-              "name": "CreatedDate",
-              "type": "datetime",
-              "relationshipName": []
-            },
-            {
-              "name": "CreatedById",
-              "type": "reference",
-              "relationshipName": [
-                "User"
-              ]
-            },
-            {
-              "name": "LastModifiedDate",
-              "type": "datetime",
-              "relationshipName": []
-            },
-            {
-              "name": "LastModifiedById",
-              "type": "reference",
-              "relationshipName": [
-                "User"
-              ]
-            },
-            {
-              "name": "SystemModstamp",
-              "type": "datetime",
-              "relationshipName": []
-            },
-            {
-              "name": "LastFeedAccessDate",
-              "type": "datetime",
-              "relationshipName": []
-            }
-          ]
-        },
-        "Records": [
-          [
-            {
-              "CollaborationGroupId": "0F936000000cQteCAE",
-              "CollaborationRole": "Standard",
-              "CreatedById": "00536000002w5sGAAQ",
-              "CreatedDate": "2016-09-02T20:04:00.000+0000",
-              "Id": "0FB36000000PqWoGAK",
-              "LastModifiedById": "00536000002w5sGAAQ",
-              "LastModifiedDate": "2016-09-02T20:04:00.000+0000",
-              "MemberId": "00536000002w5sGAAQ",
-              "NotificationFrequency": "N",
-              "SystemModstamp": "2016-09-02T20:04:00.000+0000",
-              "attributes": {
-                "type": "CollaborationGroupMember",
-                "url": "/services/data/v37.0/sobjects/CollaborationGroupMember/0FB36000000PqWoGAK"
-              }
-            }
-          ]
-        ]
-    },{
-        "name": "idea"
-    },{
-        "name": "idea_comment"
-    },{
-        "name": "lead"
-    },{
-        "name": "license"
-    },{
-        "name": "macro"
-    },{
-        "name": "note"
-    },{
-        "name": "opportunity"
-    },{
-        "name": "order"
-    },{
-        "name": "order_item"
-    },{
-        "name": "package"
-    },{
-        "name": "partner"
-    },{
-        "name": "product"
-    },{
-        "name": "record"
-    },{
-        "name": "service_order"
-    },{
-        "name": "solution"
-    },{
-        "name": "task"
-    },{
-        "name": "topic"
-    },{
-        "name": "user"
-    },{
-        "name": "user_dashboard"
+      },
+      "Records": [
+        {
+          "ORD_NUM": 200114,
+          "ORD_AMOUNT": 3500,
+          "ADVANCE_AMT": 2000,
+          "ORD_DATE": "15-AUG-08",
+          "CUST_CODE": "C00002",
+          "AGENT_CODE": "A008",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200122,
+          "ORD_AMOUNT": 2500,
+          "ADVANCE_AMT": 400,
+          "ORD_DATE": "16-SEP-08",
+          "CUST_CODE": "C00003",
+          "AGENT_CODE": "A004",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200118,
+          "ORD_AMOUNT": 500,
+          "ADVANCE_AMT": 100,
+          "ORD_DATE": "20-JUL-08",
+          "CUST_CODE": "C00023",
+          "AGENT_CODE": "A006",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200119,
+          "ORD_AMOUNT": 4000,
+          "ADVANCE_AMT": 700,
+          "ORD_DATE": "16-SEP-08",
+          "CUST_CODE": "C00007",
+          "AGENT_CODE": "A010",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200121,
+          "ORD_AMOUNT": 1500,
+          "ADVANCE_AMT": 600,
+          "ORD_DATE": "23-SEP-08",
+          "CUST_CODE": "C00008",
+          "AGENT_CODE": "A004",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200130,
+          "ORD_AMOUNT": 2500,
+          "ADVANCE_AMT": 400,
+          "ORD_DATE": "30-JUL-08",
+          "CUST_CODE": "C00025",
+          "AGENT_CODE": "A011",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200134,
+          "ORD_AMOUNT": 4200,
+          "ADVANCE_AMT": 1800,
+          "ORD_DATE": "25-SEP-08",
+          "CUST_CODE": "C00004",
+          "AGENT_CODE": "A005",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200108,
+          "ORD_AMOUNT": 4000,
+          "ADVANCE_AMT": 600,
+          "ORD_DATE": "15-FEB-08",
+          "CUST_CODE": "C00008",
+          "AGENT_CODE": "A004",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200103,
+          "ORD_AMOUNT": 1500,
+          "ADVANCE_AMT": 700,
+          "ORD_DATE": "15-MAY-08",
+          "CUST_CODE": "C00021",
+          "AGENT_CODE": "A005",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200105,
+          "ORD_AMOUNT": 2500,
+          "ADVANCE_AMT": 500,
+          "ORD_DATE": "18-JUL-08",
+          "CUST_CODE": "C00025",
+          "AGENT_CODE": "A011",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200109,
+          "ORD_AMOUNT": 3500,
+          "ADVANCE_AMT": 800,
+          "ORD_DATE": "30-JUL-08",
+          "CUST_CODE": "C00011",
+          "AGENT_CODE": "A010",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200101,
+          "ORD_AMOUNT": 3000,
+          "ADVANCE_AMT": 1000,
+          "ORD_DATE": "15-JUL-08",
+          "CUST_CODE": "C00001",
+          "AGENT_CODE": "A008",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200111,
+          "ORD_AMOUNT": 1000,
+          "ADVANCE_AMT": 300,
+          "ORD_DATE": "10-JUL-08",
+          "CUST_CODE": "C00020",
+          "AGENT_CODE": "A008",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200104,
+          "ORD_AMOUNT": 1500,
+          "ADVANCE_AMT": 500,
+          "ORD_DATE": "13-MAR-08",
+          "CUST_CODE": "C00006",
+          "AGENT_CODE": "A004",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200106,
+          "ORD_AMOUNT": 2500,
+          "ADVANCE_AMT": 700,
+          "ORD_DATE": "20-APR-08",
+          "CUST_CODE": "C00005",
+          "AGENT_CODE": "A002",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200125,
+          "ORD_AMOUNT": 2000,
+          "ADVANCE_AMT": 600,
+          "ORD_DATE": "10-OCT-08",
+          "CUST_CODE": "C00018",
+          "AGENT_CODE": "A005",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200117,
+          "ORD_AMOUNT": 800,
+          "ADVANCE_AMT": 200,
+          "ORD_DATE": "20-OCT-08",
+          "CUST_CODE": "C00014",
+          "AGENT_CODE": "A001",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200123,
+          "ORD_AMOUNT": 500,
+          "ADVANCE_AMT": 100,
+          "ORD_DATE": "16-SEP-08",
+          "CUST_CODE": "C00022",
+          "AGENT_CODE": "A002",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200120,
+          "ORD_AMOUNT": 500,
+          "ADVANCE_AMT": 100,
+          "ORD_DATE": "20-JUL-08",
+          "CUST_CODE": "C00009",
+          "AGENT_CODE": "A002",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200116,
+          "ORD_AMOUNT": 500,
+          "ADVANCE_AMT": 100,
+          "ORD_DATE": "13-JUL-08",
+          "CUST_CODE": "C00010",
+          "AGENT_CODE": "A009",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200124,
+          "ORD_AMOUNT": 500,
+          "ADVANCE_AMT": 100,
+          "ORD_DATE": "20-JUL-08",
+          "CUST_CODE": "C00017",
+          "AGENT_CODE": "A007",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200126,
+          "ORD_AMOUNT": 500,
+          "ADVANCE_AMT": 100,
+          "ORD_DATE": "24-JUN-08",
+          "CUST_CODE": "C00022",
+          "AGENT_CODE": "A002",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200129,
+          "ORD_AMOUNT": 2500,
+          "ADVANCE_AMT": 500,
+          "ORD_DATE": "20-JUL-08",
+          "CUST_CODE": "C00024",
+          "AGENT_CODE": "A006",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200127,
+          "ORD_AMOUNT": 2500,
+          "ADVANCE_AMT": 400,
+          "ORD_DATE": "20-JUL-08",
+          "CUST_CODE": "C00015",
+          "AGENT_CODE": "A003",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200128,
+          "ORD_AMOUNT": 3500,
+          "ADVANCE_AMT": 1500,
+          "ORD_DATE": "20-JUL-08",
+          "CUST_CODE": "C00009",
+          "AGENT_CODE": "A002",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200135,
+          "ORD_AMOUNT": 2000,
+          "ADVANCE_AMT": 800,
+          "ORD_DATE": "16-SEP-08",
+          "CUST_CODE": "C00007",
+          "AGENT_CODE": "A010",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200131,
+          "ORD_AMOUNT": 900,
+          "ADVANCE_AMT": 150,
+          "ORD_DATE": "26-AUG-08",
+          "CUST_CODE": "C000012",
+          "AGENT_CODE": "A012",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200133,
+          "ORD_AMOUNT": 1200,
+          "ADVANCE_AMT": 400,
+          "ORD_DATE": "29-JUN-08",
+          "CUST_CODE": "C00009",
+          "AGENT_CODE": "A002",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200100,
+          "ORD_AMOUNT": 1000,
+          "ADVANCE_AMT": 600,
+          "ORD_DATE": "08-JAN-08",
+          "CUST_CODE": "C00015",
+          "AGENT_CODE": "A003",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200110,
+          "ORD_AMOUNT": 3000,
+          "ADVANCE_AMT": 500,
+          "ORD_DATE": "15-APR-08",
+          "CUST_CODE": "C00019",
+          "AGENT_CODE": "A010",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200107,
+          "ORD_AMOUNT": 4500,
+          "ADVANCE_AMT": 900,
+          "ORD_DATE": "30-AUG-08",
+          "CUST_CODE": "C00007",
+          "AGENT_CODE": "A010",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200112,
+          "ORD_AMOUNT": 2000,
+          "ADVANCE_AMT": 400,
+          "ORD_DATE": "30-MAY-08",
+          "CUST_CODE": "C00016",
+          "AGENT_CODE": "A007",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200113,
+          "ORD_AMOUNT": 4000,
+          "ADVANCE_AMT": 600,
+          "ORD_DATE": "10-JUN-08",
+          "CUST_CODE": "C00022",
+          "AGENT_CODE": "A002",
+          "ORD_DESCRIPTION": ""
+        },{
+          "ORD_NUM": 200102,
+          "ORD_AMOUNT": 2000,
+          "ADVANCE_AMT": 300,
+          "ORD_DATE": "25-MAY-08",
+          "CUST_CODE": "C00012",
+          "AGENT_CODE": "A012",
+          "ORD_DESCRIPTION": ""
+        }
+      ]
     }
   ]
 }

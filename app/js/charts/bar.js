@@ -13,11 +13,11 @@
 
     _directive.restrict = 'AE';
     _directive.scope = { chartData: '=', title: '=', width: '=', height: '=' };
-    _directive.template = '<div><h2>{{title}}</h2><canvas id="barChart" width="{{width}}" height="{{height}}"></canvas></div>'
+    _directive.template = '<div gridster-dynamic-height item="chartData"><h2>{{title}}</h2><canvas id="barChart" width="{{width}}" height="{{height}}" style="max-width: {{width}}px; max-height: {{height}}px;"></canvas></div>'
     _directive.link = linkFn;
 
     function linkFn($scope, $ele, $attrs) {
-      
+
       var options = {
         scales: {
           xAxes: [{
@@ -28,7 +28,7 @@
           }]
         },
         maintainAspectRatio: true,
-        responsive: false
+        responsive: true
       };
 
       var ctx = $($ele).find('#barChart')[0].getContext('2d');

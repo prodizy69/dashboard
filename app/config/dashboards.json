@@ -1,6 +1,6 @@
 {
   "dashboards": [{
-    "id": 1,
+    "id": "1",
     "name": "Dashboard 1",
     "components": [{
       "type": "chart",
@@ -15,7 +15,11 @@
         }]
       },
       "width": 300,
-      "height": 300
+      "height": 300,
+      "sizeX": 2,
+      "sizeY": 2,
+      "row": 0,
+      "col": 0
     },{
       "type": "chart",
       "subtype": "polar",
@@ -29,7 +33,11 @@
         "labels": ["Red", "Green", "Yellow", "Grey", "Blue"]
       },
       "width": 300,
-      "height": 300
+      "height": 300,
+      "sizeX": 2,
+      "sizeY":2,
+      "row": 0,
+      "col": 2
     },{
       "type": "chart",
       "subtype": "line",
@@ -60,7 +68,11 @@
         }]
       },
       "width": 300,
-      "height": 300
+      "height": 300,
+      "sizeX": 2,
+      "sizeY":2,
+      "row": 0,
+      "col": 4
     },{
       "type": "chart",
       "subtype": "bar",
@@ -90,7 +102,11 @@
         }]
       },
       "width": 300,
-      "height": 300
+      "height": 300,
+      "sizeX": 2,
+      "sizeY":2,
+      "row": 0,
+      "col": 5
     },{
       "type": "chart",
       "subtype": "radar",
@@ -119,7 +135,11 @@
         }]
       },
       "width": 300,
-      "height": 300
+      "height": 300,
+      "sizeX": 2,
+      "sizeY":2,
+      "row": 1,
+      "col": 0
     },{
       "type": "chart",
       "subtype": "bubble",
@@ -141,10 +161,14 @@
         }]
       },
       "width": 300,
-      "height": 300
+      "height": 300,
+      "sizeX": 2,
+      "sizeY":2,
+      "row": 1,
+      "col": 4
     }]
   },{
-    "id": 2,
+    "id": "2",
     "name": "Dashboard 2",
     "components": [{
       "type": "chart",
@@ -159,7 +183,11 @@
         }]
       },
       "width": 300,
-      "height": 300
+      "height": 300,
+      "sizeX": 2,
+      "sizeY":2,
+      "row": 0,
+      "col": 0
     },{
       "type": "chart",
       "subtype": "polar",
@@ -173,7 +201,11 @@
         "labels": ["Red", "Green", "Yellow", "Grey", "Blue"]
       },
       "width": 300,
-      "height": 300
+      "height": 300,
+      "sizeX": 2,
+      "sizeY":2,
+      "row": 0,
+      "col": 1
     }]
   }]
 }

@@ -3,31 +3,18 @@
         <div class="pull-left"> Create {{editorType === 'dashboard' ? 'Dashboard' : 'Schema'}} </div>
         <div class="pull-right">
           <button ng-click="cancel()"> Cancel </button>
-          <button ng-click="saveDashboard()"> Save </button>
+          <button ng-if="editorType === 'dashboard'" ng-click="saveDashboard()"> Save </button>
+          <button ng-if="editorType === 'schema'" ng-click="saveSchema()"> Save </button>
         </div>
+    </div>
+
+    <div class="row">
+      <label class="pull-left">
+        <input class="form-control underline-input" type="text" ng-model="editData.name" placeholder="Enter {{editorType === 'dashboard' ? 'Dashboard' : 'Schema'}} Name ... ">
+      </label>
     </div>
 
     <div class="row dash-editor" droppable on-drop="onDrop">
 
     </div>
-
-    <!-- <div class="dashboard-name row">
-      <input class="form-control underline-input" type="text" ng-model="editData.name" placeholder="Enter Dashboard Name ... ">
-    </div> -->
-
-    <!-- <div class="dashboard-schema-select row">
-      <select class="form-control underline-input" type="text" ng-model="editData.chart">
-        <option value="" selected="selected"> Select Chart </option>
-        <option value="polar"> Polar Area </option>
-        <option value="doughnut"> Doughnut </option>
-      </select>
-    </div>
-
-    <div class="dashboard-schema-select row">
-      <select class="form-control underline-input" type="text" ng-model="editData.schema">
-        <option value="" selected="selected"> Select Schema Definition </option>
-        <option value="schema1"> Schema 1 </option>
-        <option value="schema2"> Schema 2 </option>
-      </select>
-    </div> -->
 </div>

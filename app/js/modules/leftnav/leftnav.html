@@ -37,7 +37,7 @@
                 <ul class="nav nav-second-level">
                     <li ng-repeat="chart in charts track by $index">
                         <a href="" id="chart{{$index}}">
-                            <i class="fa fa-{{chart.fa_icon}}" aria-hidden="true"></i>
+                            <i class="{{chart.iconClass}}" aria-hidden="true"></i>
                             <span draggable drag-data="{{chart}}" drag-data-type="chart"> {{chart.name}} </span>
                         </a>
                     </li>
@@ -47,13 +47,13 @@
             <li ng-if="editMode && editType === 'dashboard'">
                 <a href="#"><i class="fa fa-bar-chart-o"></i><span class="nav-label"> Schemas </span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li ng-if="!schemas.length">
-                        <a href="" ng-click="enableSchemaEditMode()"> Create Schema ... </a>
-                    </li>
                     <li ng-class="{'active': selectedSchema.id === schema.id}" ng-repeat="schema in schemas track by $index" ng-if="schemas.length">
                         <a href="" id="schema{{$index}}">
                             <span draggable drag-data="{{schema}}" drag-data-type="schema"> {{schema.name}} </span>
                         </a>
+                    </li>
+                    <li>
+                        <a href="" ng-click="enableSchemaEditMode()"> Create Schema ... </a>
                     </li>
                 </ul>
             </li>

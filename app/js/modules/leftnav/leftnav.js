@@ -26,7 +26,7 @@
                 .then(function(dashboards) {
                     $scope.dashboards = dashboards;
                     $scope.selectedDashboard = dashboards[0];
-                    $rootScope.$broadcast('load-dashboard', { data: dashboards[0] });
+                    $location.path('/dashboard/' + dashboards[0].id);
                 });
             }
 
@@ -52,14 +52,13 @@
             }
 
             $scope.showDashboard = function(data) {
-                $location.path('/');
-                
                 $scope.selectedDashboard = data;
-                $rootScope.$broadcast('load-dashboard', { data: data });
+                $location.path('/dashboard/' + data.id);
             };
 
             $scope.enableSchemaEditMode = function() {
-                $rootScope.$broadcast('enable-edit-mode', { type: 'schema' });
+                $rootScope.$broadcast('enable-edit-mode', { type: 'schema' })
+                $location.path('editor');
             };
 
             getDashboards();
@@ -72,6 +71,7 @@
             }
 
             $scope.$on('dashboard-added', getDashboards);
+            $scope.$on('schema-added', getSchemas);
 
             $scope.$on('enable-edit-mode', function(event, data) {
                 $scope.editType = data.type;
@@ -80,6 +80,7 @@
 
             $scope.$on('disable-edit-mode', function(event, data) {
                 $scope.editMode = false;
+                $scope.showDashboard($scope.dashboards[0]);
             });
 
         }

@@ -9,8 +9,8 @@
 		$routeProvider
 
 		.when('/', {
-			templateUrl: 'js/modules/home/home.html',
-			controller: 'HomeController'
+			templateUrl: 'js/modules/dashboard/dashboard.html',
+			controller: 'DashboardController'
 		})
 
 		.when('/dashboard/:dashboardId', {
@@ -21,10 +21,12 @@
 		.when('/editor', {
 			templateUrl: 'js/modules/editor/editor.html',
 			controller: 'EditorController'
-		}).when('/users.html', {
-				templateUrl: 'js/modules/users/users.html',
-				controller: 'userController'
-			})
+		})
+
+		.when('/users.html', {
+			templateUrl: 'js/modules/users/users.html',
+			controller: 'userController'
+		})
 		
 		.otherwise({
 			redirectTo: '/'

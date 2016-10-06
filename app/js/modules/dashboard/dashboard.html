@@ -3,8 +3,8 @@
         <button class="pull-right" ng-click="createDashboard()"> Create Dashboard </button>
     </div>
     <div class="gridster="gridsterOptions">
-        <ul class="dash-comp" ng-repeat="comp in dashboardData.components">
-            <li class="chart" ng-if="comp.type === 'chart'" gridster-item="comp">
+        <ul>
+            <li class="dash-comp" ng-if="comp.type === 'chart'" gridster-item="comp" ng-repeat="comp in dashboardData.components">
                 <doughnut-chart ng-if="comp.subtype === 'doughnut'" chart-data="comp.data" title="comp.title" width="comp.height" height="comp.height"></doughnut-chart>
                 <polar-chart ng-if="comp.subtype === 'polar'" chart-data="comp.data" title="comp.title" width="comp.height" height="comp.height"></polar-chart>
                 <line-chart ng-if="comp.subtype === 'line'" chart-data="comp.data" title="comp.title" width="comp.height" height="comp.height"></line-chart>

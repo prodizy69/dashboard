@@ -1,0 +1,35 @@
+<div class="editor-table-container" ng-if="editorType === 'schema'">
+  <table class="schema-table" ui-draggable>
+    <thead>
+      <tr>
+        <th>
+          <span class="table-icon">
+            <i class="fa fa-database" aria-hidden="true"></i>
+          </span>
+          <span class="table-title"> {{tableData.Metadata.table}} </span>
+          <span class="table-info">
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+          </span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="column in tableData.Metadata.columns" ng-class="{ 'injoin': volumn.joined }">
+        <td>
+          <span class="tr-icon">
+            <i class="{{getRowIconClass(column)}}"></i>
+          </span>
+          <span class="tr-name"> {{column.name}} </span>
+          <span class="tr-tools">
+            <i class="fa fa-circle-thin" ng-if="!column.selected" ng-click="toggleTableField(column)"></i>
+            <i class="fa fa-check-circle" ng-if="column.selected" ng-click="toggleTableField(column)"></i>
+            <i class="fa fa-filter" aria-hidden="true"></i>
+          </span>
+          <span class="tr-draw-right-handle" ng-mouseover="handleLinkMouseEvent('mouseover', column)" ng-mouseout="handleLinkMouseEvent('mouseout', column)" ng-click="handleLinkMouseEvent('click', column)" ng-class="{ 'injoin': column.joined }">
+            <i class="fa fa-circle"></i>
+          </span>
+        </td>
+      </tr>    
+    </tbody>
+  </table>
+</div>

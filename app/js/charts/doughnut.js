@@ -13,7 +13,7 @@
 
     _directive.restrict = 'AE';
     _directive.scope = { chartData: '=', title: '=', width: '=', height: '=' };
-    _directive.template = '<div><h2>{{title}}</h2><canvas id="doughnutChart" width="{{width}}" height="{{height}}"></canvas></div>'
+    _directive.template = '<div gridster-dynamic-height item="chartData"><h2>{{title}}</h2><canvas id="doughnutChart" width="{{width}}" height="{{height}}" style="max-width: {{width}}px; max-height: {{height}}px;"></canvas></div>'
     _directive.link = linkFn;
 
     function linkFn($scope, $ele, $attrs) {
@@ -22,13 +22,13 @@
         segmentShowStroke: true,
         segmentStrokeColor: "#fff",
         segmentStrokeWidth: 2,
-        percentageInnerCutout: 45, // This is 0 for Pie charts
+        percentageInnerCutout: 45,
         animationSteps: 100,
         animationEasing: "easeOutBounce",
         animateRotate: true,
         animateScale: false,
         maintainAspectRatio: true,
-        responsive: false
+        responsive: true
       };
 
       var ctx = $($ele).find('#doughnutChart')[0].getContext('2d');

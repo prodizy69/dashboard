@@ -6,61 +6,25 @@
 
   .controller('EditorController', EditorController);
 
-  EditorController.$inject = ['$scope', '$rootScope', 'DashboardService', '$location'];
+  EditorController.$inject = ['$scope', '$rootScope', 'DashboardService', 'SchemaService', '$location', '$http', '$compile', '$timeout', '$routeParams'];
 
-  function EditorController($scope, $rootScope, DashboardService, $location) {
+  function EditorController($scope, $rootScope, DashboardService, SchemaService, $location, $http, $compile, $timeout, $routeParams) {
 
     var editorEle = $('.dash-editor');
+    var linkLine = editorEle.find('#link-line');
+
+    var lineSVG = editorEle.connectSVG();
+
+    var chartTemplateUrl = 'js/modules/editor/editor-chart-ui.html';
+    var tableTemplateUrl = 'js/modules/editor/editor-table-ui.html';
 
     $scope.editorType = 'dashboard';
 
-    $scope.editData = {};
-
-    $scope.work = { name: 'New Dashboard', components: [] };
-    
-    var _chartType = $scope.editData.chart;
-    
-    $scope.doughnutcomponents= [{
-      "type": "chart",
-      "subtype": "doughnut",
-      "title": "Project - Doughnut",
-      "data": {
-        "labels": ["Red", "Blue", "Yellow"],
-        "datasets": [{
-          "data": [150, 505, 160],
-          "backgroundColor": ["#FF6384", "#36A2EB", "#FFCE56"],
-          "hoverBackgroundColor": ["#FF6384", "#36A2EB", "#FFCE56"]
-        }]
-      },
-      "width": 600,
-      "height": 600
-    }];
-
-    $scope.polarcomponents=[{
-      "type": "chart",
-      "subtype": "polar",
-      "title": "Project Beta Progress - Polar",
-      "data": {
-        "datasets": [{
-          "data": [1, 6, 17, 30, 4],
-          "backgroundColor": ["#FF6384", "#4BC0C0", "#FFCE56", "#E7E9ED", "#36A2EB"],
-          "label": "Project Beta Progress - Polar"
-        }],
-        "labels": ["Red", "Green", "Yellow", "Grey", "Blue"]
-      },
-      "width": 600,
-      "height": 600
-    }];
+    $scope.editData = { schema: { tables: [] }, charts: [] };
 
     $scope.saveDashboard = function() {
 
       var dashboard = {};
-
-      if($scope.editData.chart === 'polar'){
-        dashboard.components = $scope.polarcomponents;
-      } else if($scope.editData.chart==='doughnut'){
-        dashboard.components = $scope.doughnutcomponents;
-      }
 
       dashboard.name = $scope.editData.name;
       
@@ -71,9 +35,35 @@
       $location.path('/');
     };
 
+    $scope.saveSchema = function() {
+      var tables = [];
+      var selectedFields = [];
+      var conditionalField = '';
+      
+      ng.forEach($scope.editData.schema.tables, function(table) {
+
+        conditionalField = table.Metadata.columns.filter(function(field) {
+          return field.joined;
+        })[0].name;
+        
+        selectedFields = table.Metadata.columns.filter(function(field) {
+          return field.selected;
+        }).map(function(field) {
+          return field.name;
+        });
+
+        tables.push({ table: table.Metadata.table, fields: selectedFields, conditionalField: conditionalField });
+      });
+
+      SchemaService.addSchema({ name: $scope.editData.name, queryData: tables });
+
+      $rootScope.$broadcast('schema-added');
+
+      $rootScope.$broadcast('enable-edit-mode', { type: 'dashboard' });
+    };
+
     $scope.cancel = function() {
       $rootScope.$broadcast('disable-edit-mode');
-      $location.path('/');
     };
 
     $scope.$on('enable-edit-mode', function(event, data) {
@@ -82,15 +72,15 @@
 
     $scope.onDrop = function(draggedItemType, draggedItemData) {
       if(draggedItemType === 'dataobject') {
-        var dataObject = JSON.parse(draggedItemData);
-
-        createTableForData(dataObject.Metadata);
+        createTableForData(JSON.parse(draggedItemData));
+      } else if(draggedItemType === 'chart') {
+        createChart(JSON.parse(draggedItemData));
       }
     };
 
-    function getRowIconClass(column) {
+    $scope.getRowIconClass = function(column) {
       var className = 'fa fa-font';
-      if(column.type === 'int' || column.type === 'int') {
+      if(column.type === 'int' || column.type === 'number') {
         className = 'fa fa-hashtag';
       } else if(column.type === 'date' || column.type === 'datetime'){
         className = 'fa fa-calendar';
@@ -99,17 +89,53 @@
       }
 
       return className;
-    }
-    
+    };
+
+    $scope.toggleTableField = function(column) {
+      column.selected = !column.selected;
+    };
+
+    $scope.handleLinkMouseEvent = function(eventType, column) {
+      if(eventType === 'click') {
+        column.joined = !column.joined;
+      }
+    };
+
     function createTableForData(data) {
-      var _table = $('<table class="schema-table"><thead><tr><th><span class="table-icon"><i class="fa fa-database" aria-hidden="true"></i></span><span class="table-title">'+data.table+'</span><span class="table-info"><i class="fa fa-info-circle" aria-hidden="true"></i></span></th></tr></thead><tbody></tbody></table>');
-      var row, cell;
-      ng.forEach(data.columns, function(column, trIndex) {
-        _table.find('tbody').append('<tr><td><span class="tr-icon"><i class="'+getRowIconClass(column)+'" aria-hidden="true"></i></span><span class="tr-name">'+column.name+'</span><span class="tr-tools"><i class="fa fa-circle-thin" aria-hidden="true"></i><i class="fa fa-filter" aria-hidden="true"></i></span></td></tr>');
+      var tableData = ng.copy(data);
+      ng.forEach(tableData.Metadata.columns, function(column) {
+        column.selected = false;
       });
-      _table.appendTo(editorEle);
-      _table.draggable({ handle: 'thead', cursor: 'crosshair' });
+
+      $scope.editData.schema.tables.push(tableData);
+      
+      $http.get(tableTemplateUrl)
+      .then(function(res) {
+        var _scope = $scope.$new(false);
+        _scope.tableData = $scope.editData.schema.tables[$scope.editData.schema.tables.length-1];
+        var _table = $compile(res.data)(_scope);
+        _table.appendTo(editorEle);
+      });
+
+      $timeout(function() {
+        editorEle.find('table').draggable({
+          handle: 'thead',
+          drag: function(event, ui) {
+            lineSVG.redrawLines();
+          }
+        });
+      }, 1000);
     }
+
+    function createChart(data) {
+      var _chart = $('<div class="editing-chart"></div>');
+      _chart.append('<div class="middle"><span><i class="'+data.iconClass+'"></i></span></div>');
+      _chart.append('<div class="controls"><button ng-click="addDimensions()">Add Dimensions</button><button ng-click="addMeasure()">Add Measure</button></div>');
+      _chart.appendTo(editorEle);
+
+      _chart.resizable();
+    }
+
   }
 
 })(angular);

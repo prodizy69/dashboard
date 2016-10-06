@@ -8418,6 +8418,8 @@ body.md-skin {
   margin: 5px;
   padding: 5px;
   float: left;
+  width: auto !important;
+  height: auto !important;
 }
 
 .dash-editor {
@@ -8439,6 +8441,9 @@ body.md-skin {
 .dash-editor .schema-table td {
   padding: 5px;
 }
+.dash-editor .schema-table tr.injoin {
+  background-color: #F5F5F5;
+}
 .dash-editor .schema-table .table-icon {
   margin-right: 5px;
 }
@@ -8454,7 +8459,6 @@ body.md-skin {
   margin-right: 5px;
   border: 1px solid #cecece;
   padding: 1px;
-  /*color: #a9a9a9;*/
 }
 .dash-editor .schema-table .tr-name {
 
@@ -8463,7 +8467,24 @@ body.md-skin {
   float: right;
   font-size: 125%;
   margin-left: 40px;
+  margin-right: 10px;
+}
+.dash-editor .schema-table .tr-tools i.fa-check-circle {
+  color: royalblue;
 }
 .dash-editor .schema-table .tr-tools i:last-child {
   margin-left: 10px;
+}
+.dash-editor .schema-table .tr-draw-right-handle {
+  position: absolute;
+  right: -25px;
+  width: 20px;
+  height: 20px;
+  color: #FFF;
+}
+.dash-editor .schema-table .tr-draw-right-handle:hover {
+  color: gray;
+}
+.dash-editor .schema-table .tr-draw-right-handle.injoin {
+  color: royalblue;
 }
