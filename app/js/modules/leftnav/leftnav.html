@@ -19,10 +19,9 @@
                 <div class="logo-element">sdfds</div>
             </li>
         </ul>
-        <ul id="side-menu">
-            
-            <li ng-if="!editMode">
-                <i class="fa fa-th-large"></i><span class="nav-label">Dashboards</span> <span class="fa arrow"></span>
+        <ul id="side-menu" class="nav metismenu">            
+            <li ng-if="!editMode" class="active">
+                <a><i class="fa fa-th-large"></i><span class="nav-label">Dashboards</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li ng-class="{'active': selectedDashboard.id === dashboard.id}" ng-repeat="dashboard in dashboards">
                         <a href="" ng-click="showDashboard(dashboard)">
