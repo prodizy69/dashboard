@@ -26,7 +26,7 @@
                 .then(function(dashboards) {
                     $scope.dashboards = dashboards;
                     $scope.selectedDashboard = dashboards[0];
-                    $location.path('/dashboard/' + dashboards[0].id);
+                    // $location.path('/dashboard/' + dashboards[0].id);
                 });
             }
 

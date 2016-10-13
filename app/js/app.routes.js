@@ -9,8 +9,8 @@
 		$routeProvider
 
 		.when('/', {
-			templateUrl: 'js/modules/dashboard/dashboard.html',
-			controller: 'DashboardController'
+			templateUrl: 'js/modules/home/home.html',
+			controller: 'HomeController'
 		})
 
 		.when('/dashboard/:dashboardId', {
