@@ -11,6 +11,9 @@
                 <bubble-chart ng-if="comp.subtype === 'bubble'" chart-data="comp.data" title="comp.title" width="comp.height" height="comp.height"></bubble-chart>
                 <radar-chart ng-if="comp.subtype === 'radar'" chart-data="comp.data" title="comp.title" width="comp.height" height="comp.height"></radar-chart>
                 <bar-chart ng-if="comp.subtype === 'bar'" chart-data="comp.data" title="comp.title" width="comp.height" height="comp.height"></bar-chart>
+                <chartist-line-chart ng-if="comp.subtype === 'chartist-line'" chart-data="comp.data" title="comp.title" width="comp.height" height="comp.height"></chartist-line-chart>
+                <chartist-horizontal-bar-chart ng-if="comp.subtype === 'chartist-horizontal-bar'" chart-data="comp.data" title="comp.title" width="comp.height" height="comp.height"></chartist-horizontal-bar-chart>
+                <chartist-guage-chart ng-if="comp.subtype === 'chartist-guage'" chart-data="comp.data" title="comp.title" width="comp.height" height="comp.height"></chartist-guage-chart>
             </li>
         </ul>
     </div>

@@ -4,21 +4,69 @@
     "name": "Dashboard 1",
     "components": [{
       "type": "chart",
+      "subtype": "chartist-guage",
+      "title": "Chartist Guage Chart",
+      "data": {
+        "series": [20, 10, 30, 40]
+      },
+      "width": 250,
+      "height": 250,
+      "sizeX": 2,
+      "sizeY": 2,
+      "row": 0,
+      "col": 0
+    },{
+      "type": "chart",
+      "subtype": "chartist-line",
+      "title": "Chartist Line Chart",
+      "data": {
+        "labels": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "series": [
+          [12, 9, 7, 8, 5],
+          [2, 1, 3.5, 7, 3],
+          [1, 3, 4, 5, 6]
+        ]
+      },
+      "width": 250,
+      "height": 250,
+      "sizeX": 2,
+      "sizeY": 2,
+      "row": 0,
+      "col": 1
+    },{
+      "type": "chart",
+      "subtype": "chartist-horizontal-bar",
+      "title": "Chartist Horizontal Bar Chart",
+      "data": {
+        "labels": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "series": [
+          [5, 4, 3, 7, 5, 10, 3],
+          [3, 2, 9, 5, 4, 6, 4]
+        ]
+      },
+      "width": 250,
+      "height": 250,
+      "sizeX": 2,
+      "sizeY": 2,
+      "row": 0,
+      "col": 2
+    },{
+      "type": "chart",
       "subtype": "doughnut",
       "title": "Doughnut Chart",
       "data": {
         "labels": ["Red", "Blue", "Yellow"],
         "datasets": [{
-          "data": [300, 50, 100],
+          "data": [250, 50, 100],
           "backgroundColor": ["#FF6384", "#36A2EB", "#FFCE56"],
           "hoverBackgroundColor": ["#FF6384", "#36A2EB", "#FFCE56"]
         }]
       },
-      "width": 300,
-      "height": 300,
+      "width": 250,
+      "height": 250,
       "sizeX": 2,
       "sizeY": 2,
-      "row": 0,
+      "row": 1,
       "col": 0
     },{
       "type": "chart",
@@ -32,12 +80,12 @@
         }],
         "labels": ["Red", "Green", "Yellow", "Grey", "Blue"]
       },
-      "width": 300,
-      "height": 300,
+      "width": 250,
+      "height": 250,
       "sizeX": 2,
       "sizeY":2,
-      "row": 0,
-      "col": 2
+      "row": 1,
+      "col": 1
     },{
       "type": "chart",
       "subtype": "line",
@@ -67,12 +115,12 @@
           "spanGaps": false
         }]
       },
-      "width": 300,
-      "height": 300,
+      "width": 250,
+      "height": 250,
       "sizeX": 2,
       "sizeY":2,
-      "row": 0,
-      "col": 4
+      "row": 1,
+      "col": 2
     },{
       "type": "chart",
       "subtype": "bar",
@@ -101,12 +149,12 @@
           "data": [65, 59, 80, 81, 56, 55, 40]
         }]
       },
-      "width": 300,
-      "height": 300,
+      "width": 250,
+      "height": 250,
       "sizeX": 2,
       "sizeY":2,
-      "row": 0,
-      "col": 5
+      "row": 1,
+      "col": 3
     },{
       "type": "chart",
       "subtype": "radar",
@@ -134,11 +182,11 @@
           "data": [28, 48, 40, 19, 96, 27, 100]
         }]
       },
-      "width": 300,
-      "height": 300,
+      "width": 250,
+      "height": 250,
       "sizeX": 2,
       "sizeY":2,
-      "row": 1,
+      "row": 2,
       "col": 0
     },{
       "type": "chart",
@@ -160,12 +208,12 @@
           "hoverBackgroundColor": "#FF6384"
         }]
       },
-      "width": 300,
-      "height": 300,
+      "width": 250,
+      "height": 250,
       "sizeX": 2,
       "sizeY":2,
-      "row": 1,
-      "col": 4
+      "row": 2,
+      "col": 1
     }]
   },{
     "id": "2",
@@ -182,12 +230,12 @@
           "hoverBackgroundColor": ["#FF6384", "#36A2EB", "#FFCE56"]
         }]
       },
-      "width": 300,
-      "height": 300,
+      "width": 250,
+      "height": 250,
       "sizeX": 2,
       "sizeY":2,
-      "row": 0,
-      "col": 0
+      "row": 2,
+      "col": 2
     },{
       "type": "chart",
       "subtype": "polar",
@@ -200,12 +248,12 @@
         }],
         "labels": ["Red", "Green", "Yellow", "Grey", "Blue"]
       },
-      "width": 300,
-      "height": 300,
+      "width": 250,
+      "height": 250,
       "sizeX": 2,
       "sizeY":2,
-      "row": 0,
-      "col": 1
+      "row": 3,
+      "col": 0
     }]
   }]
 }
