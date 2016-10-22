@@ -23,5 +23,17 @@
     "name": "Radar Chart",
     "type": "radar",
     "iconClass": "fa fa-area-chart"
+  },{
+    "name": "Horizontal Bar Chart",
+    "type": "chartist-horizontal-bar",
+    "iconClass": "fa fa-area-chart"
+  },{
+    "name": "Chartist Line Chart",
+    "type": "chartist-line",
+    "iconClass": "fa fa-line-chart"
+  },{
+    "name": "Guage Chart",
+    "type": "chartist-guage",
+    "iconClass": "fa fa-pie-chart"
   }]
 }

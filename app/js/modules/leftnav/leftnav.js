@@ -6,9 +6,9 @@
 
 	.directive('leftNav', LeftNavDirective);
 
-	LeftNavDirective.$inject = ['$rootScope', 'DashboardService', 'SchemaService', 'ChartService', 'DataObjectService', '$location'];
+	LeftNavDirective.$inject = ['$rootScope', 'DashboardService', 'SchemaService', 'ChartService', 'DataObjectService', '$location', '$timeout'];
 
-	function LeftNavDirective($rootScope, DashboardService, SchemaService, ChartService, DataObjectService, $location) {
+	function LeftNavDirective($rootScope, DashboardService, SchemaService, ChartService, DataObjectService, $location, $timeout) {
         var _directive = {};
 
         _directive.restrict = 'AE';
@@ -83,6 +83,9 @@
                 $scope.showDashboard($scope.dashboards[0]);
             });
 
+            $timeout(function() {
+                ng.element('#side-menu').metisMenu();
+            }, 1000);
         }
 
         return _directive;
