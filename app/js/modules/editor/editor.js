@@ -15,7 +15,7 @@
     var chartTemplateUrl = 'js/modules/editor/editor-chart-ui.html';
     var tableTemplateUrl = 'js/modules/editor/editor-table-ui.html';
 
-    $scope.editorType = 'dashboard';
+    $scope.editorType = $routeParams.type;
 
     $scope.editData = { schema: { name: '', tables: [] }, dashboard: { name: '', components: [] } };
 
@@ -30,31 +30,82 @@
       $location.path('/');
     };
 
-    $scope.saveSchema = function() {
-      var tables = [];
-      var selectedFields = [];
-      var conditionalField = '';
-      
-      ng.forEach($scope.editData.schema.tables, function(table) {
-
-        conditionalField = table.Metadata.columns.filter(function(field) {
-          return field.joined;
-        })[0].name;
-        
-        selectedFields = table.Metadata.columns.filter(function(field) {
-          return field.selected;
-        }).map(function(field) {
-          return field.name;
-        });
-
-        tables.push({ table: table.Metadata.table, fields: selectedFields, conditionalField: conditionalField });
+    $scope.handleLinkMouseEvent = function(table, column) {
+      table.Metadata.columns.forEach(function(col, index, cols) {
+        cols[index].joined = false;
       });
 
-      SchemaService.addSchema({ name: $scope.editData.schema.name, queryData: tables });
+      column.joined = !column.joined;
+    };
 
-      $rootScope.$broadcast('schema-added');
+    $scope.saveSchema = function() {
+      if($scope.editData.schema.tables.length !== 2) {
+        alert('Join is only supported for two tables.');
+        return;
+      }
 
-      $rootScope.$broadcast('enable-edit-mode', { type: 'dashboard' });
+      // var tables = [];
+      // var selectedFields = [];
+      // var conditionalField = '';
+      
+      // ng.forEach($scope.editData.schema.tables, function(table) {
+
+      //   conditionalField = table.Metadata.columns.filter(function(field) {
+      //     return field.joined;
+      //   })[0].name;
+        
+      //   selectedFields = table.Metadata.columns.filter(function(field) {
+      //     return field.selected;
+      //   }).map(function(field) {
+      //     return field.name;
+      //   });
+
+      //   tables.push({ table: table.Metadata.table, fields: selectedFields, conditionalField: conditionalField });
+      // });
+
+      try {
+
+          var joinOn = $scope.editData.schema.tables[0].Metadata.columns.filter(function(field) {
+            return field.joined;
+          })[0].name;
+
+          var selectedFields = $scope.editData.schema.tables[0].Metadata.columns.filter(function(field) {
+            return field.selected;
+          }).map(function(field) {
+            return field.name;
+          }).concat($scope.editData.schema.tables[1].Metadata.columns.filter(function(field) {
+            return field.selected;
+          }).map(function(field) {
+            return field.name;
+          }));
+
+          var omittingFields = $scope.editData.schema.tables[0].Metadata.columns.filter(function(field) {
+            return !field.selected;
+          }).map(function(field) {
+            return field.name;
+          }).concat($scope.editData.schema.tables[1].Metadata.columns.filter(function(field) {
+            return !field.selected;
+          }).map(function(field) {
+            return field.name;
+          }));
+
+          var joinedData = $scope.editData.schema.tables[0].Records.joinWith(
+              $scope.editData.schema.tables[1].Records,
+              joinOn,
+              selectedFields
+              // omittingFields
+          );
+
+          debugger;
+
+          SchemaService.addSchema({ name: $scope.editData.schema.name, data: joinedData });
+
+          $rootScope.$broadcast('schema-added');
+
+          $rootScope.$broadcast('disable-edit-mode');
+      } catch (e) {
+        alert('Invalid join, please try again.');
+      }
     };
 
     $scope.cancel = function() {

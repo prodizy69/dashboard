@@ -7,19 +7,20 @@
 
     ng.module('dashly')
 
-        .controller('userController', userController);
+    .controller('UserController', UserController);
 
-    userController.$inject = ['$scope', '$location'];
+    UserController.$inject = ['$scope', 'UserService'];
 
-    function userController($scope) {
+    function UserController($scope, UserService) {
 
-        $scope.users={users:[{'name':'Lenin','role':'End User','check1':'Can update User Privileges','check2':'Can create Data Model','check3':'Can create Dashboard','check4':'View Only'},
-            {'name':'Shekar','role':'End User','check1':'Can update User Privileges','check2':'Can create Data Model','check3':'Can create Dashboard','check4':'View Only'},
-            {'name':'Suhesh','role':'Super User','check1':'Can update User Privileges','check2':'Can create Data Model','check3':'Can create Dashboard','check4':'View Only'},
-            {'name':'Boris','role':'Super User','check1':'Can update User Privileges','check2':'Can create Data Model','check3':'Can create Dashboard','check4':'View Only'},
-            {'name':'Michel','role':'End User','check1':'Can update User Privileges','check2':'Can create Data Model','check3':'Can create Dashboard','check4':'View Only'},
-            {'name':'John','role':'Super User','check1':'Can update User Privileges','check2':'Can create Data Model','check3':'Can create Dashboard','check4':'View Only'}]}
+        function getUsers() {
+            UserService.getUsers()
+            .then(function(users) {
+                $scope.users = users;
+            });
+        }
 
+        getUsers();
     }
 
 })(angular);

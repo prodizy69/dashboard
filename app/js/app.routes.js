@@ -23,9 +23,9 @@
 			controller: 'EditorController'
 		})
 
-		.when('/users.html', {
+		.when('/users', {
 			templateUrl: 'js/modules/users/users.html',
-			controller: 'userController'
+			controller: 'UserController'
 		})
 		
 		.otherwise({

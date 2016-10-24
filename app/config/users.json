@@ -1,0 +1,41 @@
+{
+  "users": [{
+      "name": "John Smith",
+      "role": "Graphics Designer",
+      "profileImage": "img/a1.jpg",
+      "permissions": [{
+        "id": "DATA_MODELS_CREATION",
+        "description": "Superuser (create Data Models)"
+      }, {
+        "id": "SHARE_DASHBOARDS",
+        "description": "Share Dashboards"
+      }]
+  }, {
+      "name": "Alex Johnathan",
+      "role": "CEO",
+      "profileImage": "img/a2.jpg",
+      "permissions": [{
+        "id": "DATA_MODELS_CREATION",
+        "description": "Superuser (create Data Models)"
+      }, {
+        "id": "SHARE_DASHBOARDS",
+        "description": "Share Dashboards"
+      }]
+  }, {
+      "name": "Monica Smith",
+      "role": "Marketing Manager",
+      "profileImage": "img/a3.jpg",
+      "permissions": []
+  }, {
+      "name": "Michael Zimber",
+      "role": "Graphics Designer",
+      "profileImage": "img/a4.jpg",
+      "permissions": [{
+        "id": "DATA_MODELS_CREATION",
+        "description": "Superuser (create Data Models)"
+      }, {
+        "id": "SHARE_DASHBOARDS",
+        "description": "Share Dashboards"
+      }]
+  }]
+}

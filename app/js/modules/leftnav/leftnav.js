@@ -6,9 +6,9 @@
 
 	.directive('leftNav', LeftNavDirective);
 
-	LeftNavDirective.$inject = ['$rootScope', 'DashboardService', 'SchemaService', 'ChartService', 'DataObjectService', '$location', '$timeout'];
+	LeftNavDirective.$inject = ['$rootScope', '$routeParams', 'DashboardService', 'SchemaService', 'ChartService', 'DataObjectService', '$location', '$timeout'];
 
-	function LeftNavDirective($rootScope, DashboardService, SchemaService, ChartService, DataObjectService, $location, $timeout) {
+	function LeftNavDirective($rootScope, $routeParams, DashboardService, SchemaService, ChartService, DataObjectService, $location, $timeout) {
         var _directive = {};
 
         _directive.restrict = 'AE';
@@ -51,14 +51,18 @@
                 });
             }
 
+            $scope.showUsers = function() {
+                $location.path('/users');
+            };
+
             $scope.showDashboard = function(data) {
                 $scope.selectedDashboard = data;
-                $location.path('/dashboard/' + data.id);
+                $location.path('/dashboard/' + data.id).search({});
             };
 
             $scope.enableSchemaEditMode = function() {
                 $rootScope.$broadcast('enable-edit-mode', { type: 'schema' })
-                $location.path('editor');
+                $location.path('editor/schema');
             };
 
             getDashboards();
@@ -74,11 +78,12 @@
             $scope.$on('schema-added', getSchemas);
 
             $scope.$on('enable-edit-mode', function(event, data) {
-                $scope.editType = data.type;
+                $scope.editType = data.type || $routeParams.type;
                 $scope.editMode = true;
             });
 
             $scope.$on('disable-edit-mode', function(event, data) {
+                $location.search({});
                 $scope.editMode = false;
                 $scope.showDashboard($scope.dashboards[0]);
             });

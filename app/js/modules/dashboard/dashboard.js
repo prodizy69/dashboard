@@ -26,7 +26,7 @@
 
     $scope.createSchema = function() {
       $rootScope.$broadcast('enable-edit-mode', { type: 'schema' });
-      $location.path('editor');
+      $location.path('editor').search('type', 'dashboard');
     };
 
   }
